@@ -1,10 +1,13 @@
 import "./App.css";
 import Carousel from "./components/Carousel";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
-      <header></header>
+      <header>
+        <Navbar />
+      </header>
       <section>
         <div class="row">
           <div class="col">
