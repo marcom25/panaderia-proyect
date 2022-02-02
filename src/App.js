@@ -4,20 +4,20 @@ import Carousel from "./components/Carousel";
 function App() {
   return (
     <>
-      <header>
-
-      </header>
+      <header></header>
       <section>
-        <div clas="row align-items-center">
+        <div class="row">
           <div class="col">
-            <h1></h1>
+            <h1>Hola Seba</h1>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
             <Carousel />
           </div>
         </div>
       </section>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </>
   );
 }
