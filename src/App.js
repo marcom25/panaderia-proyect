@@ -1,9 +1,18 @@
 import "./App.css";
-import Navbar from "./components/Navbar";
+
 
 function App() {
   return (
     <>
+      <header>
+
+      </header>
+      <section>
+
+      </section>
+      <footer>
+        
+      </footer>
     </>
   );
 }
