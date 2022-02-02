@@ -1,0 +1,23 @@
+1- Tema: Panaderia,
+2- Tecnologias: Node.js, express.js, MySql, HTML, CSS, React?, Bootstrap, ...
+
+3- 4-5 horas diarias
+4- Empezamos por Front :(
+
+5- Componentes: 
+    _Navbar,
+    _Home,
+    _Contactos al Footer,
+    _Menu,
+    _Responsive,
+    _Login,
+    _Register,
+    _Carrito,
+    _Animaciones?,
+    _...
+
+6- Links: 
+_https://www.pertutti.com.ar/
+_https://lomasricopanaderias.com.ar/#navbar
+_http://www.laceleste.com.ar/
+    
