@@ -1,4 +1,5 @@
 import "./App.css";
+import Card from "./components/Card";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
 
@@ -9,18 +10,12 @@ function App() {
         <Navbar />
       </header>
       <section>
-        <div class="row">
-          <div class="col">
-            <h1>Hola Seba</h1>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col">
-            <Carousel />
-          </div>
-        </div>
+        <Carousel />
+        <Card />
       </section>
-      <footer></footer>
+      <footer>
+
+      </footer>
     </>
   );
 }
