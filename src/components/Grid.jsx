@@ -1,6 +1,5 @@
 import React from 'react';
 import Navbar from "./Navbar";
-import Carousel from "./Carousel";
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
 
