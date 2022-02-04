@@ -14,7 +14,7 @@ const Grid = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='col-'>
+                <div className='col'>
                     <ParallaxBg/> 
                 </div>
             </div>
@@ -27,6 +27,15 @@ const Grid = () => {
                 </div>
                 <div className='col-sm'>
                     <Card/>
+                </div>
+            </div>
+            <div className='row'>
+                <div className='col-sm'>
+                    <div className=''>
+                        <p>
+                            TEXTO O IMAGENES
+                        </p>
+                    </div>
                 </div>
             </div>
             
