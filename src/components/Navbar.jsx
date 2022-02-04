@@ -1,5 +1,4 @@
 import React from "react";
-import "../Navbar";
 import { slide as Menu } from 'react-burger-menu'
 
 const Navbar = () => {
@@ -7,7 +6,7 @@ const Navbar = () => {
     <>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
