@@ -5,6 +5,7 @@ node_modules/
 .package-lock/
 /.pnp
 .pnp.js
+/images
 
 # testing
 /coverage
