@@ -1,5 +1,6 @@
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
+import Card from "./components/Card";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <div class="row">
           <div class="col">
             <Carousel />
+            <Card />
           </div>
         </div>
       </section>
