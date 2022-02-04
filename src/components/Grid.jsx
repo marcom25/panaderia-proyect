@@ -10,7 +10,7 @@ const Grid = () => {
         <div className="container-xs" style={{padding: "0"}}>
             <div className='row'>
                 <div className='col-12'>
-                    {/* <Navbar/> */}
+                    <Navbar/>
                 </div>
             </div>
             <div className='row'>
