@@ -1,12 +1,13 @@
 import React from "react";
-import { slide as Menu } from 'react-burger-menu'
+import "../Navbar";
+import "../Navbar.css";
 
 const Navbar = () => {
   return (
     <>
       <nav class="navbar navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-          <button class="navbar-toggler " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <div class="container-fluid padding-left-jejox">
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
