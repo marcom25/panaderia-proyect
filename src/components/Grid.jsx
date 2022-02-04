@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from "./Navbar";
+import Sidebar from "./Sidebar";
+import Navbar from './Navbar';
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
 
@@ -9,7 +10,8 @@ const Grid = () => {
         <div className="container-xs" style={{padding: "0"}}>
             <div className='row'>
                 <div className='col-12'>
-                    <Navbar/>
+                    <Navbar />
+                    <Sidebar/>
                 </div>
             </div>
             <div className='row'>
