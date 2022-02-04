@@ -6,7 +6,6 @@ const Navbar = () => {
     <>
       <nav class="navbar navbar-light bg-light fixed-top">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Offcanvas navbar</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <span class="navbar-toggler-icon"></span>
           </button>
