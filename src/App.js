@@ -1,5 +1,3 @@
-import "./App.css";
-import Card from "./components/Card";
 import Carousel from "./components/Carousel";
 import Navbar from "./components/Navbar";
 
@@ -10,12 +8,18 @@ function App() {
         <Navbar />
       </header>
       <section>
-        <Carousel />
-        <Card />
+        <div class="row">
+          <div class="col" style={{textAlign: 'center'}}>
+            Fichate este navbar vanila papá
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <Carousel />
+          </div>
+        </div>
       </section>
-      <footer>
-
-      </footer>
+      <footer></footer>
     </>
   );
 }
