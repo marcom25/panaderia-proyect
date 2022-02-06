@@ -4,7 +4,7 @@ import { Parallax, Background} from 'react-parallax';
 const ParallaxBg = () => (
     <Parallax
         blur={{ min: -15, max: 15 }}
-        bgImage={require('../images/descarga.jpg')}
+        bgImage={require('../images/background-image-1.jpg')}
         bgImageAlt="the dog"
         strength={-200}
     >
@@ -14,3 +14,5 @@ const ParallaxBg = () => (
 );
  
 export default ParallaxBg;
+
+  
