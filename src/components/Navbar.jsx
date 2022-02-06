@@ -1,8 +1,10 @@
 import React from 'react';
+import "../css/Navbar.css";
+
 
 const Navbar = () => {
     return (  
-      <nav class="navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
+      <nav class="colores navbar navbar-expand-lg navbar-light bg-light d-none d-lg-block">
           <div class="container-fluid">
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
