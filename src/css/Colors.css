@@ -1,0 +1,131 @@
+/* BACKGROUND COLORS */
+
+.bg-pink {
+    background-color: rgb(255, 216, 201) !important;
+}
+
+.bg-brown {
+    background-color: rgb(77, 58, 64) !important;
+}
+
+.bg-orange-light {
+    background-color: rgb(236, 138, 101) !important;
+}
+
+.bg-orange-dark {
+    background-color: rgb(187, 89, 60) !important;
+}
+
+.bg-green {
+    background-color: rgb(74, 174, 110) !important;
+}
+
+.bg-yellow {
+    background-color: rgb(251, 197, 101) !important;
+}
+
+
+
+
+
+
+
+
+/* FONT COLORS */
+
+.pink-font {
+    color: rgb(255, 225, 215) !important;
+}
+
+.brown-font {
+    color: rgb(77, 58, 64) !important;
+}
+
+.orange-light-font {
+    color: rgb(236, 138, 101) !;
+}
+
+.orange-dark-font {
+    color: rgb(187, 89, 60) !important;
+}
+
+.green-font {
+    color: rgb(74, 174, 110) !important;
+}
+
+.yellow-font {
+    color: rgb(251, 197, 101) !important;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* HOVERS */
+
+
+
+
+/* BACKGROUND HOVERS */
+
+.bg-pink-hover:hover {
+    background-color: rgb(255, 225, 215) !important;
+}
+
+.bg-brown-hover:hover {
+    background-color: rgb(77, 64, 58) !important;
+}
+
+.bg-orange-light-hover:hover {
+    background-color: rgb(236, 138, 101) !important;
+}
+
+.bg-orange-dark-hover:hover {
+    background-color: rgb(187, 89, 60) !important;
+}
+
+.bg-green-hover:hover {
+    background-color: rgb(74, 174, 110) !important;
+}
+
+.bg-yellow-hover:hover {
+    background-color: rgb(251, 197, 101) !important;
+}
+
+
+
+
+
+
+/* FONT HOVERS */
+
+.font-pink-hover:hover {
+    color: rgb(255, 225, 215) !important;
+}
+
+.font-brown-hover:hover {
+    color: rgb(77, 58, 64) !important;
+}
+
+.font-orange-light-hover:hover {
+    color: rgb(236, 138, 101) !important;
+}
+
+.font-orange-dark-hover:hover {
+    color: rgb(187, 89, 60) !important;
+}
+
+.font-green-hover:hover {
+    color: rgb(74, 174, 110) !important;
+}
+
+.font-yellow-hover:hover {
+    color: rgb(251, 197, 101) !important;
+}

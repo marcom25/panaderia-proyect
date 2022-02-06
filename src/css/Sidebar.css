@@ -1,12 +1,13 @@
-.padding-left-jejox {
+.padding-left-menu-button {
     padding-left: 10px !important;
 }
 
 .carrito {
     width: 33%;
     padding-right: 20px;
+    color: rgb(77, 58, 64);
 }
 
 .carrito:hover {
-    background-color: red;
+    color: rgb(117, 73, 53) !important;
 }
