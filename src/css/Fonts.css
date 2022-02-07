@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
+
+
+.font-caveat{
+    font-family: 'Caveat', cursive;
+}
+
+.font-comforter{
+    font-family: 'Comforter', cursive;
+}
+
+.font-festive{
+    font-family: 'Festive', cursive;
+}
+
+.font-indie-flower{
+    font-family: 'Indie Flower', cursive;
+}
+
+.font-kaushan-scritp{
+    font-family: 'Kaushan Script', cursive;
+}
+
+.font-pacifico{
+    font-family: 'Pacifico', cursive;
+}
+
+.font-satisfy{
+    font-family: 'Satisfy', cursive;
+}
+
+.font-yellowtail{
+    font-family: 'Yellowtail', cursive;
+}

@@ -4,6 +4,7 @@ import "../css/ParallaxBg.css"
 
 const ParallaxBg = () => (
     <Parallax
+        
         bgImage={require('../images/medialunas.jpg')}
         bgImageAlt="the dog"
         strength={-200}
