@@ -10,3 +10,9 @@
 .sizer{
     height: 50rem;
 }
+
+@media (max-width: 991px) {
+    .sizer{
+        height: 40rem !important;
+    }
+}

@@ -1,13 +1,20 @@
 import React from 'react';
+import { FaLastfmSquare } from 'react-icons/fa';
 
-const Card = ({image}) => {
+import "../css/Card.css"
+import "../css/Colors.css"
+
+
+const Card = ({image, counter}) => {
+   
+
     return ( 
-        <div className="card m-auto" style={{width: "18rem"}}>
-            <img className="card-img-top" src={image} alt="Card cap"/>
-            <div className="card-body">
+        <div className="card m-auto mt-4 mb-4 bg-orange-dark" style={{width: "18rem"}}>
+            <img className="card-img-top image" src={image} alt="Card cap"/>
+            <div className="card-body bg-orange-light card-content">
                 <h5 className="card-title">Card title</h5>
-                <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                
+              
+
             </div>
         </div>
     );

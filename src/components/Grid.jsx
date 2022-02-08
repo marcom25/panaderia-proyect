@@ -3,7 +3,9 @@ import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
+// CSS 
 import "../css/Grid.css"
+import "../css/Colors.css"
 // IMPORTS DE IMAGENES
 import image1 from "../images/donuts.jpg";
 import image2 from "../images/brownie.jpg";
@@ -24,15 +26,15 @@ const Grid = () => {
                 </div>
                 
             </div>
-            <div className='row justify-content-sm-center'>
+            <div className='row justify-content-sm-center bg-orange-light'>
                 <div className='col-sm m-auto'>
-                    <Card image={image1} />
+                    <Card image={image1} counter="1"/>
                 </div>
                 <div className='col-sm p-0'>
-                    <Card image={image2} />
+                    <Card image={image2} counter="2"/>
                 </div>
                 <div className='col-sm p-0'>
-                    <Card image={image3} />
+                    <Card image={image3} counter="3"/>
                 </div>
             </div>
             <div className='row'>

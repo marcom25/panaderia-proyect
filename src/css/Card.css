@@ -1,0 +1,13 @@
+.card{
+    border: 6px solid rgb(187, 89, 60) !important;
+    border-radius: 1rem !important;
+}
+
+.image{
+    border-top-left-radius: 0.5rem !important;
+    border-top-right-radius: 0.5rem !important;
+}
+.card-content{
+    border-bottom-left-radius: 0.5rem !important;
+    border-bottom-right-radius: 0.5rem !important;
+}
