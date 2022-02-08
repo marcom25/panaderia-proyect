@@ -3,6 +3,8 @@ import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
+import Footer from './Footer';
+// IMPORTS DE CSS
 import "../css/Grid.css"
 // IMPORTS DE IMAGENES
 import image1 from "../images/donuts.jpg";
@@ -39,12 +41,16 @@ const Grid = () => {
                 <div className='col-sm p-0'>
                     <div className=''>
                         <p>
-                            TEXTO O IMAGENES
+                            <br /><br />
                         </p>
                     </div>
                 </div>
             </div>
-            
+            <div className='row'>
+                <div className='col-sm p-0'>
+                    <Footer/>
+                </div>
+            </div>
         </div>
     );
 }

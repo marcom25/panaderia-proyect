@@ -23,6 +23,9 @@
 .bg-yellow {
     background-color: rgb(251, 197, 101) !important;
 }
+.bg-colorado {
+    background-color: rgb(104, 1, 1) !important;
+}
 
 
 
@@ -42,7 +45,7 @@
 }
 
 .orange-light-font {
-    color: rgb(236, 138, 101) !;
+    color: rgb(236, 138, 101) !important;
 }
 
 .orange-dark-font {

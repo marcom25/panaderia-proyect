@@ -5,7 +5,7 @@ import { FaStore, FaShoppingCart } from "react-icons/fa";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
 import { SiGooglemessages } from "react-icons/si";
-import logo from "../images/titulo-mas-cercano.svg"
+import logo from "../images/titulo-mas-cercano.svg";
 
 
 
@@ -27,14 +27,22 @@ const Sidebar = () => {
                 <li class="nav-item bg-brown-hover">
                   <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" aria-current="page" href="#"> <AiFillHome style={{fontSize: '1.55rem', paddingRight: '4px'}}/> Inicio</a>
                 </li>
-                <li class="nav-item bg-brown-hover">
-                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href="#"><FaStore style={{fontSize: '1.5rem', paddingRight: '5px'}}/> Productos</a>
+                <li > 
+                  <a class="nav-link dropdown-toggle d-flex align-items-center brown-font font-pink-hover px-3  nav-item dropdown bg-brown-hover pink-font" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <FaStore style={{fontSize: '1.5rem', paddingRight: '5px'}}/>Productos</a>
+                  <ul class="dropdown-menu border-0 rounded-0 bg-pink pink-font font-pink-hover" aria-labelledby="offcanvasNavbarDropdown">
+                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="#">Tortas</a></li>
+                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="#">Facturas</a></li>
+                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="#">Masitas</a></li>
+                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="#">Chocolates</a></li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="#">Más productos</a></li>
+                  </ul>
                 </li>
                 <li class="nav-item bg-brown-hover">
                   <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href="#"> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Sobre nosotros</a>
                 </li>
                 <li class="nav-item bg-brown-hover">
-                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href="#"><SiGooglemessages style={{fontSize: '1.5rem', paddingRight: '5px'}}/> Contactanos</a>
+                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href="#"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
                 </li>
               </ul>
             </div>
