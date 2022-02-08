@@ -1,5 +1,5 @@
 import React from 'react';
-import { FaLastfmSquare } from 'react-icons/fa';
+
 
 import "../css/Card.css"
 import "../css/Colors.css"

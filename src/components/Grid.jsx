@@ -3,6 +3,7 @@ import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
+import Carousel from './Carousel';
 import Footer from './Footer';
 // IMPORTS DE CSS
 import "../css/Grid.css"
@@ -39,12 +40,8 @@ const Grid = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='col-sm p-0'>
-                    <div className=''>
-                        <p>
-                            <br /><br />
-                        </p>
-                    </div>
+                <div className='col-sm p-0 bg-orange-light'>
+                    <Carousel/>
                 </div>
             </div>
             <div className='row'>
