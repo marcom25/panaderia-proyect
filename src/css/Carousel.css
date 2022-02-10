@@ -1,10 +1,18 @@
 @media (min-width: 991px) {
-    .carousel-container{
-        /* height: 30rem; */
+   
+}
+
+@media (min-width: 768px) {
+    .title{
+        font-size: 5em;
     }
 
     .imagen{
-        /* width: 120rem;
-        height: 20rem; */
+        filter: blur(7px);
     }
+
+    .carousel-caption{
+        bottom: 40%!important;
+    }
+
 }

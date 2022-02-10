@@ -30,17 +30,17 @@ const Grid = () => {
             </div>
             <div className='row justify-content-sm-center bg-orange-light'>
                 <div className='col-sm m-auto'>
-                    <Card image={image1} counter="1"/>
+                    <Card image={image1} msg="hola"/>
                 </div>
                 <div className='col-sm p-0'>
-                    <Card image={image2} counter="2"/>
+                    <Card image={image2} msg="hola" />
                 </div>
                 <div className='col-sm p-0'>
-                    <Card image={image3} counter="3"/>
+                    <Card image={image3} msg="hola" />
                 </div>
             </div>
             <div className='row'>
-                <div className='col-sm p-0 bg-orange-light'>
+                <div className='col-sm p-0 bg-brown'>
                     <Carousel/>
                 </div>
             </div>
