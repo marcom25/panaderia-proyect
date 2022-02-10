@@ -23,7 +23,7 @@ const Sidebar = () => {
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body p-0">
-              <ul className="navbar-nav justify-content-end flex-grow-1 brown-font">
+              <ul className="navbar-nav h-50 flex-grow-1 brown-font">
                 <li className="nav-item bg-brown-hover">
                   <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3" aria-current="page" href="#"> <AiFillHome style={{fontSize: '1.55rem', paddingRight: '4px'}}/> Inicio</a>
                 </li>
@@ -43,6 +43,13 @@ const Sidebar = () => {
                 </li>
                 <li class="nav-item bg-brown-hover">
                   <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href="#"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
+                </li>
+                
+              </ul>
+              <ul className="navbar-nav h-50 d-flex justify-content-end">
+                <li className="nav-item mb-3 text-center">
+                  <a className="nav-link px-3 brown-font bg-brown-hover font-pink-hover" href="#">Iniciar sesión </a>
+                  <a className="nav-link px-3 brown-font bg-brown-hover font-pink-hover" href="#">Registrarme</a>
                 </li>
               </ul>
             </div>

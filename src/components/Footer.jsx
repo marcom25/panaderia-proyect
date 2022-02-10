@@ -121,12 +121,6 @@ const Footer = () => {
                 </div>
                 {/* <!-- Footer Links --> */}
 
-
-                {/* <!-- Copyright --> */}
-                <div class="footer-copyright text-center mt-2">©2022<a className="text-decoration-none orange-light-font" href="https://www.instagram.com/"> Marquinhos y </a><a className="text-decoration-none orange-light-font" href="https://www.instagram.com/">Sebastinho</a>
-                </div>
-                {/* <!-- Copyright --> */}
-
             </footer>
             {/* <!-- Footer --> */}
         </> 
