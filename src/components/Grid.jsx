@@ -54,9 +54,6 @@ const Grid = () => {
                 <ImgBlock/>
             </div>
             <div className='row'>
-                <ImgBlock/>
-            </div>
-            <div className='row'>
                 <div className='col-sm p-0'>
                     <Footer/>
                 </div>
