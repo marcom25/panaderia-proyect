@@ -12,6 +12,7 @@ import "../css/Colors.css"
 import image1 from "../images/donuts.jpg";
 import image2 from "../images/brownie.jpg";
 import image3 from "../images/medialunas.jpg"
+import ImgBlock from './ImgBlock';
 
 const Grid = () => {
     return ( 
@@ -43,6 +44,12 @@ const Grid = () => {
                 <div className='col-sm p-0 bg-brown'>
                     <Carousel/>
                 </div>
+            </div>
+            <div className='row'>
+                <ImgBlock/>
+            </div>
+            <div className='row'>
+                <ImgBlock/>
             </div>
             <div className='row'>
                 <div className='col-sm p-0'>
