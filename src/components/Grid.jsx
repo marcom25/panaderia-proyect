@@ -1,3 +1,4 @@
+// IMPORTS DE COMPONENTES
 import React from 'react';
 import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
@@ -5,6 +6,7 @@ import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
 import Carousel from './Carousel';
 import Footer from './Footer';
+import CollageImages from './CollageImages';
 // IMPORTS DE CSS
 import "../css/Grid.css"
 import "../css/Colors.css"
@@ -44,6 +46,9 @@ const Grid = () => {
                 <div className='col-sm p-0 bg-brown'>
                     <Carousel/>
                 </div>
+            </div>
+            <div className='row bg-brown' style={{padding: '9rem'}}>
+                <CollageImages/>
             </div>
             <div className='row'>
                 <ImgBlock/>

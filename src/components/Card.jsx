@@ -14,7 +14,6 @@ const Card = ({image ,msg}) => {
             <div className="card-body bg-orange-light card-content">
                 <h5 className="card-title">{msg} </h5>
               
-
             </div>
         </div>
     );
