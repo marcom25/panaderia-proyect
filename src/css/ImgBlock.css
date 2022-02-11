@@ -1,6 +1,6 @@
 @media (max-width: 991px) {
     .bg-image-1{
-        background-image: url("https://picsum.photos/200/300");
+        background-image: url("../images/bakery/bakery.jpg");
         height: 100%;
         background-position: center;
         background-repeat: no-repeat;

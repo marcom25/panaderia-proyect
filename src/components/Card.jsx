@@ -9,10 +9,10 @@ const Card = ({image ,msg}) => {
    
 
     return ( 
-        <div className="card m-auto mt-4 mb-4 bg-orange-dark" style={{width: "18rem"}}>
+        <div className="card m-auto " style={{width: "20rem"}}>
             <img className="card-img-top image" src={image} alt="Card cap"/>
-            <div className="card-body bg-orange-light card-content">
-                <h5 className="card-title">{msg} </h5>
+            <div className="card-body bg-lightblue card-content">
+                <h5 className="card-title text-center">{msg} </h5>
               
             </div>
         </div>

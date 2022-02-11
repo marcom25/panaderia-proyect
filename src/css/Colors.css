@@ -3,28 +3,39 @@
 .bg-pink {
     background-color: rgb(255, 216, 201) !important;
 }
-
-.bg-brown {
-    background-color: rgb(77, 58, 64) !important;
+.bg-pink-dark{
+    background-color: #FFC6B0 !important;
 }
-
+.bg-brown {
+    background-color: rgb(77, 58, 64) !important; 
+    /* background-color: rgb(64, 54, 50) !important;  */
+}
 .bg-orange-light {
     background-color: rgb(236, 138, 101) !important;
 }
-
 .bg-orange-dark {
     background-color: rgb(187, 89, 60) !important;
 }
-
 .bg-green {
     background-color: rgb(74, 174, 110) !important;
 }
-
 .bg-yellow {
     background-color: rgb(251, 197, 101) !important;
 }
 .bg-colorado {
     background-color: rgb(104, 1, 1) !important;
+}
+.bg-cream{
+    background-color: #FFFEE3 !important;
+}
+.bg-cream-dark{
+    background-color: #f7f7b7 !important;
+}
+.bg-lightblue{
+    background-color: #B0FFF2 !important;
+}
+.bg-purple-light{
+    background-color: #DABDFF;
 }
 
 
@@ -64,13 +75,6 @@
 
 
 
-
-
-
-
-
-
-
 /* HOVERS */
 
 
@@ -83,7 +87,8 @@
 }
 
 .bg-brown-hover:hover {
-    background-color: rgb(77, 64, 58) !important;
+    background-color: rgb(64, 54, 50) !important;
+    /* background-color: rgb(77, 64, 58) !important; */
 }
 
 .bg-orange-light-hover:hover {

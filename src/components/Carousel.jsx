@@ -14,13 +14,13 @@ import image3 from "../images/bakery/lemonpie.jpg";
 const Carousel = () => {
 
     return (
-        <div id="carouselExampleCaptions" className="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div id="carouselExampleCaptions" className="carousel slide carousel-fade d-none d-md-block" data-bs-ride="carousel">
             <div className="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
-            <div className="carousel-inner mt-5 mb-5 ">
+            <div className="carousel-inner">
                 <div className="carousel-item active">
                     <img src={image1} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
