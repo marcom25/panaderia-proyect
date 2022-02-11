@@ -21,21 +21,21 @@ const Carousel = () => {
                 <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
             </div>
             <div className="carousel-inner">
-                <div className="carousel-item active">
+                <div className="carousel-item active" data-bs-interval="4000">
                     <img src={image1} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
                         <h1 className="title font-yellowtail" >First slide label</h1>
                         <p>Some representative placeholder content for the first slide.</p>
                     </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="4000">
                     <img src={image2} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
                         <h1  className="title font-yellowtail" >Second slide label</h1>
                         <p>Some representative placeholder content for the second slide.</p>
                     </div>
                 </div>
-                <div className="carousel-item">
+                <div className="carousel-item" data-bs-interval="4000">
                     <img src={image3} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
                         <h1  className="title font-yellowtail" >Third slide label</h1>
