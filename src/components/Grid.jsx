@@ -36,6 +36,7 @@ const Grid = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4'>
+            <h2 className="text-uppercase text-center brown-font pt-5">¡Nuevos productos!</h2>
                 <div className='col-sm py-4'>
                     <Card image={image1} msg="hola"/>
                 </div>
@@ -54,13 +55,15 @@ const Grid = () => {
                     <Carousel/>
                 </div>
             </div>
-            <div className='row'>
-                <ImgBlock image={image4} textAtributes='col-sm p-0 bg-cream-dark' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
+            <div className='row pt-5 bg-cream border-top border-secondary'>
+                <h2 className="text-uppercase text-center brown-font py-5">Nuestras recetas</h2>
+                <ImgBlock image={image4} textAtributes='col-sm p-0 bg-cream-dark border-top border-secondary' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center border-top border-secondary' />
             </div>
-            <div className='row flex-row-reverse'>
+            <div className='row flex-row-reverse border-bottom border-secondary'>
                 <ImgBlock image={image5} textAtributes='col-sm p-0 bg-cream-dark' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center'/>
             </div>
-            <div className='row padding-collage bg-cream'>
+            <div className='row padding-collage bg-cream py-5'>
+                <h2 className="text-uppercase text-center pt-5 pb-4 brown-font">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
             <div className='row'>
