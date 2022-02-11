@@ -38,16 +38,56 @@ const Grid = () => {
             <div className='row justify-content-sm-center bg-cream py-4'>
             <h2 className="text-uppercase text-center brown-font pt-5">¡Nuevos productos!</h2>
                 <div className='col-sm py-4'>
-                    <Card image={image1} msg="hola"/>
+                    <Card 
+                    image={image1} 
+                    msg="hola" 
+                    // imageClass='card-img-top image accordion-button collapsed'
+                    imageDataTarget='#flush-collapseOne'
+                    imageAriaControls='flush-collapseOne'
+                    bodyClass='card-body bg-lightblue card-content accordion-collapse collapse'
+                    bodyId='flush-collapseOne'
+                    bodyAriaLabel='flush-headingOne'
+                    contentClass='card-title text-center accordion-body'
+                    />
                 </div>
                 <div className='col-sm py-4'>
-                    <Card image={image2} msg="hola" />
+                    <Card 
+                    image={image2} 
+                    msg="hola" 
+                    // imageClass='card-img-top image accordion-button collapsed' 
+                    imageDataTarget='#flush-collapseTwo'
+                    imageAriaControls='flush-collapseTwo'
+                    bodyClass='card-body bg-lightblue card-content accordion-collapse collapse'
+                    bodyId='flush-collapseTwo'
+                    bodyAriaLabel='flush-headingTwo'
+                    contentClass='card-title text-center accordion-body'
+                    />
                 </div>
                 <div className='col-sm py-4'>
-                    <Card image={image3} msg="hola" />
+                    <Card 
+                    image={image3} 
+                    msg="hola" 
+                    // imageClass='card-img-top image accordion-button collapsed'
+                    imageDataTarget='#flush-collapseThree'
+                    imageAriaControls='flush-collapseThree'
+                    bodyClass='card-body bg-lightblue card-content accordion-collapse collapse'
+                    bodyId='flush-collapseThree'
+                    bodyAriaLabel='flush-headingThree'
+                    contentClass='card-title text-center accordion-body'
+                    />
                 </div>
                 <div className='col-sm py-4'>
-                    <Card image={image3} msg="hola" />
+                    <Card 
+                    image={image3} 
+                    msg="hola" 
+                    // imageClass='card-img-top image accordion-button collapsed'
+                    imageDataTarget='#flush-collapseFour'
+                    imageAriaControls='flush-collapseFour'
+                    bodyClass='card-body bg-lightblue card-content accordion-collapse collapse'
+                    bodyId='flush-collapseFour'
+                    bodyAriaLabel='flush-headingFour'
+                    contentClass='card-title text-center accordion-body'
+                    />
                 </div>
             </div>
             <div className='row'>
