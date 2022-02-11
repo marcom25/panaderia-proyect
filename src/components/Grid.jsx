@@ -10,6 +10,7 @@ import CollageImages from './CollageImages';
 // IMPORTS DE CSS
 import "../css/Grid.css"
 import "../css/Colors.css"
+import "../css/Collage.css";
 // IMPORTS DE IMAGENES
 import image1 from "../images/donuts.jpg";
 import image2 from "../images/brownie.jpg";
@@ -47,7 +48,7 @@ const Grid = () => {
                     <Carousel/>
                 </div>
             </div>
-            <div className='row bg-brown' style={{padding: '9rem'}}>
+            <div className='row bg-brown padding-collage'>
                 <CollageImages/>
             </div>
             <div className='row'>
