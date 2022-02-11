@@ -13,9 +13,9 @@ import "../css/Colors.css";
 import "../css/Collage.css";
 import "../css/Fonts.css";
 // IMPORTS DE IMAGENES
-import image1 from "../images/donuts.jpg";
-import image2 from "../images/brownie.jpg";
-import image3 from "../images/medialunas.jpg"
+import image1 from "../images/bakery/pancakes.jpg";
+import image2 from "../images/bakery/donuts2.jpg";
+import image3 from "../images/bakery/pie.jpg"
 import ImgBlock from './ImgBlock';
 
 const Grid = () => {

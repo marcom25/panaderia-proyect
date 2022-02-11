@@ -1,11 +1,16 @@
 import React from "react";
-import "../css/Sidebar.css";
-import "../css/Colors.css";
+// IMPORTANDO ICONOS
 import { FaStore, FaShoppingCart } from "react-icons/fa";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
 import { IoIosPeople } from "react-icons/io";
 import { SiGooglemessages } from "react-icons/si";
-import logo from "../images/titulo-mas-cercano.svg";
+
+// IMPORTANDO IMAGENES
+import logo from "../images/logos/titulo-mas-cercano.svg";
+
+// IMPORTANDO CSS
+import "../css/Sidebar.css";
+import "../css/Colors.css";
 
 
 

@@ -1,10 +1,12 @@
+// IMPORTANDO ICONOS
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
-import { AiFillInstagram } from "react-icons/ai";
 
-
+// IMPORTANDO CSS
 import "../css/Colors.css";
-import logo from "../images/titulo-mas-cercano.svg";
+
+// IMPORTANDO IMAGENES
+import logo from "../images/logos/titulo-mas-cercano.svg";
 
 const Footer = () => {
     return ( 

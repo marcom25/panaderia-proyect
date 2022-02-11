@@ -4,9 +4,9 @@ import "../css/Colors.css";
 import "../css/Fonts.css";
 import "../css/Carousel.css";
 
-import image1 from "../images/muffins.jpg";
-import image2 from "../images/panananan.jpg";
-import image3 from "../images/pancito.jpg";
+import image1 from "../images/bakery/pie.jpg";
+import image2 from "../images/bakery/muffin.jpg";
+import image3 from "../images/bakery/lemonpie.jpg";
 
 
 

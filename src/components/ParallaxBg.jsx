@@ -6,7 +6,7 @@ import "../css/Fonts.css"
 const ParallaxBg = () => (
     <Parallax
         blur={2}
-        bgImage={require('../images/medialunas.jpg')}
+        bgImage={require('../images/bakery/macaroons.jpg')}
         bgImageAlt="the dog"
         strength={-200}
     >
