@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Lobster+Two:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
 
 .font-caveat{
     font-family: 'Caveat', cursive;
@@ -15,6 +15,9 @@
 
 .font-indie-flower{
     font-family: 'Indie Flower', cursive;
+}
+.font-lobster-two{
+    font-family: 'Lobster Two', cursive;
 }
 
 .font-kaushan-script{

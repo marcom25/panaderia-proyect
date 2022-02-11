@@ -8,9 +8,10 @@ import Carousel from './Carousel';
 import Footer from './Footer';
 import CollageImages from './CollageImages';
 // IMPORTS DE CSS
-import "../css/Grid.css"
-import "../css/Colors.css"
+import "../css/Grid.css";
+import "../css/Colors.css";
 import "../css/Collage.css";
+import "../css/Fonts.css";
 // IMPORTS DE IMAGENES
 import image1 from "../images/donuts.jpg";
 import image2 from "../images/brownie.jpg";
@@ -52,7 +53,10 @@ const Grid = () => {
                 <CollageImages/>
             </div>
             <div className='row'>
-                <ImgBlock/>
+                <ImgBlock textAtributes='col-sm p-0 bg-orange-light' imgAtributes='col-sm p-0 bg-orange-light d-flex justify-content-center' />
+            </div>
+            <div className='row flex-row-reverse'>
+                <ImgBlock textAtributes='col-sm p-0 bg-orange-light' imgAtributes='col-sm p-0 bg-orange-light d-flex justify-content-center'/>
             </div>
             <div className='row'>
                 <div className='col-sm p-0'>
