@@ -10,7 +10,8 @@ const ParallaxBg = () => (
         bgImageAlt="the dog"
         strength={-200}
     >
-        <p className='text-center paragraph font-satisfy text-wrap'>Lorem pisum ddasdo dnakwndp</p>
+        <h1 className='text-center paragraph font-satisfy text-wrap'>Las mejores cosas en la vida son dulces</h1>
+        <p className='text-center paragraph font-satisfy text-wrap pt-5 mt-2 d-none d-sm-block'>No te quedes con las ganas..</p>
         <div className='sizer' />
     </Parallax>
 );
