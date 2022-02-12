@@ -95,12 +95,14 @@ const Grid = () => {
                     <Carousel/>
                 </div>
             </div>
-            <div className='row pt-5 bg-cream border-top border-secondary'>
-                <h2 className="text-uppercase text-center brown-font py-5">Nuestras recetas</h2>
-                <ImgBlock image={image4} textAtributes='col-sm p-0 bg-cream-dark border-top border-secondary' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center border-top border-secondary' />
+            <div className="bg-cream pt-5 pb-4">
+                <h2 className="text-uppercase text-center brown-font pt-5">Nuestras recetas</h2>
             </div>
-            <div className='row flex-row-reverse border-bottom border-secondary'>
-                <ImgBlock image={image5} textAtributes='col-sm p-0 bg-cream-dark' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center'/>
+            <div className='row bg-cream border-top border-dark px-lg-5'>
+                <ImgBlock image={image4} textAtributes='col-sm p-0 bg-cream-dark' imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
+            </div>
+            <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5'>
+                <ImgBlock image={image5} textAtributes='col-sm p-0 bg-cream-dark' imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
                 <h2 className="text-uppercase text-center pt-5 pb-4 brown-font">Nuestras delicias</h2>

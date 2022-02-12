@@ -24,30 +24,30 @@ const Carousel = () => {
                 <div className="carousel-item active" data-bs-interval="4000">
                     <img src={image1} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1 className="title font-yellowtail" >First slide label</h1>
-                        <p>Some representative placeholder content for the first slide.</p>
+                        <h1 className="title font-yellowtail" >Tortas</h1>
+                        <p>Sweet day.</p>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="4000">
                     <img src={image2} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1  className="title font-yellowtail" >Second slide label</h1>
-                        <p>Some representative placeholder content for the second slide.</p>
+                        <h1  className="title font-yellowtail" >Muffins</h1>
+                        <p>Sweet day.</p>
                     </div>
                 </div>
                 <div className="carousel-item" data-bs-interval="4000">
                     <img src={image3} className="d-block w-100 imagen" alt=""/>
                     <div className="carousel-caption d-none d-md-block">
-                        <h1  className="title font-yellowtail" >Third slide label</h1>
-                        <p>Some representative placeholder content for the third slide.</p>
+                        <h1  className="title font-yellowtail" >Tartas</h1>
+                        <p>Sweet day.</p>
                     </div>
                 </div>
             </div>
-            <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <button className="carousel-control-prev d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
                 <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Previous</span>
             </button>
-            <button className="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <button className="carousel-control-next d-none" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
                 <span className="carousel-control-next-icon" aria-hidden="true"></span>
                 <span className="visually-hidden">Next</span>
             </button>

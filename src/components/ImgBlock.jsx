@@ -8,12 +8,15 @@ import "../css/Fonts.css";
 const ImgBlock = ({image, textAtributes, imgAtributes}) => {
     return ( 
         <>
-            <div className={textAtributes}>
-                <h1 className='mt-2 pt-2 text-center font-comforter'>lorem solarim dmowda mod </h1>
-                <p className='mt-3 mb-5 text-center'>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eligendi nihil suscipit placeat nostrum? Molestiae, neque! Voluptate quas nihil eum vel iure placeat quaerat iusto natus, non quia mollitia doloribus velit!</p>
-            </div>
             <div className={imgAtributes}>
                 <img className='p-3 w-100' src={image} alt=''/>
+            </div>
+            <div className={textAtributes}>
+                <h1 className='pt-3 pt-md-4 pt-lg-5  text-center font-comforter '>Masitas dulces</h1>
+                <p className='text-center'>500gr Harina</p>
+                <p className='text-center'>500ml Leche</p>
+                <p className='text-center'>300gr Manteca</p>
+                <p className='text-center'>2 Huevos </p>
             </div>
         </>
     );
