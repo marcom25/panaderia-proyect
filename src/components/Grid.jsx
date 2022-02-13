@@ -18,7 +18,8 @@ import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";
 import image3 from "../images/bakery/pie.jpg";
 import image4 from "../images/bakery/bakery.jpg";
-import image5 from "../images/bakery/brownie.jpg";
+import image5 from "../images/bakery/bakery2.jpg";
+import image6 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
     return ( 
@@ -78,7 +79,7 @@ const Grid = () => {
                 </div>
                 <div className='col-md-6 py-4'>
                     <Card 
-                    image={image5} 
+                    image={image6} 
                     msg="Brownie" 
                     // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseFour'
