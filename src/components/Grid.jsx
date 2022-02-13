@@ -18,7 +18,7 @@ import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";
 import image3 from "../images/bakery/pie.jpg";
 import image4 from "../images/bakery/bakery.jpg";
-import image5 from "../images/bakery/bakery2.jpg";
+import image5 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
     return ( 
@@ -35,12 +35,12 @@ const Grid = () => {
                 </div>
                 
             </div>
-            <div className='row justify-content-sm-center bg-cream py-4'>
-            <h2 className="text-uppercase text-center brown-font pt-5">¡Nuevos productos!</h2>
-                <div className='col-sm py-4'>
+            <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
+                <h2 className="text-uppercase text-center brown-font pt-5">¡Nuevos productos!</h2>
+                <div className='col-md-6 py-4'>
                     <Card 
                     image={image1} 
-                    msg="hola" 
+                    msg="Pancakes" 
                     // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseOne'
                     imageAriaControls='flush-collapseOne'
@@ -50,10 +50,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body'
                     />
                 </div>
-                <div className='col-sm py-4'>
+                <div className='col-md-6 py-4'>
                     <Card 
                     image={image2} 
-                    msg="hola" 
+                    msg="Donuts" 
                     // imageClass='card-img-top image accordion-button collapsed' 
                     imageDataTarget='#flush-collapseTwo'
                     imageAriaControls='flush-collapseTwo'
@@ -63,10 +63,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body'
                     />
                 </div>
-                <div className='col-sm py-4'>
+                <div className='col-md-6 py-4'>
                     <Card 
                     image={image3} 
-                    msg="hola" 
+                    msg="Torta" 
                     // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseThree'
                     imageAriaControls='flush-collapseThree'
@@ -76,10 +76,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body'
                     />
                 </div>
-                <div className='col-sm py-4'>
+                <div className='col-md-6 py-4'>
                     <Card 
-                    image={image3} 
-                    msg="hola" 
+                    image={image5} 
+                    msg="Brownie" 
                     // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseFour'
                     imageAriaControls='flush-collapseFour'
