@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Lobster+Two:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins:wght@300&display=swap');
 
 .font-caveat{
     font-family: 'Caveat', cursive;
@@ -13,14 +14,14 @@
     font-family: 'Festive', cursive;
 }
 
-.font-indie-flower{
+.font-if{
     font-family: 'Indie Flower', cursive;
 }
-.font-lobster-two{
+.font-lt{
     font-family: 'Lobster Two', cursive;
 }
 
-.font-kaushan-script{
+.font-ks{
     font-family: 'Kaushan Script', cursive;
 }
 
@@ -34,4 +35,12 @@
 
 .font-yellowtail{
     font-family: 'Yellowtail', cursive;
+}
+
+.font-bitter{
+    font-family: 'Bitter', serif;
+}
+
+.font-poppins{
+    font-family: 'Poppins', sans-serif;
 }

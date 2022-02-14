@@ -23,7 +23,7 @@ const Footer = () => {
                             <img src={logo} alt="logo" className="m-auto d-md-none w-75 w-md-50"/>
                                 {/* <!-- Content --> */}
                             <hr class="clearfix w-50 m-auto d-md-none mt-5 mb-2"/>
-                            <h5 class="text-uppercase mb-4">SUSCRIBITE</h5>
+                            <h5 class="text-uppercase mb-4 font-poppins">SUSCRIBITE</h5>
                             <form class="form-inline ">
                             <input class="form-control form-control-sm mr-3 w-75 m-auto" type="text" placeholder="bakeryshop@gmail.com"
                             aria-label="Search" style={{height: '45px', borderRadius: '8px'}}/>
@@ -40,20 +40,20 @@ const Footer = () => {
                         {/* <!-- Grid column --> */}
                         <div class="col-md-6 mb-md-0 mb-3">
 
-                            <h5 class="text-uppercase">Secciones</h5>
+                            <h5 class="text-uppercase font-poppins">Secciones</h5>
 
                             <ul class="list-unstyled">
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">Inicio</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">Inicio</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">Productos</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">Productos</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">Sobre nosotros</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">Sobre nosotros</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">Contactanos</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">Contactanos</a>
                                 </li>
                             </ul>
 
@@ -65,51 +65,51 @@ const Footer = () => {
                         {/* <!-- Grid column --> */}
                         <div class="col-md-6 mb-md-0">
 
-                            <h5 class="text-uppercase">Locales</h5>
+                            <h5 class="text-uppercase font-poppins">Locales</h5>
 
                             <ul class="list-unstyled">
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">NVA. CORDOBA</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">NVA. CORDOBA</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">VILLA ALLENDE</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">VILLA ALLENDE</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">CERRO DE LAS ROSAS</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">CERRO DE LAS ROSAS</a>
                                 </li>
                                 <li>
-                                    <a className="orange-dark-font text-decoration-none" href="#!">GRAL. PAZ</a>
+                                    <a className="orange-dark-font text-decoration-none font-bitter" href="#!">GRAL. PAZ</a>
                                 </li>
                             </ul>
 
                         </div>
                         {/* <!-- Grid column --> */}
                         <hr class="clearfix w-50 m-auto d-md-none mt-3 mb-2" />
-                        <div class="col-md-12 m-auto mb-md-0 mb-3"><h5 class="text-uppercase mb-4 mb-md-5 mt-md-5">Contacto</h5>
+                        <div class="col-md-12 m-auto mb-md-0 mb-3"><h5 class="text-uppercase mb-4 mb-md-5 mt-md-5 font-poppins">Contacto</h5>
                             <ul class="list-unstyled d-md-flex justify-content-around">
                                     <div class="col-md-3">
                                         <h4><BsLinkedin/> Linkedin</h4>
                                         <li>
-                                            <p><a class="orange-dark-font text-decoration-none" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none" href="#!"> Sebastián</a></p> 
+                                            <p><a class="orange-dark-font text-decoration-none font-bitter" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none" href="#!"> Sebastián</a></p> 
                                         </li>
                                     </div>
                                     <div class="col-md-3">
                                         <h4><BsGithub/> Github</h4>
                                         <li>
-                                            <p><a class="orange-dark-font text-decoration-none" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none" href="#!"> Sebastián</a></p>
+                                            <p><a class="orange-dark-font text-decoration-none font-bitter" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none font-bitter" href="#!"> Sebastián</a></p>
                                         </li>
                                     </div>
                                 
                                     <div class="col-md-3">
                                         <h4><SiGmail/> Gmail</h4>
                                         <li>
-                                            <p><a class="orange-dark-font text-decoration-none" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none" href="#!"> Sebastián</a></p>
+                                            <p><a class="orange-dark-font text-decoration-none font-bitter" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none font-bitter" href="#!"> Sebastián</a></p>
                                         </li>
                                     </div>
                                     <div class="col-md-3">
                                         <h4><BsInstagram/> Instagram</h4>
                                         <li>
-                                            <p><a class="orange-dark-font text-decoration-none" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none" href="#!"> Sebastián</a></p>
+                                            <p><a class="orange-dark-font text-decoration-none font-bitter" href="#!">Marco </a>/<a class="orange-dark-font text-decoration-none font-bitter" href="#!"> Sebastián</a></p>
                                         </li>
                                     </div>
                                 

@@ -11,6 +11,7 @@ import logo from "../images/logos/titulo-mas-cercano.svg";
 // IMPORTANDO CSS
 import "../css/Sidebar.css";
 import "../css/Colors.css";
+import "../css/Fonts.css";
 
 
 
@@ -30,10 +31,10 @@ const Sidebar = () => {
             <div className="offcanvas-body p-0">
               <ul className="navbar-nav h-50 flex-grow-1 brown-font">
                 <li className="nav-item bg-brown-hover">
-                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3" aria-current="page" href="#"> <AiFillHome style={{fontSize: '1.55rem', paddingRight: '4px'}}/> Inicio</a>
+                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" aria-current="page" href="#"> <AiFillHome style={{fontSize: '1.55rem', paddingRight: '4px'}}/> Inicio</a>
                 </li>
                 <li > 
-                  <a class="nav-link dropdown-toggle d-flex align-items-center brown-font font-pink-hover px-3  nav-item dropdown bg-brown-hover pink-font" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <FaStore style={{fontSize: '1.5rem', paddingRight: '5px'}}/>Productos</a>
+                  <a class="nav-link dropdown-toggle d-flex align-items-center brown-font font-pink-hover px-3  nav-item dropdown bg-brown-hover pink-font font-poppins" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <FaStore style={{fontSize: '1.5rem', paddingRight: '5px'}}/>Productos</a>
                   <ul class="dropdown-menu border-0 rounded-0 bg-pink pink-font font-pink-hover" aria-labelledby="offcanvasNavbarDropdown">
                     <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Tortas</a></li>
                     <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Facturas</a></li>
@@ -44,17 +45,17 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li className="nav-item bg-brown-hover">
-                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href=""> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Sobre nosotros</a>
+                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href=""> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Sobre nosotros</a>
                 </li>
                 <li class="nav-item bg-brown-hover">
-                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3" href=""><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
+                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href=""><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
                 </li>
                 
               </ul>
               <ul className="navbar-nav h-50 d-flex justify-content-end">
                 <li className="nav-item mb-3 text-center">
-                  <a  className="nav-link px-3 brown-font bg-brown-hover font-pink-hover" href="/login">Iniciar sesión </a>
-                  <a className="nav-link px-3 brown-font bg-brown-hover font-pink-hover" href="">Registrarme</a>
+                  <a  className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" href="/login">Iniciar sesión </a>
+                  <a className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" href="">Registrarme</a>
                 </li>
               </ul>
             </div>

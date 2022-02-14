@@ -8,6 +8,8 @@ import "../css/Colors.css"
 const Card = ({image ,msg, imageClass, iamgeType, imageDataTarget, imageAriaControls, bodyClass, bodyId, bodyAriaLabel, contentClass}) => {
    
 
+    
+
     return ( 
         <div className="card m-auto " style={{width: "20rem"}}>
             <img className="card-img-top image accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target={imageDataTarget} aria-controls={imageAriaControls} src={image} alt="Card cap"/>
