@@ -1,5 +1,8 @@
+// IMPORTS DE MODULOS
+import React, { useEffect } from 'react';
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 // IMPORTS DE COMPONENTES
-import React from 'react';
 import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
 import Card from "./Card";
@@ -22,11 +25,13 @@ import image5 from "../images/bakery/bakery2.jpg";
 import image6 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
-
-
+    
+    useEffect(() => {
+        Aos.init({duration: 2000});
+    }, []);
 
     return ( 
-        <div className="container-xs" style={{padding: "0"}}>
+        <div className="container-xs" style={{padding: "0", overflow: 'hidden'}}>
             <div className='row'>
                 <div className='col-12 p-0 bg-pink'>
                     <Navbar />
@@ -40,8 +45,8 @@ const Grid = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins">¡Nuevos productos!</h2>
-                <div className='col-md-6 py-4'>
+                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up" data-aos-duration="500" data-aos-id="super-duper">¡Nuevos productos!</h2>
+                <div className='col-md-6 py-4' data-aos="zoom-in">
                     <Card 
                     image={image1} 
                     msg="Pancakes" 
@@ -54,7 +59,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4'>
+                <div className='col-md-6 py-4' data-aos="zoom-in">
                     <Card 
                     image={image2} 
                     msg="Donuts" 
@@ -67,7 +72,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4'>
+                <div className='col-md-6 py-4' data-aos="zoom-in">
                     <Card 
                     image={image3} 
                     msg="Torta" 
@@ -80,7 +85,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4'>
+                <div className='col-md-6 py-4' data-aos="zoom-in">
                     <Card 
                     image={image6} 
                     msg="Brownie" 
@@ -100,9 +105,9 @@ const Grid = () => {
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins">Nuestras recetas</h2>
+                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up">Nuestras recetas</h2>
             </div>
-            <div className='row bg-cream border-top border-dark px-lg-5'>
+            <div className='row bg-cream border-top border-dark px-lg-5' data-aos="fade-left">
                 <ImgBlock
                 h1='Masitas Dulces'
                 p1='500gr Harina'
@@ -113,19 +118,19 @@ const Grid = () => {
                 textAtributes='col-sm p-0 bg-cream-dark' 
                 imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
             </div>
-            <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5'>
+            <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5' data-aos="fade-right">
                 <ImgBlock 
-                h1='Chupame La Pichula'
-                p1='1231'
-                p2='123131'
-                p3=' jdndawd'
-                p4='ponele texto mamador de pitos'
+                h1='Facturas'
+                p1='800gr Harina'
+                p2='500ml Leche'
+                p3='300gr Azucar'
+                p4='4 Huevos'
                 image={image5} 
                 textAtributes='col-sm p-0 bg-cream-dark' 
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
-                <h2 className="text-uppercase text-center pt-5 pb-4 brown-font font-poppins">Nuestras delicias</h2>
+                <h2 className="text-uppercase text-center pt-5 pb-4 brown-font font-poppins" data-aos="slide-up">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
             <div className='row'>

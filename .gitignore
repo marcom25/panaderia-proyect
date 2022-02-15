@@ -6,7 +6,7 @@ node_modules/
 /.pnp
 .pnp.js
 /images
-.ngrok.exe
+.ngrok.exe/
 # testing
 /coverage
 
