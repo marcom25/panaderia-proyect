@@ -28,7 +28,7 @@ const Grid = () => {
     
     useEffect(() => {
         Aos.init({duration: 2000});
-    }, []);
+    });
 
     return ( 
         <div className="container-xs" style={{padding: "0", overflow: 'hidden'}}>
