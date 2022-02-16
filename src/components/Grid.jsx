@@ -1,6 +1,6 @@
 // IMPORTS DE MODULOS
 import React, { useEffect } from 'react';
-
+import WOW from 'wowjs';
 // IMPORTS DE COMPONENTES
 import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
@@ -25,10 +25,13 @@ import image6 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
     
-
+    useEffect(() => {
+        const wow = new WOW.WOW({});
+      wow.init();
+    }, []);
 
     return ( 
-        <div className="container-xs" style={{padding: "0", overflow: 'hidden'}}>
+        <div className="container-xs bg-cream" style={{padding: "0"}}>
             <div className='row'>
                 <div className='col-12 p-0 bg-pink'>
                     <Navbar />
@@ -42,8 +45,8 @@ const Grid = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
-                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins">¡Nuevos productos!</h2>
-                <div className='cards col-md-6 py-4'>
+                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.3s' data-wow-duration="2s">¡Nuevos productos!</h2>
+                <div className='cards col-md-6 py-4 wow fadeIn' data-wow-delay= '2s' data-wow-duration="3s">
                     <Card 
                     image={image1} 
                     msg="Pancakes" 
@@ -56,7 +59,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4'>
+                <div className='col-md-6 py-4 wow fadeIn' data-wow-delay= '2s' data-wow-duration="3s">
                     <Card 
                     image={image2} 
                     msg="Donuts"                    
@@ -68,7 +71,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4'>
+                <div className='col-md-6 py-4 wow fadeIn' data-wow-delay= '2s' data-wow-duration="2s">
                     <Card 
                     image={image3} 
                     msg="Torta" 
@@ -80,7 +83,7 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className=' col-md-6 py-4'>
+                <div className='col-md-6 py-4 wow fadeIn' data-wow-delay= '2s' data-wow-duration="2s">
                     <Card 
                     image={image6} 
                     msg="Brownie" 
@@ -99,9 +102,9 @@ const Grid = () => {
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
-                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up">Nuestras recetas</h2>
+                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.3s' data-wow-duration="2s" data-wow-offset= '1'>Nuestras recetas</h2>
             </div>
-            <div className='row bg-cream border-top border-dark px-lg-5' data-aos="fade-left">
+            <div className='row bg-cream border-top border-dark px-lg-5 wow fadeInRight' data-wow-delay= '2s' data-wow-duration="2s">
                 <ImgBlock
                 h1='Masitas Dulces'
                 p1='500gr Harina'
@@ -112,7 +115,7 @@ const Grid = () => {
                 textAtributes='col-sm p-0 bg-cream-dark' 
                 imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
             </div>
-            <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5' data-aos="fade-right">
+            <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5 wow fadeInLeft' data-wow-delay= '2s' data-wow-duration="2s">
                 <ImgBlock 
                 h1='Facturas'
                 p1='800gr Harina'
@@ -124,7 +127,7 @@ const Grid = () => {
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
-                <h2 className="texto text-uppercase text-center pt-5 pb-4 brown-font font-poppins" data-aos="slide-up">Nuestras delicias</h2>
+                <h2 className="texto text-uppercase text-center pt-5 pb-4 brown-font font-poppins wow slideInUp" data-wow-delay= '0.3s' data-wow-duration="2s">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
             <div className='row'>

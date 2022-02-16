@@ -1,7 +1,6 @@
 // IMPORTS DE MODULOS 
 import React, { useEffect } from 'react';
-import Aos from 'aos';
-import 'aos/dist/aos.css';
+import WOW from 'wowjs';
 // IMPORTANDO IMAGENES
 import bakeryUno from "../images/bakery/bakery.jpg";
 import bakeryDos from "../images/bakery/bakery2.jpg";
@@ -15,39 +14,39 @@ import macaroons from "../images/bakery/macaroons.jpg";
 
 
 const CollageImages = () => {
-
     useEffect(() => {
-        Aos.init({duration: 4000});
+        const wow = new WOW.WOW({});
+      wow.init();
     }, []);
 
     return (  
         <>
                
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s" >
                 <img src={brownie} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={cakeTres} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={macaroons} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={cakeUno} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={bakeryUno} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={croissants} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={cakeDos} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={bakeryDos} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2" data-aos="zoom-in">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
                 <img src={cheesecake} alt="muffins" className="w-100 h-100"/>
             </div>
         
