@@ -1,6 +1,6 @@
 // IMPORTS DE MODULOS
 import React, { useEffect } from 'react';
-import Aos from 'aos';
+
 // IMPORTS DE COMPONENTES
 import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
@@ -15,7 +15,7 @@ import "../css/Grid.css";
 import "../css/Colors.css";
 import "../css/Collage.css";
 import "../css/Fonts.css";
-import 'aos/dist/aos.css';
+
 // IMPORTS DE IMAGENES
 import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";
@@ -26,9 +26,7 @@ import image6 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
     
-    useEffect(() => {
-        Aos.init({duration: 2000});
-    }, );
+
 
     return ( 
         <div className="container-xs" style={{padding: "0", overflow: 'hidden'}}>
@@ -45,12 +43,12 @@ const Grid = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up" data-aos-duration="500" data-aos-id="super-duper">¡Nuevos productos!</h2>
-                <div className='col-md-6 py-4' data-aos="zoom-in">
+                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins">¡Nuevos productos!</h2>
+                <div className='cards col-md-6 py-4'>
                     <Card 
                     image={image1} 
                     msg="Pancakes" 
-                    // imageClass='card-img-top image accordion-button collapsed'
+                    
                     imageDataTarget='#flush-collapseOne'
                     imageAriaControls='flush-collapseOne'
                     bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
@@ -59,11 +57,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4' data-aos="zoom-in">
+                <div className='col-md-6 py-4'>
                     <Card 
                     image={image2} 
-                    msg="Donuts" 
-                    // imageClass='card-img-top image accordion-button collapsed' 
+                    msg="Donuts"                    
                     imageDataTarget='#flush-collapseTwo'
                     imageAriaControls='flush-collapseTwo'
                     bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
@@ -72,11 +69,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4' data-aos="zoom-in">
+                <div className='col-md-6 py-4'>
                     <Card 
                     image={image3} 
                     msg="Torta" 
-                    // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseThree'
                     imageAriaControls='flush-collapseThree'
                     bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
@@ -85,11 +81,10 @@ const Grid = () => {
                     contentClass='card-title text-center accordion-body font-bitter'
                     />
                 </div>
-                <div className='col-md-6 py-4' data-aos="zoom-in">
+                <div className=' col-md-6 py-4'>
                     <Card 
                     image={image6} 
                     msg="Brownie" 
-                    // imageClass='card-img-top image accordion-button collapsed'
                     imageDataTarget='#flush-collapseFour'
                     imageAriaControls='flush-collapseFour'
                     bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
@@ -105,7 +100,7 @@ const Grid = () => {
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up">Nuestras recetas</h2>
+                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up">Nuestras recetas</h2>
             </div>
             <div className='row bg-cream border-top border-dark px-lg-5' data-aos="fade-left">
                 <ImgBlock
@@ -130,7 +125,7 @@ const Grid = () => {
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
-                <h2 className="text-uppercase text-center pt-5 pb-4 brown-font font-poppins" data-aos="slide-up">Nuestras delicias</h2>
+                <h2 className="texto text-uppercase text-center pt-5 pb-4 brown-font font-poppins" data-aos="slide-up">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
             <div className='row'>
