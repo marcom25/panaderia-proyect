@@ -1,6 +1,7 @@
 // IMPORTS DE MODULOS
-import React, { useEffect } from 'react';
-import Aos from 'aos';
+import React, { useEffect, useRef } from 'react';
+import { gsap } from 'gsap';
+import { scrollTrigger } from 'gsap/ScrollTrigger';
 // IMPORTS DE COMPONENTES
 import Sidebar from "./Sidebar";
 import Navbar from './Navbar';
@@ -15,7 +16,6 @@ import "../css/Grid.css";
 import "../css/Colors.css";
 import "../css/Collage.css";
 import "../css/Fonts.css";
-import 'aos/dist/aos.css';
 // IMPORTS DE IMAGENES
 import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";
@@ -25,10 +25,14 @@ import image5 from "../images/bakery/bakery2.jpg";
 import image6 from "../images/bakery/brownie.jpg";
 
 const Grid = () => {
-    
+    const titleRef = useRef(null);
+
     useEffect(() => {
-        Aos.init({duration: 2000});
-    }, );
+        const el = titleRef.current;
+        gsap.fromTo(el, {opacity:0}, {opacity: 1, duration: 5, ScrollTrigger: {
+            trigger: el
+        }})
+    }, []);
 
     return ( 
         <div className="container-xs" style={{padding: "0", overflow: 'hidden'}}>
@@ -45,7 +49,7 @@ const Grid = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up" data-aos-duration="500" data-aos-id="super-duper">¡Nuevos productos!</h2>
+                <h2 ref={titleRef} className="text-uppercase text-center brown-font pt-5 font-poppins">¡Nuevos productos!</h2>
                 <div className='col-md-6 py-4' data-aos="zoom-in">
                     <Card 
                     image={image1} 
@@ -105,7 +109,7 @@ const Grid = () => {
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
-                <h2 className="text-uppercase text-center brown-font pt-5 font-poppins" data-aos="slide-up">Nuestras recetas</h2>
+                <h2 ref={titleRef} className="text-uppercase text-center brown-font pt-5 font-poppins">Nuestras recetas</h2>
             </div>
             <div className='row bg-cream border-top border-dark px-lg-5' data-aos="fade-left">
                 <ImgBlock
