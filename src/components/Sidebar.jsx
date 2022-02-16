@@ -1,4 +1,6 @@
-import React from "react";
+// IMPORTS DE MODULOS
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
 // IMPORTANDO ICONOS
 import { FaStore, FaShoppingCart } from "react-icons/fa";
 import { AiFillHome, AiOutlineMenu } from "react-icons/ai";
@@ -17,6 +19,11 @@ import "../css/Fonts.css";
 
 
 const Sidebar = () => {
+    useEffect(() => {
+      const wow = new WOW.WOW({});
+      wow.init();
+    }, []);
+
   return (
     <>
       <nav className="navbar navbar-light bg-pink sticky-top d-md-none">
@@ -29,19 +36,19 @@ const Sidebar = () => {
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
             <div className="offcanvas-body p-0">
-              <ul className="navbar-nav h-50 flex-grow-1 brown-font">
+              <ul className="navbar-nav h-50 flex-grow-1 brown-fontn">
                 <li className="nav-item bg-brown-hover">
                   <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" aria-current="page" href="#"> <AiFillHome style={{fontSize: '1.55rem', paddingRight: '4px'}}/> Inicio</a>
                 </li>
                 <li > 
                   <a class="nav-link dropdown-toggle d-flex align-items-center brown-font font-pink-hover px-3  nav-item dropdown bg-brown-hover pink-font font-poppins" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false"> <FaStore style={{fontSize: '1.5rem', paddingRight: '5px'}}/>Productos</a>
                   <ul class="dropdown-menu border-0 rounded-0 bg-pink pink-font font-pink-hover" aria-labelledby="offcanvasNavbarDropdown">
-                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Tortas</a></li>
-                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Facturas</a></li>
-                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Masitas</a></li>
-                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Chocolates</a></li>
-                    <li><hr class="dropdown-divider" /></li>
-                    <li><a class="dropdown-item bg-brown-hover font-pink-hover ps-4" href="">Más productos</a></li>
+                    <li className='fadeIn' data-wow-delay= '0.2s' data-wow-duration="1s"><a class='dropdown-item bg-brown-hover font-pink-hover ps-4' href="">Tortas</a></li>
+                    <li className='fadeIn' data-wow-delay= '0.3s' data-wow-duration="1s"><a class='dropdown-item bg-brown-hover font-pink-hover ps-4' href="">Facturas</a></li>
+                    <li className='fadeIn' data-wow-delay= '0.4s' data-wow-duration="1s"><a class='dropdown-item bg-brown-hover font-pink-hover ps-4' href="">Masitas</a></li>
+                    <li className='fadeIn' data-wow-delay= '0.5s' data-wow-duration="1s"><a class='dropdown-item bg-brown-hover font-pink-hover ps-4' href="">Chocolates</a></li>
+                    <li className='fadeIn'><hr class="dropdown-divider" /></li>
+                    <li className='fadeIn' data-wow-delay= '0.6s' data-wow-duration="1s"><a class='dropdown-item bg-brown-hover font-pink-hover ps-4' href="">Más productos</a></li>
                   </ul>
                 </li>
                 <li className="nav-item bg-brown-hover">

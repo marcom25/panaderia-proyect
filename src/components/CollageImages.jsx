@@ -22,32 +22,32 @@ const CollageImages = () => {
     return (  
         <>
                
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s" >
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s" >
                 <img src={brownie} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={cakeTres} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={macaroons} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={cakeUno} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={bakeryUno} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={croissants} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={cakeDos} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
                 <img src={bakeryDos} alt="muffins" className="w-100 h-100"/>
             </div>
-            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '3s' data-wow-duration="2s">
-                <img src={cheesecake} alt="muffins" className="w-100 h-100"/>
+            <div className="col-md-4 col-12 p-3 p-md-2 wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">
+                <img src={cheesecake} alt="muffins " className="w-100 h-100"/>
             </div>
         
         </>
