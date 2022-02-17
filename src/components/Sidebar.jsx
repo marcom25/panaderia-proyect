@@ -27,7 +27,7 @@ const Sidebar = () => {
   return (
     <>
       <nav className="navbar navbar-light bg-pink sticky-top d-md-none">
-        <div className="container-fluid padding-left-menu-button" style={{width: '33%'}}>
+        <div className="container-fluid padding-left-menu-button" style={{width: '33%', overflow: 'hidden'}}>
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <h2 ><AiOutlineMenu className="brown-font"/></h2>
           </button>
