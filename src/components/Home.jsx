@@ -31,7 +31,7 @@ const Home = () => {
     }, []);
 
     return ( 
-        <div className="container-xs bg-cream" style={{padding: "0"}}>
+        <div className="container-xs bg-cream" style={{padding: "0", overflow: 'hidden'}}>
             <div className='row'>
                 <div className='col-12 p-0 bg-pink' style={{overflow: 'hidden'}}>
                     <Navbar />
