@@ -1,3 +1,6 @@
+// IMPORTANDO MODULOS 
+import React, { useEffect } from 'react';
+import WOW from 'wowjs';
 // IMPORTANDO ICONOS
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
@@ -9,6 +12,12 @@ import "../css/Colors.css";
 import logo from "../images/logos/titulo-mas-cercano.svg";
 
 const Footer = () => {
+
+    useEffect(() => {
+        const wow = new WOW.WOW({});
+        wow.init();
+    }, []);
+
     return ( 
         <>
             {/* <!-- Footer --> */}
@@ -23,8 +32,8 @@ const Footer = () => {
                             <img src={logo} alt="logo" className="m-auto d-md-none w-75 w-md-50"/>
                                 {/* <!-- Content --> */}
                             <hr class="clearfix w-50 m-auto d-md-none mt-5 mb-2"/>
-                            <h5 class="text-uppercase mb-4 font-poppins">SUSCRIBITE</h5>
-                            <form class="form-inline ">
+                            <h5 class="text-uppercase mb-4 font-poppins wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">SUSCRIBITE</h5>
+                            <form class="form-inline wow fadeIn" data-wow-delay= '1.4s' data-wow-duration="1s">
                             <input class="form-control form-control-sm mr-3 w-75 m-auto" type="text" placeholder="bakeryshop@gmail.com"
                             aria-label="Search" style={{height: '45px', borderRadius: '8px'}}/>
                             <i class="fas fa-search" aria-hidden="true"></i>
