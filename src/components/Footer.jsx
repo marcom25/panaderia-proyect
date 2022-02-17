@@ -32,8 +32,8 @@ const Footer = () => {
                             <img src={logo} alt="logo" className="m-auto d-md-none w-75 w-md-50"/>
                                 {/* <!-- Content --> */}
                             <hr class="clearfix w-50 m-auto d-md-none mt-5 mb-2"/>
-                            <h5 class="text-uppercase mb-4 font-poppins wow fadeIn" data-wow-delay= '1.2s' data-wow-duration="1s">SUSCRIBITE</h5>
-                            <form class="form-inline wow fadeIn" data-wow-delay= '1.4s' data-wow-duration="1s">
+                            <h5 class="text-uppercase mb-4 font-poppins wow fadeIn" data-wow-delay= '1s' data-wow-duration="1s">SUSCRIBITE</h5>
+                            <form class="form-inline wow fadeIn" data-wow-delay= '1.1s' data-wow-duration="1s">
                             <input class="form-control form-control-sm mr-3 w-75 m-auto" type="text" placeholder="bakeryshop@gmail.com"
                             aria-label="Search" style={{height: '45px', borderRadius: '8px'}}/>
                             <i class="fas fa-search" aria-hidden="true"></i>
