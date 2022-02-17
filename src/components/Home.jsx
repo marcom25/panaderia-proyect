@@ -23,7 +23,7 @@ import image4 from "../images/bakery/bakery.jpg";
 import image5 from "../images/bakery/bakery2.jpg";
 import image6 from "../images/bakery/brownie.jpg";
 
-const Grid = () => {
+const Home = () => {
     
     useEffect(() => {
         const wow = new WOW.WOW({});
@@ -139,4 +139,4 @@ const Grid = () => {
     );
 }
  
-export default Grid;
+export default Home;

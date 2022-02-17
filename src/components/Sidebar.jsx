@@ -52,7 +52,7 @@ const Sidebar = () => {
                   </ul>
                 </li>
                 <li className="nav-item bg-brown-hover">
-                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href=""> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Sobre nosotros</a>
+                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href=""> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Nosotros</a>
                 </li>
                 <li class="nav-item bg-brown-hover">
                   <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href=""><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>

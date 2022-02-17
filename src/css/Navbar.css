@@ -8,20 +8,21 @@
 
 /* Login */
 .login-width {
-    width: 10% !important;
+    width: 13% !important;
 }
 .loginDesing {
     background-color: rgb(77, 58, 64);
-    padding-top: 0.5rem;
+    padding-top: 0.4rem;
     padding-right: 1.5rem;
     padding-left: 1.5rem;
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.4rem;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     text-decoration: none;
     color: rgb(255, 225, 215);
+    font-weight: 600;
 }
 
 .loginDesing:hover {
@@ -29,18 +30,20 @@
     color: white;
 }
 
-.loginOptions {
+.productOptions {
+    font-weight: 600;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
+    padding-top: 0.3rem !important;
+    padding-bottom: 0.3rem !important;
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
 }
-.loginOptions:hover {
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    color: rgb(187, 75, 0) !important;
+.productOptions:hover {
+    color: white !important;
+    background-color: rgb(61, 50, 52) !important;
 }
 
 
@@ -48,9 +51,8 @@
 
 /* Cart */
 .carritoNavbar {
-    width: 10% !important;
+    width: 12% !important;
 }
-
 
 
 /* Logo */

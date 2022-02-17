@@ -1,11 +1,11 @@
 import React from 'react';
-import Grid from './components/Grid';
+import Home from './components/Home';
 
 
 function App() {
   return (
     <>
-      <Grid/>
+      <Home/>
     </>
   );
 }

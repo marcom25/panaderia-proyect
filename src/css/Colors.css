@@ -46,6 +46,9 @@
 
 
 /* FONT COLORS */
+.white-font {
+    color: white !important;
+}
 
 .pink-font {
     color: rgb(255, 225, 215) !important;
