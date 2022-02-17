@@ -112,7 +112,7 @@ const Home = () => {
                 p3='300gr Manteca'
                 p4='2 Huevos'
                 image={image4} 
-                textAtributes='col-sm p-0 bg-cream-dark' 
+                textAtributes='col-sm p-0 bg-brown' 
                 imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
             </div>
             <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5 wow fadeInLeft' data-wow-delay= '1.2s' data-wow-duration="2s">
@@ -123,7 +123,7 @@ const Home = () => {
                 p3='300gr Azucar'
                 p4='4 Huevos'
                 image={image5} 
-                textAtributes='col-sm p-0 bg-cream-dark' 
+                textAtributes='col-sm p-0 bg-brown' 
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
