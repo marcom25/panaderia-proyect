@@ -2,12 +2,12 @@
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 // IMPORTS DE COMPONENTES
-import Sidebar from "./Sidebar";
-import Navbar from './Navbar';
+import Sidebar from "../utils/Sidebar";
+import Navbar from '../utils/Navbar';
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
 import Carousel from './Carousel';
-import Footer from './Footer';
+import Footer from '../utils/Footer';
 import CollageImages from './CollageImages';
 import ImgBlock from './ImgBlock';
 // IMPORTS DE CSS

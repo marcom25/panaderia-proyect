@@ -6,9 +6,6 @@ import "../css/Colors.css"
 
 
 const Card = ({image ,msg, imageClass, iamgeType, imageDataTarget, imageAriaControls, bodyClass, bodyId, bodyAriaLabel, contentClass}) => {
-   
-
-    
 
     return ( 
         <div className="card m-auto " style={{width: "20rem"}}>
