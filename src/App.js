@@ -1,12 +1,18 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 
-const rootElement = document.getElementById("root");
+
 function App() {
   return (
-    <>
-      <Home/>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <
+        <Route path='/inicio' element={<Home/>} />
+        <Route path=''
+        
+      </Routes>
+    </BrowserRouter>
   );
 }
 
