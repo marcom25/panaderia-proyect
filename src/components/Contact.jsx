@@ -2,7 +2,6 @@ import React from 'react';
 import Navbar from '../utils/Navbar';
 import Sidebar from '../utils/Sidebar';
 import Footer from '../utils/Footer';
-
 // IMPORTS DE CSS
 import "../css/Grid.css";
 import "../css/Colors.css";
@@ -15,8 +14,7 @@ import image3 from "../images/bakery/pie.jpg";
 import image4 from "../images/bakery/bakery.jpg";
 import image5 from "../images/bakery/bakery2.jpg";
 import image6 from "../images/bakery/brownie.jpg";
-
-const Products = () => {
+const Contact = () => {
     return ( 
         <>
             <div className="container-xs bg-cream" style={{padding: "0", overflow: 'hidden'}}>
@@ -37,4 +35,4 @@ const Products = () => {
     );
 }
  
-export default Products;
+export default Contact;
