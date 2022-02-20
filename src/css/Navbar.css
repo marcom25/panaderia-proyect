@@ -11,18 +11,19 @@
     width: 13% !important;
 }
 .loginDesing {
-    background-color: rgb(77, 58, 64);
-    padding-top: 0.4rem;
-    padding-right: 1.5rem;
-    padding-left: 1.5rem;
-    padding-bottom: 0.4rem;
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-    text-decoration: none;
-    color: rgb(255, 225, 215);
-    font-weight: 600;
+    width: max-content !important;
+    background-color: rgb(77, 58, 64) !important;
+    /* padding-top: 0.4rem !important;
+    padding-right: 1.5rem !important;
+    padding-left: 1.5rem !important;
+    padding-bottom: 0.4rem !important; */
+    border-top-left-radius: 10px !important;
+    border-bottom-left-radius: 10px !important;
+    border-top-right-radius: 10px !important;
+    border-bottom-right-radius: 10px !important; 
+    text-decoration: none !important;
+    color: rgb(255, 225, 215) !important;
+    font-weight: 600 !important;
 }
 
 .loginDesing:hover {
