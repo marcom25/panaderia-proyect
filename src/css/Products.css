@@ -1,0 +1,32 @@
+.cardsWidth {
+    width: 100%;
+}
+.imgWidth{
+    height: 250px;
+}
+
+.font-weight-800 {
+    font-weight: 700 !important;
+}
+.cardsButton {
+    padding: 0.375rem 0.75rem !important;
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    font-weight: 600 !important;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .cardsWidth {
+        width: 33% !important;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .cardsWidth {
+        width: 25% !important;
+    }
+}
