@@ -10,22 +10,18 @@ import "../css/Fonts.css";
 // IMPORTS DE IMAGENES
 import logo from "../images/logos/titulo-mas-cercano.svg";
 import { Link } from 'react-router-dom';
-import Modal from '../components/Modal';
+
 
 const Navbar = () => {
     return (  
       <nav className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex">
           <div className="container-fluid p-0">
             <div className='login-width text-center'>
-              <p 
-              type="button" 
-              data-bs-toggle="modal" 
-              data-bs-target="#exampleModal" 
-              className='my-auto btn py-2 px-3 ms-lg-3 loginDesing font-poppins'>Iniciar Sesion</p>
+              <Link to="/login" className='my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins '>Iniciar Sesion</Link>
+              <Link to="/register" className='my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins d-none'>Registrarme</Link>
             </div>
-            <Modal/>
             <div className="collapse navbar-collapse mecanismomenu" id="navbarNavDropdown">
-              <ul className="navbar-nav d-flex justify-content-around m-auto">
+              <ul className="navbar-nav d-flex justify-content-around m-auto barrita-chota">
                 <li className="nav-item w-20 my-auto text-center">
                   <Link className="nav-link brown-font productOptions font-poppins" aria-current="page" to="/">Inicio</Link>
                 </li>
