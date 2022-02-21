@@ -1,35 +1,44 @@
-import React from 'react';
+import React from "react";
+import { Link } from "react-router-dom";
 
 import "../css/Fonts.css";
 
 const RegisterForm = () => {
-    return ( 
-        <>
-        <form className='form-floating'>
-        <div className="row my-3 d-flex justify-content-center">
-            <div className="col-sm-10">
-                <input placeholder="Username" type="text" className="form-control" id="inputEmail3"/>
-            </div>
+  return (
+    <>
+      <div class="container m-auto" style={{ overflow: "hidden" }}>
+        <div class="row card contenido">
+          <div className="col card-body bg-cream caja p-0">
+            <h1 className="text-center card-title bg-cream  font-poppins py-3 titulo ">
+              Registro
+            </h1>
+            <form className="mt-5 bg-cream">
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Usuario o Email</label>
+              </div>
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Last Name</label>
+              </div>
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Contraseña</label>
+              </div>
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Email Confirm</label>
+              </div>
+              <button className="font-poppins" type="submit">
+                Submit
+              </button>
+              
+            </form>
+          </div>
         </div>
-        <div className="row my-3 d-flex justify-content-center">
-            <div className="col-sm-10">
-                <input placeholder="Email" type="email" className="form-control" id="inputEmail3"/>
-            </div>
-        </div>
-        <div className="row mb-3 d-flex justify-content-center">
-            <div className="col-sm-10">
-                <input placeholder='Password' type="password" className="form-control" id="inputPassword3"/>
-            </div>
-        </div>
-        <div className='row'>
-            <div className="col d-flex justify-content-end py-3 bg-pink">
-                <button type="submit" className="btn loginDesing font-poppins">Registrarme</button>
-            </div>   
-        </div>
-        </form>
-      
-        </>
-    );
-}
- 
+      </div>
+    </>
+  );
+};
+
 export default RegisterForm;

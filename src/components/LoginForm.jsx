@@ -1,85 +1,37 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-import "../css/Fonts.css";
 import "../css/LoginForm.css";
 import "../css/Colors.css";
-
+import "../css/Fonts.css";
 const LoginForm = () => {
   return (
     <>
-      <section className="vh-100 gradient-custom bg-pink">
-        <div className="container py-5 h-100">
-          <div className="row d-flex justify-content-center align-items-center h-100">
-            <div className="col-12 col-md-8 col-lg-6 col-xl-5">
-              <div className="card ">
-                <div className="card-body p-5 text-center bg-cream">
-                  <div className="mb-md-5 mt-md-4 pb-5">
-                    <h2 className="fw-bold mb-2 text-uppercase brown-font">
-                      Login
-                    </h2>
-                    <p className=" mb-5 brown-font">
-                      Please enter your login and password!
-                    </p>
-
-                    <div className="form-outline form-black mb-4">
-                      <input
-                        type="email"
-                        id="typeEmailX"
-                        className="form-control form-control-lg"
-                      />
-                      <label className="form-label" for="typeEmailX">
-                        Email
-                      </label>
-                    </div>
-
-                    <div className="form-outline form-black mb-4">
-                      <input
-                        type="password"
-                        id="typePasswordX"
-                        className="form-control form-control-lg"
-                      />
-                      <label className="form-label" for="typePasswordX">
-                        Password
-                      </label>
-                    </div>
-
-                    <p className="small mb-5 pb-lg-2">
-                      <a className="" href="#!">
-                        Forgot password?
-                      </a>
-                    </p>
-
-                    <button className="btn btn-lg px-5" type="submit">
-                      Login
-                    </button>
-
-                    <div className="d-flex justify-content-center text-center mt-4 pt-1">
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-facebook-f fa-lg"></i>
-                      </a>
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-twitter fa-lg mx-4 px-2"></i>
-                      </a>
-                      <a href="#!" className="text-white">
-                        <i className="fab fa-google fa-lg"></i>
-                      </a>
-                    </div>
-                  </div>
-
-                  <div>
-                    <p className="mb-0">
-                      Don't have an account?{" "}
-                      <a href="#!" className="text-white-50 fw-bold">
-                        Sign Up
-                      </a>
-                    </p>
-                  </div>
-                </div>
+      <div class="container m-auto" style={{ overflow: "hidden" }}>
+        <div class="row card contenido">
+          <div className="col card-body bg-cream caja p-0">
+            <h1 className="text-center card-title bg-cream  font-poppins py-3 titulo ">
+              Iniciar Sesion
+            </h1>
+            <form className="mt-5 bg-cream">
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Usuario o Email</label>
               </div>
-            </div>
+          
+              <div class="question">
+                <input type="text" required />
+                <label className="font-poppins">Contraseña</label>
+              </div>
+             
+              <button className="font-poppins" type="submit">
+                Submit
+              </button>
+              <Link to="/register" >Si no tienes cuenta puedes registrarte</Link>
+            </form>
           </div>
         </div>
-      </section>
+      </div>
     </>
   );
 };
