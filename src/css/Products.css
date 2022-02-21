@@ -1,6 +1,7 @@
 .cardsWidth {
     width: 100%;
 }
+
 .imgWidth{
     height: 250px;
 }
@@ -38,6 +39,8 @@
 }
 
 
+
+
 /* Filter */
 
 .container-category:hover {
@@ -46,26 +49,44 @@
     cursor: pointer;
 }
 
-.posts {
-    /* display: grid;
-    grid-gap: 1.5rem;
-    grid-template-columns: repeat(4, 1fr); */
-    /* background-color: brown; */
-}
 
-.post {
-    color:aqua
-}
 
-[value="Brownies"]:checked ~ .posts .post:not([data-category~="Brownies"]) {
+
+
+
+
+
+
+
+/* Products desktop animation */
+.capaPadre {
     display: none;
 }
-
-.filters {
-    color: 'brown';
-}
-
-[value="Brownies"]:checked ~ .filters [for="Brownies"]{
-    background: var(--green) !important;
-    color: var(--white) !important;
+@media screen and (min-width: 992px) {
+    .post {
+       position: relative !important;
+       overflow: hidden !important;
+    }
+    
+    .capaPadre {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        position: absolute;
+        background: rgba(255, 216, 201, 0.7) !important;
+        display: block;
+        opacity: 0;
+        transition: all 250ms ease-out !important;
+        -webkit-transition: all 250ms ease-out !important;
+        -moz-transition: all 250ms ease-out !important;
+        -ms-transition: all 250ms ease-out !important;
+        -o-transition: all 250ms ease-out !important;
+    }
+    .margin-button {
+        margin-top: 188px !important;
+    }
+    
+    .capaPadre:hover {
+        opacity: 1;
+    }
 }
