@@ -55,7 +55,7 @@ const Sidebar = () => {
               <ul className="navbar-nav h-50 d-flex justify-content-end">
                 <li className="nav-item mb-3 text-center">
                   <Link  className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" to="/login">Iniciar sesión </Link>
-                  <Link className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" to="/signup">Registrarme</Link>
+                  <Link className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" to="/register">Registrarme</Link>
                 </li>
               </ul>
             </div>

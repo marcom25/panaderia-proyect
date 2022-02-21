@@ -20,13 +20,16 @@ body{
   border-top-right-radius: inherit;
 }
 
+.container {
+  width: 100% !important;
+  height: 100vh !important;
+}
 .contenido{
   border: 0px !important;
   box-shadow: 0 1px 10px 0 rgb(0 0 0 / 10%), 0 4px 5px 0 rgb(0 0 0 / 6%), 0 2px 4px 0 rgb(0 0 0 / 7%);
   position: relative;
-  left: 30%;
-  max-width: 500px;
-  margin-top: 10rem !important;
+  max-width: 550px;
+  margin: auto !important;
 }
 
 form {
@@ -142,6 +145,99 @@ form .question input[type="text"]:focus ~ label {
 }
 
 form .question input[type="text"]:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  -moz-transform: translate(5px, -35px) scale(0.6);
+  -ms-transform: translate(5px, -35px) scale(0.6);
+  -webkit-transform: translate(5px, -35px) scale(0.6);
+  transform: translate(5px, -35px) scale(0.6);
+}
+
+/* password */
+form .question input[type="password"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid rgb(77, 58, 64);
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: rgb(77, 58, 64);
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+form .question input[type="password"]:focus {
+  outline: none;
+  background: rgb(77, 58, 64);
+  color: rgb(255, 216, 201);
+  margin-top: 30px;
+}
+
+form .question input[type="password"]:valid {
+  margin-top: 30px;
+}
+
+form .question input[type="password"]:focus ~ label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+
+form .question input[type="password"]:valid ~ label {
+  text-transform: uppercase;
+  font-style: italic;
+  -moz-transform: translate(5px, -35px) scale(0.6);
+  -ms-transform: translate(5px, -35px) scale(0.6);
+  -webkit-transform: translate(5px, -35px) scale(0.6);
+  transform: translate(5px, -35px) scale(0.6);
+}
+
+/* Email */
+
+form .question input[type="email"] {
+  appearance: none;
+  background-color: none;
+  border: 1px solid rgb(77, 58, 64);
+  line-height: 0;
+  font-size: 17px;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 15px;
+  border-radius: 60px;
+  color: rgb(77, 58, 64);
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+form .question input[type="email"]:focus {
+  outline: none;
+  background: rgb(77, 58, 64);
+  color: rgb(255, 216, 201);
+  margin-top: 30px;
+}
+
+form .question input[type="email"]:valid {
+  margin-top: 30px;
+}
+
+form .question input[type="email"]:focus ~ label {
+  -moz-transform: translate(0, -35px);
+  -ms-transform: translate(0, -35px);
+  -webkit-transform: translate(0, -35px);
+  transform: translate(0, -35px);
+}
+
+form .question input[type="email"]:valid ~ label {
   text-transform: uppercase;
   font-style: italic;
   -moz-transform: translate(5px, -35px) scale(0.6);
