@@ -39,7 +39,13 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5'><FaShoppingCart className='font-cream-hover-carrito' style={{fontSize: '2rem', cursor:'pointer'}}/></div>
+          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5'>
+            <button type="button" class="btn brown-font  position-relative">
+              <FaShoppingCart className='font-cream-hover-carrito' style={{fontSize: '2rem', cursor:'pointer', padding: '0'}}/>
+              <span class="carrito-badge position-absolute translate-middle badge rounded-pill ">5</span>
+            </button>
+           
+          </div>
         </div>
       </nav>
     

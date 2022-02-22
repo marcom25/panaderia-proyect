@@ -61,15 +61,15 @@
 .font-cream-hover-carrito:hover{
     -webkit-filter: 
     drop-shadow(1px 1px 0 rgb(77, 58, 64))
-    drop-shadow(-1px 1px 0 rgb(77, 58, 64))
+    drop-shadow(-1px 1px 0 rgb(77, 58, 64)) 
     drop-shadow(1px -1px 0 rgb(77, 58, 64))
-    drop-shadow(-1px -1px 0 rgb(77, 58, 64));
+    drop-shadow(-1px -1px 0 rgb(77, 58, 64)) !important;
 
     filter: 
     drop-shadow(1px 1px 0 rgb(77, 58, 64))
     drop-shadow(-1px 1px 0 rgb(77, 58, 64)) 
     drop-shadow(1px -1px 0 rgb(77, 58, 64))  
-    drop-shadow(-1px -1px 0 rgb(77, 58, 64));
+    drop-shadow(-1px -1px 0 rgb(77, 58, 64)) !important;
     color: #FFFEE3 !important;
 }
 
@@ -82,4 +82,11 @@
     .barrita-chota{
         width: 90%;
     }
+}
+
+.carrito-badge{
+    color: rgb(255, 225, 215) !important;
+    background-color: rgb(77, 58, 64) !important;
+    left: 90% !important;
+    top: 10% !important
 }
