@@ -24,10 +24,6 @@ const LoginForm = () => {
                   <input type="password" className="p-2" required />
                   <label className="font-poppins">Contraseña</label>
                 </div>
-              
-                <Link to="/" className="font-poppins text-decoration-none cream-font font-brown-hover"><button className="d-block m-auto mt-4 mb-2" type="submit">Iniciar sesión</button></Link>
-                <Link to="/register" className="d-block text-center text-decoration-none brown-font fw-boldefont-poppins text-decoration none brown-font pb-2">Crear una cuenta nueva</Link>
-                <Link to="/login" className="d-block text-center text-decoration-none brown-font">¿Olvidó su contraseña?</Link>
 
                 <div className="m-auto" style={{width: 'max-content'}}><Link to="/" className="font-poppins text-decoration-none white-font font-pink-hover" href="/"><button className="d-block m-auto mt-4 mb-2 " type="submit">Iniciar sesión</button></Link>
                 </div>

@@ -29,7 +29,9 @@ const RegisterForm = () => {
                   <label className="font-poppins">Repetir contraseña</label>
                 </div>
               
-                <Link to="/" className="font-poppins text-decoration-none white-font font-brown-hover"><button className="d-block m-auto mt-4 mb-2" type="submit">Registrarme</button></Link>
+                <div className="m-auto mt-4 mb-2" style={{width: 'max-content'}}>
+                  <Link to="/login" className="font-poppins text-decoration-none white-font font-pink-hover"><button className="d-block m-auto" type="submit">Registrarme</button></Link>
+                </div>
               </form>
             </div>
           </div>
