@@ -1,5 +1,5 @@
 .w-20 {
-    width: 20% !important;
+    width: fit-content !important;
 }
 
 .logo-width {
@@ -8,7 +8,7 @@
 
 /* Login */
 .login-width {
-    width: 13% !important;
+    width: fit-content !important;
 }
 .loginDesing {
     width: max-content !important;
@@ -27,8 +27,9 @@
 }
 
 .loginDesing:hover {
-    background-color: rgb(61, 50, 52);
-    color: white;
+    border: 2px solid rgb(77, 58, 64);
+    background-color: #FFFEE3 !important;
+    color: rgb(77, 58, 64) !important;
 }
 
 .productOptions {
@@ -42,9 +43,11 @@
     padding-left: 0.5rem !important;
     padding-right: 0.5rem !important;
 }
+
+
 .productOptions:hover {
-    color: white !important;
-    background-color: rgb(61, 50, 52) !important;
+    color: #FFFEE3  !important;
+    background-color: rgb(77, 58, 64) !important;
 }
 
 
@@ -55,6 +58,20 @@
     width: 12% !important;
 }
 
+.font-cream-hover-carrito:hover{
+    -webkit-filter: 
+    drop-shadow(1px 1px 0 rgb(77, 58, 64))
+    drop-shadow(-1px 1px 0 rgb(77, 58, 64)) 
+    drop-shadow(1px -1px 0 rgb(77, 58, 64))
+    drop-shadow(-1px -1px 0 rgb(77, 58, 64)) !important;
+
+    filter: 
+    drop-shadow(1px 1px 0 rgb(77, 58, 64))
+    drop-shadow(-1px 1px 0 rgb(77, 58, 64)) 
+    drop-shadow(1px -1px 0 rgb(77, 58, 64))  
+    drop-shadow(-1px -1px 0 rgb(77, 58, 64)) !important;
+    color: #FFFEE3 !important;
+}
 
 /* Logo */
 .logo {
@@ -65,4 +82,11 @@
     .barrita-chota{
         width: 90%;
     }
+}
+
+.carrito-badge{
+    color: rgb(255, 225, 215) !important;
+    background-color: rgb(77, 58, 64) !important;
+    left: 90% !important;
+    top: 10% !important
 }

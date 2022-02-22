@@ -54,8 +54,7 @@ const Sidebar = () => {
               </ul>
               <ul className="navbar-nav h-50 d-flex justify-content-end">
                 <li className="nav-item mb-3 text-center">
-                  <Link  className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" to="/login">Iniciar sesión </Link>
-                  <Link className="nav-link px-3 brown-font bg-brown-hover font-pink-hover font-poppins" to="/register">Registrarme</Link>
+                  <Link to="/login" className='my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins '>Iniciar Sesion</Link>
                 </li>
               </ul>
             </div>

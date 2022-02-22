@@ -14,11 +14,11 @@ import { Link } from 'react-router-dom';
 
 const Navbar = () => {
     return (  
-      <nav className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex">
+      <nav className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex ">
           <div className="container-fluid p-0">
             <div className='login-width text-center'>
               <Link to="/login" className='my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins '>Iniciar Sesion</Link>
-              <Link to="/register" className='my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins d-none'>Registrarme</Link>
+              
             </div>
             <div className="collapse navbar-collapse mecanismomenu" id="navbarNavDropdown">
               <ul className="navbar-nav d-flex justify-content-around m-auto barrita-chota">
@@ -39,7 +39,13 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5'><FaShoppingCart className='font-orange-dark-hover' style={{fontSize: '2rem', cursor:'pointer'}}/></div>
+          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5'>
+            <button type="button" class="btn brown-font  position-relative">
+              <FaShoppingCart className='font-cream-hover-carrito' style={{fontSize: '2rem', cursor:'pointer', padding: '0'}}/>
+              <span class="carrito-badge position-absolute translate-middle badge rounded-pill ">5</span>
+            </button>
+           
+          </div>
         </div>
       </nav>
     
