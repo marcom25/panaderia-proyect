@@ -29,7 +29,7 @@ const RegisterForm = () => {
                   <label className="font-poppins">Repetir contraseña</label>
                 </div>
               
-                <button className="d-block m-auto mt-4 mb-2" type="submit"><Link to="/" className="font-poppins text-decoration-none white-font font-pink-hover">Registrarme</Link></button>
+                <Link to="/" className="font-poppins text-decoration-none white-font font-brown-hover"><button className="d-block m-auto mt-4 mb-2" type="submit">Registrarme</button></Link>
               </form>
             </div>
           </div>

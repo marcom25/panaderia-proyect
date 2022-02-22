@@ -76,8 +76,10 @@ form button {
 
 form button:hover,
 form button:focus {
-  color: rgb(255, 216, 201);
-  background-color: rgb(77, 58, 64);
+  color: rgb(77, 58, 64);
+  border: 2px solid rgb(77, 58, 64) !important;
+  background-color: #FFFEE3 !important;
+  
 }
 
 form .question {
@@ -129,7 +131,7 @@ form .question input[type="text"] {
 form .question input[type="text"]:focus {
   outline: none;
   background: rgb(77, 58, 64);
-  color: rgb(255, 216, 201);
+  color:  #FFFEE3;
   margin-top: 30px;
 }
 
@@ -175,7 +177,7 @@ form .question input[type="password"] {
 form .question input[type="password"]:focus {
   outline: none;
   background: rgb(77, 58, 64);
-  color: rgb(255, 216, 201);
+  color:  #FFFEE3;
   margin-top: 30px;
 }
 
@@ -222,7 +224,7 @@ form .question input[type="email"] {
 form .question input[type="email"]:focus {
   outline: none;
   background: rgb(77, 58, 64);
-  color: rgb(255, 216, 201);
+  color:  #FFFEE3;
   margin-top: 30px;
 }
 
