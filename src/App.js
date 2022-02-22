@@ -1,11 +1,12 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Home from './components/Home';
 import Products from './components/Products';
 import AboutUs from './components/AboutUs';
 import Contact from './components/Contact';
 import LoginForm from './components/LoginForm';
 import RegisterForm from './components/RegisterForm';
+import ChangePassword from './components/ChangePassword';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       <Route path='contactanos' element={<Contact/>}/>
       <Route path='login' element={<LoginForm/>}/>
       <Route path='register' element={<RegisterForm/>}/>
+      <Route path='changePassword' element={<ChangePassword/>} />
     </Routes>
   );
 }

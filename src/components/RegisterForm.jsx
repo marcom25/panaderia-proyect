@@ -28,8 +28,10 @@ const RegisterForm = () => {
                   <input type="password" className="p-2" required />
                   <label className="font-poppins">Repetir contraseña</label>
                 </div>
-              
-                <button className="d-block m-auto mt-4 mb-2" type="submit"><Link to="/" className="font-poppins text-decoration-none white-font font-pink-hover">Registrarme</Link></button>
+                
+                <div className="m-auto mt-4 mb-2" style={{width: 'max-content'}}>
+                  <Link to="/" className="font-poppins text-decoration-none white-font font-pink-hover"><button className="d-block m-auto" type="submit">Registrarme</button></Link>
+                </div>
               </form>
             </div>
           </div>
