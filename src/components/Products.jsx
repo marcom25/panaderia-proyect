@@ -18,17 +18,10 @@ import "../css/Collage.css";
 import "../css/Fonts.css";
 import "../css/Products.css";
 
-// IMPORTS DE IMAGENES
-// import image1 from "../images/bakery/pancakes.jpg";
-// import image2 from "../images/bakery/donuts2.jpg";
-// import image3 from "../images/bakery/pie.jpg";
-// import image4 from "../images/bakery/bakery.jpg";
-// import image5 from "../images/bakery/bakery2.jpg";
-// import image6 from "../images/bakery/brownie.jpg";
 
 
 const allCategories = ['All', ...new Set(AllDataProducts.map(item => item.product))];
-console.log(allCategories)
+
 
 const Products = () => {
     const [cards, setCards] = useState(AllDataProducts);
@@ -55,6 +48,7 @@ const Products = () => {
                 </div>
                 <section className='container-xs bg-cream pt-2 pb-5'>
                     <h3 className= 'py-4 text-center brown-font'>Productos</h3>
+                    
                     <div className='d-flex'>
                         <div className='d-none d-md-block ps-4 pe-5' style={{width: 'min-content'}}>
                             <ButtonAllProducts buttons={buttons} filter={filter}/>
