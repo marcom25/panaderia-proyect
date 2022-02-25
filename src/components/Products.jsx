@@ -10,6 +10,7 @@ import ButtonBakery from './ButtonBakery';
 import ButtonHotDrinks from './ButtonHotDrinks';
 import ButtonAllProducts from './ButtonAllProducts';
 import CardsProducts from './CardsProducts';
+import ButtonsPagination from './ButtonsPagination';
 
 // IMPORTS DE CSS
 import "../css/Grid.css";
@@ -24,18 +25,48 @@ const allCategories = ['All', ...new Set(AllDataProducts.map(item => item.produc
 
 
 const Products = () => {
-    const [cards, setCards] = useState(AllDataProducts);
+    
+    // Filter 
+    const cardsPerPage = 12;
+    const [cards, setCards] = useState([...AllDataProducts].splice(0, cardsPerPage));
     const [buttons, setButtons] = useState(allCategories);
-
+    
     const filter = (category) => {
         if (category === 'All') {
-            setCards(AllDataProducts);
+            setCards([...AllDataProducts].splice(0, cardsPerPage));
             return;
         }
-
+        
         const filteredData = AllDataProducts.filter(items => items.product === category);
         setCards(filteredData);
     }
+    
+
+    
+    // Pagination 
+    const [currentPage, setCurrentPage] = useState(0);
+    const totalCards = [...AllDataProducts].length;
+
+    // next button function
+    const nextHandler = () => {
+        const nextPage = currentPage + 1;
+        const firstIndex = nextPage * cardsPerPage;
+        if (firstIndex === totalCards) return;
+
+        setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
+        setCurrentPage(nextPage);
+    }   
+    // prev button function
+    const prevHandler = () => {
+        const prevPage = currentPage - 1;
+        const firstIndex = prevPage * cardsPerPage;
+        if (firstIndex < 0) return;
+
+        setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
+        setCurrentPage(prevPage);
+
+    }
+
 
     return ( 
         <>
@@ -76,9 +107,11 @@ const Products = () => {
                             </div>
                         </div>
                         <div className='d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100'>
-                            <CardsProducts cards={cards}/>
+                            <CardsProducts cards={cards} />
                         </div>
+
                     </div>
+                        <ButtonsPagination prevHandler={prevHandler} nextHandler={nextHandler}/>
                 </section>
                 <div className='row'>
                     <div className='p-0 '>

@@ -275,11 +275,11 @@ export default [
         price: '$150'
     },
     {
-        id:'11',
+        id:'12',
         image: pancake,
-        product: 'Chocolate',
-        title: 'Chocolatada',
-        price: '$150'
+        product: 'Café',
+        title: 'Café',
+        price: '$200'
     },
     {
         id:'12',
@@ -287,5 +287,13 @@ export default [
         product: 'Café',
         title: 'Café',
         price: '$200'
-    }
+    },
+    {
+        id:'12',
+        image: pancake,
+        product: 'Café',
+        title: 'Café',
+        price: '$200'
+    },
+    
 ];
