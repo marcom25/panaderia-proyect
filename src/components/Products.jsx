@@ -78,7 +78,7 @@ const Products = () => {
                     </div>
                 </div>
                 <section className='container-xs bg-cream pt-2 pb-5'>
-                    <h3 className= 'py-4 text-center brown-font'>Productos</h3>
+                    <h3 className= 'py-4 text-center brown-font' id="Handler">Productos</h3>
                     <div className='text-center'>
                         <div class="dropdown pt-2 pb-4 d-md-none">
                             <button class="btn bg-brown white-font dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Todas las categorias</button>

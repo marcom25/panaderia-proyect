@@ -20,7 +20,7 @@ const CardsProducts = ({cards}) => {
                 {
                     cards.map((card) => { 
                         
-                        return  <div className='cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post' id="Handler">
+                        return  <div className='cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post'>
                                     <div class="card bg-cream border-0 w-100" key={card.id}>
                                         <img src={card.image} class="card-img-top w-100 imgWidth" alt="..." />
                                         <div className='capaPadre'>
