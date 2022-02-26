@@ -10,6 +10,7 @@ import ButtonBakery from './ButtonBakery';
 import ButtonHotDrinks from './ButtonHotDrinks';
 import ButtonAllProducts from './ButtonAllProducts';
 import CardsProducts from './CardsProducts';
+import ButtonsPagination from './ButtonsPagination';
 
 // IMPORTS DE CSS
 import "../css/Grid.css";
@@ -24,18 +25,48 @@ const allCategories = ['All', ...new Set(AllDataProducts.map(item => item.produc
 
 
 const Products = () => {
-    const [cards, setCards] = useState(AllDataProducts);
+    
+    // Filter 
+    const cardsPerPage = 12;
+    const [cards, setCards] = useState([...AllDataProducts].splice(0, cardsPerPage));
     const [buttons, setButtons] = useState(allCategories);
-
+    
     const filter = (category) => {
         if (category === 'All') {
-            setCards(AllDataProducts);
+            setCards([...AllDataProducts].splice(0, cardsPerPage));
             return;
         }
-
+        
         const filteredData = AllDataProducts.filter(items => items.product === category);
         setCards(filteredData);
     }
+    
+
+    
+    // Pagination 
+    const [currentPage, setCurrentPage] = useState(0);
+    const totalCards = [...AllDataProducts].length;
+
+    // next button function
+    const nextHandler = () => {
+        const nextPage = currentPage + 1;
+        const firstIndex = nextPage * cardsPerPage;
+        if (firstIndex === totalCards) return;
+
+        setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
+        setCurrentPage(nextPage);
+    }   
+    // prev button function
+    const prevHandler = () => {
+        const prevPage = currentPage - 1;
+        const firstIndex = prevPage * cardsPerPage;
+        if (firstIndex < 0) return;
+
+        setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
+        setCurrentPage(prevPage);
+
+    }
+
 
     return ( 
         <>
@@ -48,46 +79,15 @@ const Products = () => {
                 </div>
                 <section className='container-xs bg-cream pt-2 pb-5'>
                     <h3 className= 'py-4 text-center brown-font'>Productos</h3>
-                    <div class="dropdown d-md-none m-auto">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                        <div class="dropdown d-md-none m-auto">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown d-md-none m-auto">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown d-md-none m-auto">
-                        <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
-                            Dropdown link
-                        </a>
-
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                        </ul>
-                    </div>
-                        </ul>
+                    <div className='text-center'>
+                        <div class="dropdown pt-2 pb-4 d-md-none">
+                            <button class="btn bg-brown white-font dropdown-toggle" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Todas las categorias</button>
+                            <ul class="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold" aria-labelledby="dropdownMenu2">
+                                    <ButtonAllProducts buttons={buttons} filter={filter} className='fw-bold bg-brown-hover' />
+                                    <ButtonBakery buttons={buttons} filter={filter}/>
+                                    <ButtonHotDrinks buttons={buttons} filter={filter}/>
+                            </ul>
+                        </div>
                     </div>
                     <div className='d-flex'>
                         <div className='d-none d-md-block ps-4 pe-5' style={{width: 'min-content'}}>
@@ -106,10 +106,12 @@ const Products = () => {
                                 </ul>
                             </div>
                         </div>
-                        <div className='d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100 d-none d-md-block'>
-                            <CardsProducts cards={cards} className="d-none"/>
+                        <div className='d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100'>
+                            <CardsProducts cards={cards} />
                         </div>
+
                     </div>
+                        <ButtonsPagination prevHandler={prevHandler} nextHandler={nextHandler}/>
                 </section>
                 <div className='row'>
                     <div className='p-0 '>
