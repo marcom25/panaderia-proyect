@@ -1,0 +1,29 @@
+.parrafos {
+    line-height: 2 !important;
+}
+
+.carousel {
+    width: 100%;
+}
+.carouselDivsTitle {
+    width: 40%;
+    text-align: center !important;
+}
+
+.carouselTitle {
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem !important;
+}
+
+@media screen and (min-width: 768px) {
+    .carousel {
+        width: 95% !important;
+    } 
+}
+
+@media screen and (min-width: 992px) {
+    .carousel {
+        width: 95% !important;
+    } 
+}
+

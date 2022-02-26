@@ -94,7 +94,7 @@ const Footer = () => {
                         </div>
                         {/* <!-- Grid column --> */}
                         <hr class="clearfix w-50 m-auto d-md-none mt-3 mb-2" />
-                        <div class="col-md-12 m-auto mb-md-0 mb-3"><h5 class="text-uppercase mb-4 mb-md-5 mt-md-5 font-poppins">Contacto</h5>
+                        <div class="col-md-12 m-auto mb-md-0 mb-3"><h5 class="text-uppercase mb-4 mb-md-5 mt-md-5 font-poppins" id='contacto'>Contacto</h5>
                             <ul class="list-unstyled d-md-flex justify-content-around">
                                     <div class="col-md-3">
                                         <h4><BsLinkedin/> Linkedin</h4>

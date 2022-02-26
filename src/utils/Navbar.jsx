@@ -35,7 +35,7 @@ const Navbar = () => {
                   <Link className="nav-link brown-font productOptions font-poppins" to="/nosotros">Nosotros</Link>
                 </li>
                 <li className="nav-item my-auto w-20 text-center">
-                  <Link className="nav-link brown-font productOptions font-poppins" to="/contactanos">Contactanos</Link>
+                  <a className="nav-link brown-font productOptions font-poppins" href="#contacto">Contactanos</a>
                 </li>
               </ul>
             </div>
