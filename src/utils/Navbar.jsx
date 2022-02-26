@@ -1,5 +1,6 @@
 // IMPORTS DE MODULOS
 import React from 'react';
+import {HoverCart, Cart} from '../components/Cart';
 // IMPORTS DE ICONOS
 import { FaShoppingCart } from 'react-icons/fa';
 // IMPORTS DE CSS
@@ -39,10 +40,11 @@ const Navbar = () => {
                 </li>
               </ul>
             </div>
-          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5'>
-            <button type="button" class="btn brown-font  position-relative">
+          <div className='carritoNavbar text-center brown-font ps-lg-4 ps-xl-5 ='>
+            <button type="button" class="btn brown-font position-relative ">
               <FaShoppingCart className='font-cream-hover-carrito' style={{fontSize: '2rem', cursor:'pointer', padding: '0'}}/>
-              <span class="carrito-badge position-absolute translate-middle badge rounded-pill ">5</span>
+                <HoverCart/>
+              <span class="carrito-badge position-absolute translate-middle badge rounded-pill "></span>
             </button>
            
           </div>
