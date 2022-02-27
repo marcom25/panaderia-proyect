@@ -1,9 +1,5 @@
-// IMPORTS DE COMPONENTES
-import React from 'react';
 import { Link } from 'react-router-dom';
 
-// IMPORTS DE CSS
-import "../css/Fonts.css";
 
 const ChangePassword = () => {
     return ( 

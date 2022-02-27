@@ -5,8 +5,6 @@ import WOW from 'wowjs';
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
-// IMPORTANDO CSS
-import "../css/Colors.css";
 
 // IMPORTANDO IMAGENES
 import logo from "../images/logos/titulo-mas-cercano.svg";

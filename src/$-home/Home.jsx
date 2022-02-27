@@ -2,12 +2,10 @@
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 // IMPORTS DE COMPONENTES
-import Sidebar from "../utils/Sidebar";
-import Navbar from '../utils/Navbar';
+
 import Card from "./Card";
 import ParallaxBg from './ParallaxBg';
 import Carousel from './Carousel';
-import Footer from '../utils/Footer';
 import CollageImages from './CollageImages';
 import ImgBlock from './ImgBlock';
 // IMPORTS DE CSS
@@ -15,6 +13,18 @@ import "../css/Grid.css";
 import "../css/Colors.css";
 import "../css/Collage.css";
 import "../css/Fonts.css";
+import "../css/AboutUs.css";
+import "../css/Carousel.css";
+import "../css/Navbar.css";
+import "../css/Products.css";
+import "../css/Cart.css";
+import "../css/ImgBlock.css";
+import "../css/LoginForm.css";
+import "../css/ParallaxBg.css"
+import "../css/Sidebar.css";
+import "../css/Card.css"
+
+
 // IMPORTS DE IMAGENES
 import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";
@@ -32,12 +42,7 @@ const Home = () => {
 
     return ( 
         <div className="container-xs bg-cream" style={{padding: "0", overflow: 'hidden'}}>
-            <div className='row'>
-                <div className='col-12 p-0 bg-pink' style={{overflow: 'hidden'}}>
-                    <Navbar />
-                    <Sidebar/>
-                </div>
-            </div>
+            
             <div className='row'>
                 <div className='col p-0'>
                     <ParallaxBg/> 
@@ -130,11 +135,7 @@ const Home = () => {
                 <h2 className="texto text-uppercase text-center pt-5 pb-4 brown-font font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
-            <div className='row'>
-                <div className='col-sm p-0 '>
-                    <Footer/>
-                </div>
-            </div>
+           
         </div>
     );
 }

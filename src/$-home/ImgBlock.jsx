@@ -1,10 +1,3 @@
-// IMPORTS DE MODULOS
-import React from 'react';
-// IMPORTS DE CSS
-import "../css/Colors.css";
-import "../css/ImgBlock.css";
-import "../css/Fonts.css";
-
 
 const ImgBlock = ({image, textAtributes, imgAtributes, p1, p2, p3, p4, h1}) => {
 

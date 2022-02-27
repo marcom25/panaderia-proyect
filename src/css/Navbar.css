@@ -55,7 +55,7 @@
 
 /* Cart */
 .carritoNavbar {
-    width: 12% !important;
+    width: fit-content !important;
 }
 
 .font-cream-hover-carrito:hover{

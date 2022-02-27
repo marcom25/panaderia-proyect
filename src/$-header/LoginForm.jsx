@@ -1,9 +1,7 @@
-import React from "react";
+
 import { Link } from "react-router-dom";
 
-import "../css/LoginForm.css";
-import "../css/Colors.css";
-import "../css/Fonts.css";
+
 const LoginForm = () => {
   return (
     <>

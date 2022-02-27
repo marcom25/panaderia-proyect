@@ -11,10 +11,6 @@ import { SiGooglemessages } from "react-icons/si";
 // IMPORTANDO IMAGENES
 import logo from "../images/logos/titulo-mas-cercano.svg";
 
-// IMPORTANDO CSS
-import "../css/Sidebar.css";
-import "../css/Colors.css";
-import "../css/Fonts.css";
 
 
 

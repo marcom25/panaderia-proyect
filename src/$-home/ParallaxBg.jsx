@@ -2,9 +2,6 @@
 import React, {useEffect} from 'react';
 import { Parallax } from 'react-parallax';
 import WOW from 'wowjs';
-// IMPORTS DE CSS
-import "../css/ParallaxBg.css"
-import "../css/Fonts.css"
 
 
 const ParallaxBg = () => {

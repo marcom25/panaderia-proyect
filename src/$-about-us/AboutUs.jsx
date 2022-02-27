@@ -1,16 +1,6 @@
 // IMPORTS DE MODULOS
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
-import Navbar from '../utils/Navbar';
-import Sidebar from '../utils/Sidebar';
-import Footer from '../utils/Footer';
-
-// IMPORTS DE CSS
-import "../css/Grid.css";
-import "../css/Colors.css";
-import "../css/Collage.css";
-import "../css/Fonts.css";
-import "../css/AboutUs.css";
 
 // IMPORTS DE IMAGENES
 import aboutUs from "../images/bakery/aboutUs.jpg";
@@ -27,12 +17,7 @@ const AboutUs = () => {
 
     return ( 
         <>
-            <header className='row'>
-                <div className='col-12 p-0 bg-pink' style={{overflow: 'hidden'}}>
-                    <Navbar />
-                    <Sidebar/>
-                </div>
-            </header>
+            
             <section className="container-xs bg-cream" style={{padding: "0", overflow: 'hidden'}}>
                 <div className='w-100 bg-cream pt-2 my-5 p-2'>
                     <h1 className='text-center brown-font'>Nosotros</h1>
@@ -100,11 +85,7 @@ const AboutUs = () => {
                     </div>
                 </div>
             </section>
-            <div className='row'>
-                    <div className='col-sm p-0 '>
-                        <Footer/>
-                    </div>
-                </div>
+           
         </>
     );
 }
