@@ -21,7 +21,7 @@ const CardsProducts = ({ cards }) => {
               <div className="capaPadre">
                 <div>
                   <button
-                    class="btn cardsButton bg-white brown-font margin-button"
+                    class="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button"
                     onClick={() =>
                       dispatch({
                         type: "ADD_TO_CART",

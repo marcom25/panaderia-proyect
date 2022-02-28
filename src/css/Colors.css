@@ -127,6 +127,9 @@
 .font-brown-hover:hover {
     color: rgb(77, 58, 64) !important;
 }
+.font-white-hover:hover {
+    color: white !important;
+}
 
 .font-orange-light-hover:hover {
     color: rgb(236, 138, 101) !important;

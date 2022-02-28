@@ -15,7 +15,7 @@ export const DropdownCart = () => {
     <>
       <button
         type="button"
-        class="btn brown-font position-relative dropdown-toggle"
+        class="btn brown-font position-relative"
         id="dropdownMenuButton1"
         data-bs-toggle="dropdown"
         aria-expanded="false"

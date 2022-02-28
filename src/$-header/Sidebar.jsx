@@ -60,7 +60,7 @@ const Sidebar = () => {
             <img src={logo} alt="logo" className="w-100" />
         </div>
         <div className="d-flex justify-content-end carrito" >
-          <h1 ><FaShoppingCart /></h1>
+          <Link to="/cart" className='brown-font'><h1><FaShoppingCart /></h1></Link>
         </div>
       </nav>
     </>
