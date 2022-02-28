@@ -11,6 +11,10 @@
     color: rgb(255, 216, 201) !important;
 }
 
+.deleteIcon {
+    border: 0px !important;
+}
+
 .deleteIcon:hover {
     color: red !important;
     cursor: pointer;
