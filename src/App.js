@@ -10,7 +10,7 @@ import LoginForm from "./$-header/LoginForm";
 import RegisterForm from "./$-header/RegisterForm";
 import ChangePassword from "./$-header/ChangePassword";
 import Footer from "./$-footer/Footer";
-import CartPage from "./$-header/CartPage";
+import {CartPage} from "./$-header/CartPage";
 
 
 function App() {

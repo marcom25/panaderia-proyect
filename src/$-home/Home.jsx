@@ -23,6 +23,7 @@ import "../css/LoginForm.css";
 import "../css/ParallaxBg.css"
 import "../css/Sidebar.css";
 import "../css/Card.css"
+import "../css/CartPage.css";
 
 
 // IMPORTS DE IMAGENES
