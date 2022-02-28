@@ -1,0 +1,17 @@
+.buttons {
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border: 0px;
+}
+
+.buttons:hover {
+    background-color: rgb(66, 51, 55) !important; 
+    color: rgb(255, 216, 201) !important;
+}
+
+.deleteIcon:hover {
+    color: red !important;
+    cursor: pointer;
+}

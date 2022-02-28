@@ -10,6 +10,8 @@ import LoginForm from "./$-header/LoginForm";
 import RegisterForm from "./$-header/RegisterForm";
 import ChangePassword from "./$-header/ChangePassword";
 import Footer from "./$-footer/Footer";
+import CartPage from "./$-header/CartPage";
+
 
 function App() {
   return (
@@ -24,6 +26,7 @@ function App() {
         <Route path="login" element={<LoginForm />} />
         <Route path="register" element={<RegisterForm />} />
         <Route path="changePassword" element={<ChangePassword />} />
+        <Route path="cart" element={<CartPage />} />
       </Routes>
       <Footer />
     </>
