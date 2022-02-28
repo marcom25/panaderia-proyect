@@ -1,6 +1,7 @@
 // IMPORTS DE MODULOS
 import React, {useEffect} from 'react';
-import { Parallax } from 'react-parallax';
+import { ParallaxBanner } from 'react-scroll-parallax';
+import macaroons from '../images/bakery/macaroons.jpg'
 import WOW from 'wowjs';
 
 
@@ -13,16 +14,17 @@ const ParallaxBg = () => {
 
     return (
 
-        <Parallax
-            blur={2}
-            bgImage={require('../images/bakery/macaroons.jpg')}
-            bgImageAlt="the dog"
-            strength={-200}
+        <ParallaxBanner
+        layers={[
+            { image: macaroons, speed: -20 },
+            
+          ]}
+          className="aspect-[2/1]"
         > 
             <h1 className='texto text-center paragraph font-satisfy text-wrap wow fadeIn' data-wow-delay= '1s' data-wow-duration="2s">Las mejores cosas en la vida son dulces</h1>
             <p className='texto text-center paragraph font-satisfy text-wrap pt-5 mt-2 d-none d-sm-block wow fadeIn' data-wow-delay= '3s' data-wow-duration="2s">No te quedes con las ganas..</p>
             <div className='sizer' />
-        </Parallax>
+        </ParallaxBanner>
     );
 };
  

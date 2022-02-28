@@ -63,13 +63,13 @@ const Products = () => {
     <>
       <div className="container-xs bg-cream" style={{ padding: "0" }}>
         <section className="container-xs bg-cream pt-2 pb-5">
-          <h3 className="py-4 text-center brown-font" id="Handler">
+          <h3 className="py-4 text-center brown-font font-poppins" id="Handler">
             Productos
           </h3>
           <div className="text-center">
             <div class="dropdown pt-2 pb-4 d-md-none">
               <button
-                class="btn bg-brown white-font dropdown-toggle"
+                class="btn bg-brown white-font dropdown-toggle font-poppins"
                 type="button"
                 id="dropdownMenu2"
                 data-bs-toggle="dropdown"
@@ -99,7 +99,7 @@ const Products = () => {
               <ButtonAllProducts buttons={buttons} filter={filter} />
               <hr className="m-0" />
               <div className="filters">
-                <h5 className="brown-font mb-1" style={{ fontSize: "1.1rem" }}>
+                <h5 className="brown-font mb-1 font-poppins" style={{ fontSize: "1.1rem" }}>
                   Pastelería
                 </h5>
                 <ul className="list-unstyled line-height-products mb-3">
@@ -108,7 +108,7 @@ const Products = () => {
               </div>
               <div>
                 <h5
-                  className="line-height-products mb-1"
+                  className="line-height-products mb-1 font-poppins"
                   style={{ fontSize: "1.1rem" }}
                 >
                   Bebidas calientes
@@ -119,6 +119,7 @@ const Products = () => {
               </div>
             </div>
             <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
+              
               <CardsProducts cards={cards} />
             </div>
           </div>

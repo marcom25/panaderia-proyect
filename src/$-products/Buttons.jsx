@@ -5,7 +5,8 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
         if (cat === "All") {
           return (
             <li
-              className="brown-font line-height-products d-block mb-1 container-category"
+              className="brown-font line-height-products d-block mb-1 container- font-poppins"
+              style={{cursor: "pointer"}}
               onClick={() => filter(cat)}
             >
               Todos los productos
@@ -25,7 +26,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
           return (
             <li
               onClick={() => filter(cat)}
-              className="brown-font d-block container-category"
+              className="brown-font d-block container-category font-bitter"
             >
               {cat}
             </li>
@@ -49,7 +50,7 @@ export const ButtonBakery = ({ buttons, filter }) => {
           return (
             <li
               onClick={() => filter(cat)}
-              className="brown-font d-block container-category"
+              className="brown-font d-block container-category font-bitter"
             >
               {cat}
             </li>
@@ -67,7 +68,7 @@ export const ButtonsPagination = ({ prevHandler, nextHandler }) => {
         <ul class="pagination justify-content-center">
           <li class="page-item">
             <a
-              class="page-link bg-brown white-font font-pink-hover"
+              class="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Previous"
             >
@@ -78,7 +79,7 @@ export const ButtonsPagination = ({ prevHandler, nextHandler }) => {
           </li>
           <li class="page-item">
             <a
-              class="page-link bg-brown white-font font-pink-hover"
+              class="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Next"
             >

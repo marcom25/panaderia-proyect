@@ -1,0 +1,23 @@
+.buttonFooter {
+  margin-top: 35px;
+  background-color: rgb(77, 58, 64);
+  border: 1px solid #fffee3;
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 60px;
+  color: #fffee3;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.buttonFooter:hover,
+.buttonFooter:focus {
+  color: rgb(77, 58, 64);
+  border: 2px solid rgb(77, 58, 64) !important;
+  background-color: #fffee3 !important;
+}

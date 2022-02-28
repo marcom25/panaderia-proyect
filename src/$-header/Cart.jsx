@@ -10,7 +10,7 @@ export const DropdownCart = () => {
     dispatch,
   } = CartState();
 
-
+  console.log(cart.length)
   return (
     <>
       <button
@@ -25,13 +25,14 @@ export const DropdownCart = () => {
           style={{ fontSize: "2rem", cursor: "pointer", padding: "0" }}
         />
 
-        <span class="carrito-badge position-absolute translate-middle badge rounded-pill "></span>
+        <span class="carrito-badge position-absolute translate-middle badge rounded-pill ">{cart.length}</span>
       </button>
 
       <ul
         className="dropdown-menu dropdownCart bg-cream"
         aria-labelledby="dropdownMenuButton1"
       >
+        
         {cart.length > 0 ? (
           <>
             {cart.map((prod) => (
@@ -63,7 +64,9 @@ export const DropdownCart = () => {
             </div>
           </>
         ) : (
-          <span> El Carrito esta vacio </span>
+          <div className="d-flex justify-content-center ">
+            <span className="d-flex justify-content-center font-poppins bg-brown cream-font rounded w-50"> El Carrito esta vacio </span>
+          </div>
         )}
       </ul>
     </>

@@ -24,8 +24,7 @@ import "../css/ParallaxBg.css"
 import "../css/Sidebar.css";
 import "../css/Card.css"
 import "../css/CartPage.css";
-
-
+import "../css/Footer.css";
 // IMPORTS DE IMAGENES
 import image1 from "../images/bakery/pancakes.jpg";
 import image2 from "../images/bakery/donuts2.jpg";

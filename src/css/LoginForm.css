@@ -8,9 +8,14 @@ form .question input[type="text"] {
   transition: all 0.25s cubic-bezier(0.53, 0.01, 0.35, 1.5);
 }
 
-body{
-  background-color: rgb(255, 216, 201) !important;
+body {
+  background-image: url("../images/bakery/macaroons.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }
+
 .caja{
   border-radius: 10px;
 }
