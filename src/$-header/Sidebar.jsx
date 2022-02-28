@@ -44,7 +44,7 @@ const Sidebar = () => {
                   <Link className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" to="/nosotros"> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Nosotros</Link>
                 </li>
                 <li class="nav-item bg-brown-hover">
-                  <Link class="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" to="#contacto"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</Link>
+                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href="#contacto"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
                 </li>
                 
               </ul>
