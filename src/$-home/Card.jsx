@@ -14,7 +14,7 @@ const Card = ({
   return (
     <div className="card m-auto " style={{ width: "20rem" }}>
       <img
-        className="card-img-top image accordion-button collapsed"
+        className="card-img-top image accordion-button p-0 collapsed"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target={imageDataTarget}

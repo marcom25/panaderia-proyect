@@ -11,6 +11,7 @@ import {
 } from "./Buttons";
 import CardsProducts from "./CardsProducts";
 
+
 const allCategories = [
   "All",
   ...new Set(AllDataProducts.map((item) => item.product)),

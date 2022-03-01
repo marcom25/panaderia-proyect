@@ -1,6 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500&family=Comforter&family=Festive&family=Indie+Flower&family=Kaushan+Script&family=Lobster+Two:wght@400;700&family=Pacifico&family=Satisfy&family=Yellowtail&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oleo+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@600&display=swap');
+
+
+.font-weight-1k{
+    font-weight: 1000 !important;
+}
+
+.semi-bold {
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.font-oleo {
+    font-family: 'Oleo Script', cursive;
+}
 
 .font-caveat{
     font-family: 'Caveat', cursive;

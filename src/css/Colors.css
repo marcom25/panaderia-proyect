@@ -151,3 +151,6 @@
     color: #FFFEE3 !important; 
 }
 
+.font-weight-hover:hover {
+    font-weight: 600 !important;
+}

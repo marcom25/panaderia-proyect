@@ -8,6 +8,7 @@ import ParallaxBg from './ParallaxBg';
 import Carousel from './Carousel';
 import CollageImages from './CollageImages';
 import ImgBlock from './ImgBlock';
+
 // IMPORTS DE CSS
 import "../css/Grid.css";
 import "../css/Colors.css";
@@ -25,13 +26,14 @@ import "../css/Sidebar.css";
 import "../css/Card.css"
 import "../css/CartPage.css";
 import "../css/Footer.css";
+
 // IMPORTS DE IMAGENES
-import image1 from "../images/bakery/pancakes.jpg";
-import image2 from "../images/bakery/donuts2.jpg";
-import image3 from "../images/bakery/pie.jpg";
-import image4 from "../images/bakery/bakery.jpg";
-import image5 from "../images/bakery/bakery2.jpg";
-import image6 from "../images/bakery/brownie.jpg";
+import image1 from "../images/bakery/prueba1.jpg";
+import image2 from "../images/bakery/prueba2.jpg";
+import image3 from "../images/bakery/prueba3.jpg";
+import image4 from "../images/bakery/receta1.jpg";
+import image5 from "../images/bakery/receta3.jpg";
+import image6 from "../images/bakery/prueba4.jpg";
 
 const Home = () => {
     
@@ -50,7 +52,7 @@ const Home = () => {
                 
             </div>
             <div className='row justify-content-sm-center bg-cream py-4 px-lg-5'>
-                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">¡Nuevos productos!</h2>
+                <h2 className="texto text-uppercase font-weight-1k text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">¡Nuevos productos!</h2>
                 <div className='cards col-md-6 py-4 wow fadeIn' data-wow-delay= '1s' data-wow-duration="1s">
                     <Card 
                     image={image1} 
@@ -107,7 +109,7 @@ const Home = () => {
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
-                <h2 className="texto text-uppercase text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s" data-wow-offset= '1'>Nuestras recetas</h2>
+                <h2 className="texto text-uppercase font-weight-1k text-center brown-font pt-5 font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s" data-wow-offset= '1'>Nuestras recetas</h2>
             </div>
             <div className='row bg-cream border-top border-dark px-lg-5 wow fadeInRight' data-wow-delay= '1s' data-wow-duration="2s">
                 <ImgBlock
@@ -132,7 +134,7 @@ const Home = () => {
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
-                <h2 className="texto text-uppercase text-center pt-5 pb-4 brown-font font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">Nuestras delicias</h2>
+                <h2 className="texto text-uppercase font-weight-1k text-center pt-5 pb-4 brown-font font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">Nuestras delicias</h2>
                 <CollageImages/>
             </div>
            

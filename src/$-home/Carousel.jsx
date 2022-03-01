@@ -1,6 +1,6 @@
 import image1 from "../images/bakery/pie.jpg";
-import image2 from "../images/bakery/muffin.jpg";
-import image3 from "../images/bakery/lemonpie.jpg";
+import image2 from "../images/bakery/muffinprueba.jpg";
+import image3 from "../images/bakery/tartaprueba.jpg";
 
 const Carousel = () => {
   return (
@@ -13,21 +13,21 @@ const Carousel = () => {
         <div className="carousel-item active" data-bs-interval="4000">
           <img src={image1} className="d-block w-100 imagen" alt="" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="title font-yellowtail">Tortas</h1>
+            <h1 className="title font-oleo">Tortas</h1>
             <p>Sweet day.</p>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="4000">
           <img src={image2} className="d-block w-100 imagen" alt="" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="title font-yellowtail">Muffins</h1>
+            <h1 className="title font-oleo">Muffins</h1>
             <p>Sweet day.</p>
           </div>
         </div>
         <div className="carousel-item" data-bs-interval="4000">
           <img src={image3} className="d-block w-100 imagen" alt="" />
           <div className="carousel-caption d-none d-md-block">
-            <h1 className="title font-yellowtail">Tartas</h1>
+            <h1 className="title font-oleo">Tartas</h1>
             <p>Sweet day.</p>
           </div>
         </div>
