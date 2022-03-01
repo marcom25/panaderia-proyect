@@ -40,7 +40,7 @@ const Navbar = () => {
                 Productos
               </Link>
             </li>
-            <li className="nav-item text-center logo-width">
+            <li className="nav-item text-center logo-width" id="start">
               <img src={logo} alt="bakeryshop" className="w-100 h-100 m-auto" />
             </li>
             <li className="nav-item my-auto w-20 text-center">

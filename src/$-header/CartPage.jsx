@@ -36,7 +36,7 @@ export const CartPage = () => {
                                         <img src={prod.image} alt="pancake" className="w-100" />
                                     </div>
                                     <div className="col-4">
-                                        <h4>{prod.product}</h4>
+                                        <h4>{prod.title}</h4>
                                         <div className="d-flex">
                                             <div className="me-3">
                                                 <p><span className="fw-bold">Precio:</span> ${prod.price}</p>
@@ -62,10 +62,12 @@ export const CartPage = () => {
                             <hr className="w-100 p-0 m-0" />
                             <div className="d-flex justify-content-between">
                                 <div>
-                                    <p>Subtotal</p>
+                                    <p className="mb-0">Subtotal</p>
+                                    <p>IVA +21%</p>
                                 </div>
                                 <div>
-                                    <p>$ {subTotal}</p>
+                                    <p className="mb-0">$ {subTotal}</p>
+                                    <p>$ {subTotal * .21}</p>
                                 </div>
                             </div>
                             <hr className="w-100 p-0 m-0" />
@@ -92,10 +94,12 @@ export const CartPage = () => {
                         <hr className="w-100 p-0 m-0" />
                         <div className="d-flex justify-content-between">
                             <div>
-                                <p>Subtotal </p>
+                                <p className="mb-0">Subtotal </p>
+                                <p>IVA +21%</p>
                             </div>
                             <div>
-                                <p>${subTotal}</p>
+                                <p className="mb-0">$ {subTotal}</p>
+                                <p>$ {subTotal * .21}</p>
                             </div>
                         </div>
                         <hr className="w-100 p-0 m-0" />
@@ -104,7 +108,7 @@ export const CartPage = () => {
                                 <p>Total</p>
                             </div>
                             <div>
-                                <p>${total}</p>
+                                <p>$ {total}</p>
                             </div>
                         </div>
                         <div className="m-auto">

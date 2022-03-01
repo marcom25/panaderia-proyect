@@ -39,7 +39,7 @@ export const DropdownCart = () => {
               <span className="cartitem" key={prod.id}>
                 <img src={prod.image} className="cartItemImg" alt={prod.name} />
                 <div className="cartItemDetail font-poppins">
-                  <span>{prod.product}</span>
+                  <span>{prod.title}</span>
                   <span>$ {Number(prod.price)}</span>
                 </div>
                 <AiFillDelete

@@ -60,7 +60,7 @@ const Home = () => {
                     
                     imageDataTarget='#flush-collapseOne'
                     imageAriaControls='flush-collapseOne'
-                    bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
+                    bodyClass='card-body p-0 bg-cream card-content accordion-collapse collapse'
                     bodyId='flush-collapseOne'
                     bodyAriaLabel='flush-headingOne'
                     contentClass='card-title text-center accordion-body font-bitter'
@@ -72,7 +72,7 @@ const Home = () => {
                     msg="Donuts"                    
                     imageDataTarget='#flush-collapseTwo'
                     imageAriaControls='flush-collapseTwo'
-                    bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
+                    bodyClass='card-body p-0 bg-cream card-content accordion-collapse collapse'
                     bodyId='flush-collapseTwo'
                     bodyAriaLabel='flush-headingTwo'
                     contentClass='card-title text-center accordion-body font-bitter'
@@ -84,7 +84,7 @@ const Home = () => {
                     msg="Torta" 
                     imageDataTarget='#flush-collapseThree'
                     imageAriaControls='flush-collapseThree'
-                    bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
+                    bodyClass='card-body p-0 bg-cream card-content accordion-collapse collapse'
                     bodyId='flush-collapseThree'
                     bodyAriaLabel='flush-headingThree'
                     contentClass='card-title text-center accordion-body font-bitter'
@@ -96,7 +96,7 @@ const Home = () => {
                     msg="Brownie" 
                     imageDataTarget='#flush-collapseFour'
                     imageAriaControls='flush-collapseFour'
-                    bodyClass='card-body p-0 bg-lightblue card-content accordion-collapse collapse'
+                    bodyClass='card-body p-0 bg-cream card-content accordion-collapse collapse'
                     bodyId='flush-collapseFour'
                     bodyAriaLabel='flush-headingFour'
                     contentClass='card-title text-center accordion-body font-bitter'

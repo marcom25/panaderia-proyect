@@ -1,6 +1,7 @@
 // IMPORTANDO MODULOS
 import React, { useEffect } from "react";
 import WOW from "wowjs";
+import { Link } from "react-router-dom";
 // IMPORTANDO ICONOS
 import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
@@ -52,7 +53,7 @@ const Footer = () => {
                 <i class="fas fa-search" aria-hidden="true"></i>
                 <button
                   type="button"
-                  class="btn text-uppercase rounded-5  mt-3 border-0 buttonFooter font-bitter"
+                  class="btn text-uppercase rounded-5 bg-brown white-font font-brown-hover mt-3 border-0 buttonFooter font-bitter"
                   style={{ height: "55px", borderRadius: "8px" }}
                 >
                   Suscribirme!
@@ -69,33 +70,33 @@ const Footer = () => {
 
               <ul class="list-unstyled">
                 <li>
-                  <a
+                  <Link
                     className="orange-dark-font text-decoration-none font-bitter"
-                    href="#!"
+                    href="#start" to="/"
                   >
                     Inicio
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="orange-dark-font text-decoration-none font-bitter"
-                    href="#!"
+                    href="#start" to="/productos"
                   >
                     Productos
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a
+                  <Link
                     className="orange-dark-font text-decoration-none font-bitter"
-                    href="#!"
+                    href="#start" to="/nosotros"
                   >
-                    Sobre nosotros
-                  </a>
+                    Nosotros
+                  </Link>
                 </li>
                 <li>
                   <a
                     className="orange-dark-font text-decoration-none font-bitter"
-                    href="#!"
+                    href="#contacto"
                   >
                     Contactanos
                   </a>
@@ -110,36 +111,36 @@ const Footer = () => {
 
               <ul class="list-unstyled">
                 <li>
-                  <a
+                  <span
                     className="orange-dark-font text-decoration-none font-bitter"
                     href="#!"
                   >
                     NVA. CORDOBA
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a
+                  <span
                     className="orange-dark-font text-decoration-none font-bitter"
                     href="#!"
                   >
                     VILLA ALLENDE
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a
+                  <span
                     className="orange-dark-font text-decoration-none font-bitter"
                     href="#!"
                   >
                     CERRO DE LAS ROSAS
-                  </a>
+                  </span>
                 </li>
                 <li>
-                  <a
+                  <span
                     className="orange-dark-font text-decoration-none font-bitter"
                     href="#!"
                   >
                     GRAL. PAZ
-                  </a>
+                  </span>
                 </li>
               </ul>
             </div>
@@ -162,13 +163,15 @@ const Footer = () => {
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
                         href="#!"
+                        target="_blank"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
                         class="orange-dark-font text-decoration-none"
-                        href="#!"
+                        href="https://www.linkedin.com/in/sebasti%C3%A1n-ponce-4156a01a9/"
+                        target="_blank"
                       >
                         {" "}
                         Sebastián
@@ -184,14 +187,16 @@ const Footer = () => {
                     <p>
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="https://github.com/marcom25"
+                        target="_blank"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="https://github.com/sebaponce2"
+                        target="_blank"
                       >
                         {" "}
                         Sebastián
@@ -209,6 +214,7 @@ const Footer = () => {
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
                         href="#!"
+                        target="_blank"
                       >
                         Marco{" "}
                       </a>
@@ -216,6 +222,7 @@ const Footer = () => {
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
                         href="#!"
+                        target="_blank"
                       >
                         {" "}
                         Sebastián
@@ -231,14 +238,16 @@ const Footer = () => {
                     <p>
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="https://www.instagram.com/marco__m25/"
+                        target="_blank"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
                         class="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="https://www.instagram.com/sebaponce__/"
+                        target="_blank"
                       >
                         {" "}
                         Sebastián
