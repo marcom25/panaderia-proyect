@@ -69,19 +69,13 @@ const LoginForm = () => {
                   <label className="font-poppins">Contraseña</label>
                 </div>
 
-                <div className="m-auto" style={{ width: "max-content" }}>
-                  {/* <Link
-                    to="/"
-                    className="font-poppins text-decoration-none white-font font-pink-hover"
-                    href="/"
-                  > */}
-                  <button
+                <div className="m-auto" style={{ width: "max-content" }}> 
+                   <button
                     className="d-block m-auto mt-4 mb-2 font-poppins text-decoration-none "
                     type="submit"
                   >
                     Iniciar sesión
                   </button>
-                  {/* </Link> */}
                 </div>
 
                 <Link
