@@ -1,28 +1,32 @@
 import React, { createContext, useReducer, useContext } from "react";
 import { cartReducer } from "./Reducer";
+import allData from "../$-products/AllDataProducts";
 
 const Cart = createContext();
 
-const Context = async ({ children }) => {
+const Context = ({ children }) => {
 
     let data = {};
-    
-    try {
-        const res = await fetch("http://localhost:8080/products", {
-            method: "GET",
-            headers: {
-                "Content-Type": "application/json",
-                "Acces-Control-Allow_Origin": "localhost:3000",
-            },
-            mode: "cors",
-        });
-        
-        data = await res.json();
-        
-        console.log(data.data);
-    } catch (error) {
-        console.log(error);
+
+    const fetchProducts = async () => {
+        try {
+            const res = await fetch("http://localhost:8080/products", {
+                method: "GET",
+                headers: {
+                    "Content-Type": "application/json",
+                    "Acces-Control-Allow_Origin": "localhost:3000",
+                },
+                mode: "cors",
+            });
+            
+            data = await res.json();
+            
+            console.log(data.data);
+        } catch (error) {
+            console.log(error);
+        }
     }
+
     
     const [state, dispatch] = useReducer(cartReducer, {
       products: data.data,
