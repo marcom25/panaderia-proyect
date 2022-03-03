@@ -24,7 +24,7 @@ const LoginForm = () => {
       console.log(data);
       if (data.isUser === true) {
         console.log("true");
-        // window.location.assign("/");
+        // window.location.assign("/ ");
       } else {
         console.log("false");
         // window.location.assign("/login");
