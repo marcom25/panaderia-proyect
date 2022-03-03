@@ -1,5 +1,5 @@
 import { CartState } from "../$-context/Context";
-
+import image from "../images/bakery/pancakes.jpg";
 
 const CardsProducts = ({ cards }) => {
   const {
