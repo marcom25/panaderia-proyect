@@ -1,105 +1,159 @@
 // IMPORTS DE MODULOS
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { CartState } from "../$-context/Context";
 
 // IMPORTS DE COMPONENTES
-import AllDataProducts from "./AllDataProducts";
+
 import {
   ButtonAllProducts,
   ButtonBakery,
   ButtonHotDrinks,
   ButtonsPagination,
 } from "./Buttons";
-import CardsProducts from "./CardsProducts";
-
-
-const allCategories = [
-  "All",
-  ...new Set(AllDataProducts.map((item) => item.product)),
-];
+import SingleProduct from "./SingleProduct";
 
 const Products = () => {
-  // Filter
+  const renderManager = 0;
+  
+  let sortedProducts = [];
+
   const cardsPerPage = 12;
-  const [cards, setCards] = useState(
-    [...AllDataProducts].splice(0, cardsPerPage)
-  );
-  const [buttons, setButtons] = useState(allCategories);
 
-  const filter = (category) => {
-    if (category === "All") {
-      setCards([...AllDataProducts].splice(0, cardsPerPage));
-      return;
-    }
+  const [allCategories, setAllCategories] = useState([]);
 
-    const filteredData = AllDataProducts.filter(
-      (items) => items.product === category
-    );
-    setCards(filteredData);
-  };
+  const [loading, setLoading] = useState(false);
 
-  // Pagination
-  const [currentPage, setCurrentPage] = useState(0);
-  const totalCards = [...AllDataProducts].length;
+  const [products, setProducts] = useState([]);
 
-  // next button function
-  const nextHandler = () => {
-    const nextPage = currentPage + 1;
-    const firstIndex = nextPage * cardsPerPage;
-    if (firstIndex === totalCards) return;
+  const [cards, setCards] = useState(products.splice(0, cardsPerPage));
 
-    setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
-    setCurrentPage(nextPage);
-  };
-  // prev button function
-  const prevHandler = () => {
-    const prevPage = currentPage - 1;
-    const firstIndex = prevPage * cardsPerPage;
-    if (firstIndex < 0) return;
+  const {
+    filterState: { sort, byBakery, byHotDrinks },
+  } = CartState();
 
-    setCards([...AllDataProducts].splice(firstIndex, cardsPerPage));
-    setCurrentPage(prevPage);
-  };
+  useEffect(() => {
+    fetch("http://localhost:8080/products", {
+      method: "GET",
+      headers: {
+        "Content-Type": "application/json",
+        "Acces-Control-Allow_Origin": "localhost:3000",
+      },
+      mode: "cors",
+    })
+      .then((res) => res.json())
+      .then((res) => {
+        setProducts(res.data);
+        console.log(res.data, "resdata");
+        setAllCategories([
+          "All",
+          ...new Set(res.data.map((item) => item.category)),
+        ]);
+        setLoading(true);
+
+        return(()=> {
+          setLoading(false)
+        })
+      })
+      .catch((error) => console.log(error));
+  }, [renderManager]);
+
+  console.log(products, "productos");
+
+  if (sort === "All") {
+    setCards(products.splice(0, cardsPerPage));
+  }
+
+  if (byBakery && byBakery.length > 0) {
+    setCards(products.filter(
+      (item) => item.category === byBakery
+    ));
+  }
+
+  if (byHotDrinks && byHotDrinks.length > 0) {
+    setCards(products.filter(
+      (item) => item.category === byHotDrinks
+    ));
+  }
+
+  
 
   return (
     <>
-      <section className="container-xs bg-cream" style={{ padding: "0" }}>
-        <div className="container-xs bg-cream pt-2 pb-5">
-          <h3 className="py-4 text-center brown-font font-poppins fw-bold" id="Handler">Productos</h3>
-          {/* mobile button */}
-          <div className="text-center">
-            <div class="dropdown pt-2 pb-4 d-md-none">
-              <button class="btn bg-brown white-font dropdown-toggle font-poppins" type="button" id="dropdownMenu2" data-bs-toggle="dropdown" aria-expanded="false">Todas las categorias</button>
-              <ul class="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold" aria-labelledby="dropdownMenu2"><ButtonAllProducts buttons={buttons} filter={filter} className="fw-bold bg-brown-hover"/>
-                <ButtonBakery buttons={buttons} filter={filter} />
-                <ButtonHotDrinks buttons={buttons} filter={filter} />
-              </ul>
-            </div>
-          </div>
-          {/* mobile button ^ */}
-          <div className="d-flex">
-            <div className="d-none d-md-block ps-4 pe-5" style={{ width: "min-content" }}>
-              <ButtonAllProducts buttons={buttons} filter={filter} />
-              <hr className="m-0" />
-              <div className="filters">
-                <h5 className="brown-font mb-1 font-poppins fw-bold" style={{ fontSize: "1.1rem" }}>Pastelería</h5>
-                <ul className="list-unstyled line-height-products mb-3">
-                  <ButtonBakery buttons={buttons} filter={filter} />
+      {loading ? (
+        <section className="container-xs bg-cream" style={{ padding: "0" }}>
+          <div className="container-xs bg-cream pt-2 pb-5">
+            <h3
+              className="py-4 text-center brown-font font-poppins fw-bold"
+              id="Handler"
+            >
+              Productos
+            </h3>
+            {/* mobile button */}
+            <div className="text-center">
+              <div class="dropdown pt-2 pb-4 d-md-none">
+                <button
+                  class="btn bg-brown white-font dropdown-toggle font-poppins"
+                  type="button"
+                  id="dropdownMenu2"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Todas las categorias
+                </button>
+                <ul
+                  class="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold"
+                  aria-labelledby="dropdownMenu2"
+                >
+                  <ButtonAllProducts
+                    buttons={allCategories}
+                    className="fw-bold bg-brown-hover"
+                  />
+                  <ButtonBakery buttons={allCategories} />
+                  <ButtonHotDrinks buttons={allCategories} />
                 </ul>
               </div>
-              <div>
-                <h5 className="line-height-products mb-1 font-poppins fw-bold "style={{ fontSize: "1.1rem" }}>Bebidas calientes</h5>
-                <ul className="list-unstyled line-height-products">
-                  <ButtonHotDrinks buttons={buttons} filter={filter} />
-                </ul>
+            </div>
+            {/* mobile button ^ */}
+            <div className="d-flex">
+              <div
+                className="d-none d-md-block ps-4 pe-5"
+                style={{ width: "min-content" }}
+              >
+                <ButtonAllProducts buttons={allCategories} />
+                <hr className="m-0" />
+                <div className="filters">
+                  <h5
+                    className="brown-font mb-1 font-poppins fw-bold"
+                    style={{ fontSize: "1.1rem" }}
+                  >
+                    Pastelería
+                  </h5>
+                  <ul className="list-unstyled line-height-products mb-3">
+                    <ButtonBakery buttons={allCategories} />
+                  </ul>
+                </div>
+                <div>
+                  <h5
+                    className="line-height-products mb-1 font-poppins fw-bold "
+                    style={{ fontSize: "1.1rem" }}
+                  >
+                    Bebidas calientes
+                  </h5>
+                  <ul className="list-unstyled line-height-products">
+                    <ButtonHotDrinks buttons={allCategories} />
+                  </ul>
+                </div>
+              </div>
+              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
+                <SingleProduct cards={cards} />
               </div>
             </div>
-            <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
-              <CardsProducts cards={cards} />
-            </div>
+            <ButtonsPagination products={products} />
           </div>
-          <ButtonsPagination prevHandler={prevHandler} nextHandler={nextHandler}/>
-        </div>
-      </section>
+        </section>
+      ) : (
+        <div className="bg-cream">Loading...</div>
+      )}
     </>
   );
 };

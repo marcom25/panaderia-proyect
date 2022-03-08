@@ -1,17 +1,27 @@
 // IMPORTS DE CSS
+import { useState } from "react";
+import { CartState } from "../$-context/Context";
 import "../css/Colors.css";
 
 
 export const ButtonAllProducts = ({ buttons, filter }) => {
+
+  const {
+    filterDispatch,
+  } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
         if (cat === "All") {
           return (
             <li
+              key={cat.id}
               className="brown-font line-height-products d-block mb-1 container-category font-poppins"
               style={{cursor: "pointer"}}
-              onClick={() => filter(cat)}
+              onClick={() => filterDispatch({
+                type: "SORT_ALL",
+                payload: cat
+              })}
             >
               Todos los productos
             </li>
@@ -23,13 +33,20 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
 };
 
 export const ButtonHotDrinks = ({ buttons, filter }) => {
+  const {
+    filterDispatch,
+  } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
         if (cat === "Café" || cat === "Té" || cat === "Chocolate") {
           return (
             <li
-              onClick={() => filter(cat)}
+              key={cat.id}
+              onClick={() => filterDispatch({
+                type: "FILTER_BY_HOT_DRINKS",
+                payload: cat
+              })}
               className="brown-font d-block container-category font-bitter"
             >
               {cat}
@@ -42,6 +59,9 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
 };
 
 export const ButtonBakery = ({ buttons, filter }) => {
+  const {
+    filterDispatch,
+  } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
@@ -53,7 +73,11 @@ export const ButtonBakery = ({ buttons, filter }) => {
         ) {
           return (
             <li
-              onClick={() => filter(cat)}
+              key={cat.id}
+              onClick={() => filterDispatch({
+                type: "FILTER_BY_BAKERY",
+                payload: cat
+              })}
               className="brown-font d-block container-category font-bitter "
             >
               {cat}
@@ -65,7 +89,42 @@ export const ButtonBakery = ({ buttons, filter }) => {
   );
 };
 
-export const ButtonsPagination = ({ prevHandler, nextHandler }) => {
+export const ButtonsPagination = ({products}) => {
+  
+
+  const cardsPerPage = 12;
+  const allCategories = [
+    "All",
+    ...new Set(products.map((item) => item.category)),
+  ];
+ 
+  const [currentPage, setCurrentPage] = useState(0);
+  const [cards, setCards] = useState(products.splice(0, cardsPerPage));
+  
+
+
+  const totalCards = products.length;
+
+  const nextHandler = () => {
+    const nextPage = currentPage + 1;
+    const firstNextIndex = nextPage * cardsPerPage;
+    if (firstNextIndex === totalCards) return;
+
+    setCards(products.splice(firstNextIndex, cardsPerPage));
+    setCurrentPage(nextPage);
+  };
+
+  const prevHandler = () => {
+    const prevPage = currentPage - 1;
+    const firstPrevIndex = prevPage * cardsPerPage;
+    if (firstPrevIndex < 0) return;
+
+    setCards(products.splice(firstPrevIndex, cardsPerPage));
+    setCurrentPage(prevPage);
+  };
+
+
+
   return (
     <div className="text-center p-2">
       <div aria-label="Page navigation example">

@@ -7,6 +7,8 @@ const CardsProducts = ({ cards }) => {
     dispatch,
   } = CartState();
 
+  console.log(cards, "productos solo");
+
   return (
     <div className="w-100">
       <div className="w-100 d-flex flex-wrap">
@@ -14,9 +16,9 @@ const CardsProducts = ({ cards }) => {
           <div className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post">
             <div class="card bg-cream border-0 w-100" key={card.id}>
               <img
-                src={card.image}
+                src={image}
                 class="card-img-top w-100 imgWidth"
-                alt={card.product}
+                alt={card.category}
               />
               <div className="capaPadre">
                 <div>
@@ -34,7 +36,7 @@ const CardsProducts = ({ cards }) => {
                 </div>
               </div>
               <div class="card-body bg-cream p-0 d-flex justify-content-between">
-                <h5 class="card-title brown-font font-poppins">{card.title}</h5>
+                <h5 class="card-title brown-font font-poppins">{card.name}</h5>
                 <p className="brown-font font-weight-700 font-poppins">$ {card.price}</p>
               </div>
               <div className="m-auto d-lg-none">

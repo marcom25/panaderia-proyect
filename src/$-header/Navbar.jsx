@@ -1,5 +1,5 @@
 // IMPORTS DE MODULOS
-import { DropdownCart, Cart } from "./Cart";
+import { DropdownCart } from "./DropdowCart";
 
 
 // IMPORTS DE IMAGENES

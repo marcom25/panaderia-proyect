@@ -13,7 +13,13 @@ import Footer from "./$-footer/Footer";
 import {CartPage} from "./$-header/CartPage";
 
 
+
+
+
 function App() {
+
+  
+  
   return (
     <>
       <Navbar />
