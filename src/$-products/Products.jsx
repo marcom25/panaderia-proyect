@@ -23,9 +23,9 @@ const Products = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([].splice(0, 12));
 
-  const [cards, setCards] = useState(products.splice(0, cardsPerPage));
+  // const [cards, setProducts] = useState();
 
   const {
     filterState: { sort, byBakery, byHotDrinks },
@@ -43,7 +43,7 @@ const Products = () => {
       .then((res) => res.json())
       .then((res) => {
         setProducts(res.data);
-        console.log(res.data, "resdata");
+        console.log('Aca me estoy trayendo el primer producto:', res.data[0]);
         setAllCategories([
           "All",
           ...new Set(res.data.map((item) => item.category)),
@@ -57,22 +57,27 @@ const Products = () => {
       .catch((error) => console.log(error));
   }, [renderManager]);
 
-  console.log(products, "productos");
-
-  if (sort === "All") {
-    setCards(products.splice(0, cardsPerPage));
+  console.log('sort:', sort);
+  console.log('byBakery:', byBakery);
+  console.log('byHotDrinks:', byHotDrinks);
+  if (sort) {
+    sortedProducts = products.splice(0, 12);
+    setProducts(sortedProducts);
   }
 
-  if (byBakery && byBakery.length > 0) {
-    setCards(products.filter(
+  if (byBakery) {
+    sortedProducts = products.filter(
       (item) => item.category === byBakery
-    ));
+    );
+
+    setProducts(sortedProducts);
   }
 
-  if (byHotDrinks && byHotDrinks.length > 0) {
-    setCards(products.filter(
+  if (byHotDrinks) {
+    sortedProducts = products.filter(
       (item) => item.category === byHotDrinks
-    ));
+    )
+    setProducts(sortedProducts);
   }
 
   
@@ -145,10 +150,10 @@ const Products = () => {
                 </div>
               </div>
               <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
-                <SingleProduct cards={cards} />
+                <SingleProduct cards={products} />
               </div>
             </div>
-            <ButtonsPagination products={products} />
+            {/* <ButtonsPagination products={products} /> */}
           </div>
         </section>
       ) : (

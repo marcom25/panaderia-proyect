@@ -16,9 +16,9 @@ const Context = ({ children }) => {
 
   
   const [filterState, filterDispatch] = useReducer(filterReducer, {
-    sort: [],
-    byBakery: [],
-    byHotDrinks: []
+    sort: "",
+    byBakery: "",
+    byHotDrinks: ""
   });
   
 

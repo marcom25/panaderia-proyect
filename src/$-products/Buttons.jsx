@@ -5,7 +5,7 @@ import "../css/Colors.css";
 
 
 export const ButtonAllProducts = ({ buttons, filter }) => {
-
+  console.log('buttons:', buttons);
   const {
     filterDispatch,
   } = CartState();
@@ -13,9 +13,10 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
     <div>
       {buttons.map((cat, i) => {
         if (cat === "All") {
+          console.log('cat:', cat)
           return (
             <li
-              key={cat.id}
+              key={i}
               className="brown-font line-height-products d-block mb-1 container-category font-poppins"
               style={{cursor: "pointer"}}
               onClick={() => filterDispatch({
@@ -42,7 +43,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
         if (cat === "Café" || cat === "Té" || cat === "Chocolate") {
           return (
             <li
-              key={cat.id}
+              key={i}
               onClick={() => filterDispatch({
                 type: "FILTER_BY_HOT_DRINKS",
                 payload: cat
@@ -73,7 +74,7 @@ export const ButtonBakery = ({ buttons, filter }) => {
         ) {
           return (
             <li
-              key={cat.id}
+              key={i}
               onClick={() => filterDispatch({
                 type: "FILTER_BY_BAKERY",
                 payload: cat

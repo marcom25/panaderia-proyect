@@ -7,7 +7,7 @@ const CardsProducts = ({ cards }) => {
     dispatch,
   } = CartState();
 
-  console.log(cards, "productos solo");
+  console.log('productos desde SingleProducts:', cards);
 
   return (
     <div className="w-100">
@@ -55,7 +55,7 @@ const CardsProducts = ({ cards }) => {
               </div>
             </div>
           </div>
-        ))}
+        )) }
       </div>
       {<div></div>}
     </div>

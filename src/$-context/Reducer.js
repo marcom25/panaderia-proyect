@@ -25,11 +25,14 @@ export const cartReducer = (state, action) => {
 export const filterReducer = (state, action) => {
   switch (action.type) {
     case "SORT_ALL":
+      console.log(state);
       return { ...state, sort: action.payload };
     case "FILTER_BY_BAKERY":
+      console.log(state);
       return { ...state, byBakery: action.payload };
     case "FILTER_BY_HOT_DRINKS":
-      return { ...state, byHotDrinks: action.payload};
+      console.log(state);
+      return { ...state, byHotDrinks: action.payload };
   
     default:
       return state;
