@@ -1,7 +1,14 @@
 import { useRef, useEffect, useState } from "react";
+import { CartState } from "../$-context/Context";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
+
+  const {
+    userDispatch,
+  } = CartState();
+
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
@@ -24,7 +31,11 @@ const LoginForm = () => {
       console.log(data);
       if (data.isUser === true) {
         console.log("true");
-        // window.location.assign("/ ");
+        userDispatch({
+          type: "UPDATE_USER",
+          payload: data.user
+        })
+       
       } else {
         console.log("false");
         // window.location.assign("/login");

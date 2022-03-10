@@ -1,3 +1,5 @@
+
+
 export const cartReducer = (state, action) => {
   console.log(state);
   switch (action.type) {
@@ -38,3 +40,15 @@ export const filterReducer = (state, action) => {
       return state;
   }
 };
+
+
+export const userReducer = (state, action) => {
+  switch (action.type) {
+    case "UPDATE_USER":
+      return {...state, username: action.payload}
+  
+    default:
+      return state;
+  }
+
+}

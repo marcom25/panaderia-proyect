@@ -1,14 +1,21 @@
 import React, { createContext, useReducer, useContext } from "react";
-import { cartReducer, filterReducer } from "./Reducer";
+import { cartReducer, filterReducer, userReducer } from "./Reducer";
 
 const Cart = createContext();
 
 
 
 const Context = ({ children }) => {
+
+
+
  
   const [state, dispatch] = useReducer(cartReducer, {
     cart: [],
+  });
+
+  const [userState, userDispatch] = useReducer(userReducer, {
+    username: ""
   });
 
   
@@ -19,7 +26,7 @@ const Context = ({ children }) => {
   });
   
 
-  return <Cart.Provider value={{ state, dispatch, filterState, filterDispatch }}>{children}</Cart.Provider>;
+  return <Cart.Provider value={{ state, dispatch, filterState, filterDispatch, userState, userDispatch }}>{children}</Cart.Provider>;
 };
 
 export default Context;
