@@ -1,7 +1,7 @@
 import { CartState } from "../$-context/Context";
 import image from "../images/bakery/pancakes.jpg";
 
-const CardsProducts = ({ cards }) => {
+const SingleProduct = ({ cards }) => {
   const {
     state: {cart},
     dispatch,
@@ -13,8 +13,8 @@ const CardsProducts = ({ cards }) => {
     <div className="w-100">
       <div className="w-100 d-flex flex-wrap">
         {cards.map((card) => (
-          <div className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post">
-            <div class="card bg-cream border-0 w-100" key={card.id}>
+          <div className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post" key={card.id}>
+            <div class="card bg-cream border-0 w-100" >
               <img
                 src={image}
                 class="card-img-top w-100 imgWidth"
@@ -62,4 +62,4 @@ const CardsProducts = ({ cards }) => {
   );
 };
 
-export default CardsProducts;
+export default SingleProduct;

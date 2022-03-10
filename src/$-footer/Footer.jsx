@@ -70,12 +70,12 @@ const Footer = () => {
 
               <ul class="list-unstyled">
                 <li>
-                  <Link
+                  <a
                     className="orange-dark-font text-decoration-none font-bitter"
-                    href="#start" to="/"
+                    href="#start"
                   >
                     Inicio
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <Link
