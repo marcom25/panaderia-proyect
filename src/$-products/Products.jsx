@@ -17,12 +17,7 @@ const Products = () => {
 
   const [loading, setLoading] = useState(false);
 
-<<<<<<< HEAD
   const [products, setProducts] = useState([]);
-=======
-  const [products, setProducts] = useState([].splice(0, 12));
-  
->>>>>>> master
 
   const [sortedProducts, setSortedProducts] = useState([]);
   // const [cards, setProducts] = useState();
