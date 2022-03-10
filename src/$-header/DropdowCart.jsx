@@ -45,6 +45,7 @@ export const DropdownCart = () => {
                   <span>$ {Number(prod.price)}</span>
                 </div>
                 <AiFillDelete
+                  className="deleteIcon brown-font"
                   fontSize="20px"
                   style={{ cursor: "pointer" }}
                   onClick={() =>
