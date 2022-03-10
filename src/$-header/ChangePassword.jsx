@@ -1,9 +1,20 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 const ChangePassword = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmedPassword, setConfirmedPassword] = useState("");
+
+  const emailText = useRef(null);
+  const passwordText = useRef(null);
+
+  const incorrectEmail = () => {
+    emailText.current.className = 'd-block white-font bg-brown invalid-text';   
+  }
+
+  const showDifferentPasswords = () => {
+    passwordText.current.className = 'd-block white-font bg-brown invalid-text';
+  }
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -11,7 +22,7 @@ const ChangePassword = () => {
     if (password === confirmedPassword) {
       try {
         const res = await fetch("http://localhost:8080/changePassword", {
-          method: "PATCH",
+          method: "PUT",
           body: JSON.stringify({ email, password, confirmedPassword }),
           headers: {
             "Content-Type": "application/json",
@@ -22,13 +33,16 @@ const ChangePassword = () => {
 
         const data = await res.json();
         console.log(data);
+
+        if (!data.registeredMail) {
+          incorrectEmail();
+        } else window.location.assign("/login");
+
       } catch (error) {
         console.log(error);
       }
-    }
+    }else showDifferentPasswords();
 
-
-    
   };
 
   return (
@@ -37,10 +51,12 @@ const ChangePassword = () => {
         <div style={{ marginTop: "12vh", paddingBottom: "12vh" }}>
           <div class="row card contenido">
             <div className="col card-body bg-cream caja p-0">
-              <h1 className="text-center card-title bg-cream  font-poppins pt-5 titulo ">
+              <h1 className="text-center card-title bg-cream font-poppins pt-5 titulo ">
                 Cambiar contraseña
               </h1>
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
+              <p ref={emailText} className="white-font bg-brown d-none">Email incorrecto. Por favor, ingrese un email registrado.</p>
+              <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
                 <div class="question">
                   <input
                     type="text"
