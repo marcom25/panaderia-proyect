@@ -2,6 +2,7 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import { CartState } from "../$-context/Context";
 import { Link } from "react-router-dom";
+import image from "../images/bakery/pancakes.jpg";
 
 
 export const DropdownCart = () => {
@@ -11,6 +12,7 @@ export const DropdownCart = () => {
   } = CartState();
 
   console.log(cart.length)
+  console.log('cart en single:', cart);
   return (
     <>
       <button
@@ -37,12 +39,13 @@ export const DropdownCart = () => {
           <>
             {cart.map((prod) => (
               <span className="cartitem" key={prod.id}>
-                <img src={prod.image} className="cartItemImg" alt={prod.name} />
+                <img src={image} className="cartItemImg" alt={prod.name} />
                 <div className="cartItemDetail font-poppins">
-                  <span>{prod.title}</span>
+                  <span>{prod.name}</span>
                   <span>$ {Number(prod.price)}</span>
                 </div>
                 <AiFillDelete
+                  className="deleteIcon brown-font"
                   fontSize="20px"
                   style={{ cursor: "pointer" }}
                   onClick={() =>

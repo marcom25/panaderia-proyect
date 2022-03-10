@@ -1,13 +1,27 @@
 import { useRef, useEffect, useState } from "react";
+import { CartState } from "../$-context/Context";
 import { Link } from "react-router-dom";
 
 const LoginForm = () => {
+
+  const {
+    userDispatch,
+  } = CartState();
+
+
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  
+  const showText = useRef(null);
 
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log(email, password);
+
+
+    const showInvalidText = () => {
+      showText.current.className = 'd-block white-font bg-brown invalid-text';
+    }
 
     try {
       const res = await fetch("http://localhost:8080/login", {
@@ -24,11 +38,15 @@ const LoginForm = () => {
       console.log(data);
       if (data.isUser === true) {
         console.log("true");
-        // window.location.assign("/ ");
-      } else {
-        console.log("false");
-        // window.location.assign("/login");
-      }
+        userDispatch({
+          type: "UPDATE_USER",
+          payload: data.user
+        })
+        window.location.assign("/");
+       
+      
+      } else showInvalidText();
+    
       
     } catch (error) {
       console.log(error);
@@ -45,6 +63,7 @@ const LoginForm = () => {
                 Iniciar Sesion
               </h1>
               <form className="mt-5 bg-cream" onSubmit={submitHandler}>
+                <p ref={showText}  className="d-none">Usuario y/o contraseña incorrectos.</p>
                 <div class="question">
                   <input
                     type="text"

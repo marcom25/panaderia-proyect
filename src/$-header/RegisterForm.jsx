@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef } from "react";
 
 
 const RegisterForm = () => {
@@ -6,6 +6,17 @@ const RegisterForm = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [newPassword, setNewPassword] = useState("");
+  
+  const userText = useRef(null);
+  const passwordText = useRef(null);
+
+  const showUsedText = () => {
+    userText.current.className = 'd-block white-font bg-brown invalid-text';
+  }
+
+  const showDifferentPasswords = () => {
+    passwordText.current.className = 'd-block white-font bg-brown invalid-text';
+  }
 
   const submitHandler = async (e) => {
     e.preventDefault();
@@ -25,11 +36,16 @@ const RegisterForm = () => {
   
         const data = await res.json();
         console.log(data);
+        if (data.isAlreadyUsed) {
+          showUsedText();
+        }
 
-
+      
       } catch (error) {
         console.log(error);
       }
+    } else {
+      showDifferentPasswords();
     }
 
   };
@@ -44,6 +60,8 @@ const RegisterForm = () => {
                 Registrarme
               </h1>
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
+              <p ref={userText} className="white-font bg-brown d-none">Email y/o usuario en uso.</p>
+              <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
                 <div class="question">
                   <input
                     type="text"

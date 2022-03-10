@@ -55,3 +55,32 @@
 .linkButton{
     width: 90% !important;
 }
+
+.buttonPay:hover{
+  cursor: pointer;
+}
+
+.returnButton {
+  
+  background-color: rgb(77, 58, 64);
+  border: 2px solid #FFFEE3;
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #FFFEE3;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+.returnButton:hover,
+.returnButton:focus {
+  color: rgb(77, 58, 64);
+  border: 2px solid rgb(77, 58, 64) !important;
+  background-color: #FFFEE3 !important;
+  
+}
