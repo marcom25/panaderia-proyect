@@ -3,6 +3,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { CartState } from "../$-context/Context";
+import image from "../images/bakery/pancakes.jpg";
 
 export const CartPage = () => {
   const {
@@ -33,10 +34,10 @@ export const CartPage = () => {
                             <div className="col-12 p-0">
                                 <div className="row">
                                     <div className="col-4 ms-md-4 my-auto">
-                                        <img src={prod.image} alt="pancake" className="w-100" />
+                                        <img src={image} alt="pancake" className="w-100" />
                                     </div>
                                     <div className="col-4">
-                                        <h4>{prod.title}</h4>
+                                        <h4>{prod.name}</h4>
                                         <div className="d-flex">
                                             <div className="me-3">
                                                 <p><span className="fw-bold">Precio:</span> ${prod.price}</p>
