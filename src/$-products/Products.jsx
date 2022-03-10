@@ -24,6 +24,7 @@ const Products = () => {
   const [loading, setLoading] = useState(false);
 
   const [products, setProducts] = useState([].splice(0, 12));
+  
 
   // const [cards, setProducts] = useState();
 
