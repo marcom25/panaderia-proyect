@@ -5,7 +5,7 @@ import "../css/Colors.css";
 
 
 export const ButtonAllProducts = ({ buttons, filter }) => {
-  console.log('buttons:', buttons);
+  // console.log('buttons:', buttons);
   const {
     filterDispatch,
   } = CartState();
@@ -20,7 +20,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
               className="brown-font line-height-products d-block mb-1 container-category font-poppins"
               style={{cursor: "pointer"}}
               onClick={() => filterDispatch({
-                type: "SORT_ALL",
+                type: "SORT",
                 payload: cat
               })}
             >
@@ -45,7 +45,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
             <li
               key={i}
               onClick={() => filterDispatch({
-                type: "FILTER_BY_HOT_DRINKS",
+                type: "SORT",
                 payload: cat
               })}
               className="brown-font d-block container-category font-bitter"
@@ -76,7 +76,7 @@ export const ButtonBakery = ({ buttons, filter }) => {
             <li
               key={i}
               onClick={() => filterDispatch({
-                type: "FILTER_BY_BAKERY",
+                type: "SORT",
                 payload: cat
               })}
               className="brown-font d-block container-category font-bitter "

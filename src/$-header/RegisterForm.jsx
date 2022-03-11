@@ -38,7 +38,7 @@ const RegisterForm = () => {
         console.log(data);
         if (data.isAlreadyUsed) {
           showUsedText();
-        }
+        } else window.location.assign("/login");
 
       
       } catch (error) {

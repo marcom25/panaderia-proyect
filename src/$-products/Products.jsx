@@ -20,11 +20,13 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   const [sortedProducts, setSortedProducts] = useState([]);
-  // const [cards, setProducts] = useState();
+  
+  const cardsPerPage = 12;
 
   const {
-    filterState: { sort, byBakery, byHotDrinks },
+    filterState: { sort },
   } = CartState();
+
 
   useEffect(() => {
     // Refactor callback/promise hell for async/await
@@ -55,26 +57,14 @@ const Products = () => {
   }, []);
 
   console.log('sort:', sort);
-  console.log('byBakery:', byBakery);
-  console.log('byHotDrinks:', byHotDrinks);
   useEffect(() => {
-    if (sort) {
-      setSortedProducts(products.slice(0, 12));
-    }
+    if (sort == 'All') {
+      const firstProducts = products.slice(0, cardsPerPage);
+      setSortedProducts(firstProducts);
+    } else setSortedProducts(products.filter((item) => item.category === sort));
 
-    if (byBakery) {
-      setSortedProducts(products.filter((item) => item.category === byBakery));
-    }
+  }, [sort]); 
 
-    if (byHotDrinks) {
-      setSortedProducts(
-        products.filter((item) => item.category === byHotDrinks)
-      );
-    }
-  }, [sort, byBakery, byHotDrinks, products]);
-
-  console.log('PRODUCTS', products);
-  console.log('sortedProducts', sortedProducts);
   return (
     <>
       {!loading ? (
@@ -86,6 +76,7 @@ const Products = () => {
             >
               Productos
             </h3>
+
             {/* mobile button */}
             <div className="text-center">
               <div class="dropdown pt-2 pb-4 d-md-none">
@@ -112,6 +103,7 @@ const Products = () => {
               </div>
             </div>
             {/* mobile button ^ */}
+
             <div className="d-flex">
               <div
                 className="d-none d-md-block ps-4 pe-5"
