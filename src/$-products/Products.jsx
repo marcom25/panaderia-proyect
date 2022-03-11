@@ -20,11 +20,12 @@ const Products = () => {
   const [products, setProducts] = useState([]);
 
   const [sortedProducts, setSortedProducts] = useState([]);
-  // const [cards, setProducts] = useState();
+  
 
   const {
-    filterState: { sort, byBakery, byHotDrinks },
+    filterState: { sort },
   } = CartState();
+
 
   useEffect(() => {
     // Refactor callback/promise hell for async/await
@@ -55,26 +56,13 @@ const Products = () => {
   }, []);
 
   console.log('sort:', sort);
-  console.log('byBakery:', byBakery);
-  console.log('byHotDrinks:', byHotDrinks);
   useEffect(() => {
-    if (sort) {
-      setSortedProducts(products.slice(0, 12));
-    }
+    if (sort == 'All') {
+      setSortedProducts(products);
+    } else setSortedProducts(products.filter((item) => item.category === sort));
 
-    if (byBakery) {
-      setSortedProducts(products.filter((item) => item.category === byBakery));
-    }
+  }, [sort]); 
 
-    if (byHotDrinks) {
-      setSortedProducts(
-        products.filter((item) => item.category === byHotDrinks)
-      );
-    }
-  }, [sort, byBakery, byHotDrinks, products]);
-
-  console.log('PRODUCTS', products);
-  console.log('sortedProducts', sortedProducts);
   return (
     <>
       {!loading ? (
@@ -86,6 +74,7 @@ const Products = () => {
             >
               Productos
             </h3>
+
             {/* mobile button */}
             <div className="text-center">
               <div className="dropdown pt-2 pb-4 d-md-none">
@@ -112,7 +101,8 @@ const Products = () => {
               </div>
             </div>
             {/* mobile button ^ */}
-            <div className="d-flex">
+
+            <div className="d-flex" style={{height: '90vh', overflow: 'hidden'}}>
               <div
                 className="d-none d-md-block ps-4 pe-5"
                 style={{ width: 'min-content' }}
@@ -142,14 +132,14 @@ const Products = () => {
                   </ul>
                 </div>
               </div>
-              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
+              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100" style={{overflow: 'scroll'}}>
                 <CardsProducts
                   allCards={products}
                   filteredCards={sortedProducts}
                 />
               </div>
             </div>
-            {/* <ButtonsPagination products={products} /> */}
+            {/* <ButtonsPagination products={products} setProducts={setProducts} sortedProducts={sortedProducts} setSortedProducts={setSortedProducts}/> */}
           </div>
         </section>
       ) : (
