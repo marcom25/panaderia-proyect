@@ -97,17 +97,17 @@ const AboutUs = () => {
             <div>
               <div
                 id="carouselExampleCaptions"
-                class="carousel slide carousel-fade m-auto wow fadeIn"
+                className="carousel slide carousel-fade m-auto wow fadeIn"
                 data-bs-ride="carousel"
                 data-wow-delay="2s"
                 data-wow-duration="1s"
               >
-                <div class="carousel-indicators d-none">
+                <div className="carousel-indicators d-none">
                   <button
                     type="button"
                     data-bs-target="#carouselExampleCaptions"
                     data-bs-slide-to="0"
-                    class="active"
+                    className="active"
                     aria-current="true"
                     aria-label="Slide 1"
                   ></button>
@@ -124,26 +124,26 @@ const AboutUs = () => {
                     aria-label="Slide 3"
                   ></button>
                 </div>
-                <div class="carousel-inner pt-lg-4 pb-lg-5 mb-lg-5">
-                  <div class="carousel-item active" data-bs-interval="4000">
-                    <img src={brownie} class="d-block w-100 card" alt="..." />
-                    <div class="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
+                <div className="carousel-inner pt-lg-4 pb-lg-5 mb-lg-5">
+                  <div className="carousel-item active" data-bs-interval="4000">
+                    <img src={brownie} className="d-block w-100 card" alt="..." />
+                    <div className="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
                       <h1 className="fst-italic bg-brown carouselTitle">
                         Bakery shop
                       </h1>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="4000">
-                    <img src={pie} class="d-block w-100 card" alt="pie" />
-                    <div class="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
+                  <div className="carousel-item" data-bs-interval="4000">
+                    <img src={pie} className="d-block w-100 card" alt="pie" />
+                    <div className="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
                       <h1 className="fst-italic bg-brown carouselTitle">
                         Bakery shop
                       </h1>
                     </div>
                   </div>
-                  <div class="carousel-item" data-bs-interval="4000">
-                    <img src={cake} class="d-block w-100 card" alt="cake" />
-                    <div class="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
+                  <div className="carousel-item" data-bs-interval="4000">
+                    <img src={cake} className="d-block w-100 card" alt="cake" />
+                    <div className="carousel-caption carouselDivsTitle m-auto d-none d-md-block">
                       <h1 className="fst-italic bg-brown carouselTitle">
                         Bakery shop
                       </h1>
@@ -151,28 +151,28 @@ const AboutUs = () => {
                   </div>
                 </div>
                 <button
-                  class="carousel-control-prev d-none"
+                  className="carousel-control-prev d-none"
                   type="button"
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="prev"
                 >
                   <span
-                    class="carousel-control-prev-icon"
+                    className="carousel-control-prev-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Previous</span>
+                  <span className="visually-hidden">Previous</span>
                 </button>
                 <button
-                  class="carousel-control-next d-none"
+                  className="carousel-control-next d-none"
                   type="button"
                   data-bs-target="#carouselExampleCaptions"
                   data-bs-slide="next"
                 >
                   <span
-                    class="carousel-control-next-icon"
+                    className="carousel-control-next-icon"
                     aria-hidden="true"
                   ></span>
-                  <span class="visually-hidden">Next</span>
+                  <span className="visually-hidden">Next</span>
                 </button>
               </div>
             </div>

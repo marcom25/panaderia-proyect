@@ -17,7 +17,7 @@ export const DropdownCart = () => {
     <>
       <button
         type="button"
-        class="btn brown-font position-relative"
+        className="btn brown-font position-relative"
         id="dropdownMenuButton1"
         data-bs-toggle="dropdown"
         aria-expanded="false"
@@ -27,7 +27,7 @@ export const DropdownCart = () => {
           style={{ fontSize: "2rem", cursor: "pointer", padding: "0" }}
         />
 
-        <span class="carrito-badge position-absolute translate-middle badge rounded-pill ">{cart.length}</span>
+        <span className="carrito-badge position-absolute translate-middle badge rounded-pill ">{cart.length}</span>
       </button>
 
       <ul

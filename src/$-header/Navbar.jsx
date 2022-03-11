@@ -1,14 +1,14 @@
 // IMPORTS DE MODULOS
 import { DropdownCart } from "./DropdowCart";
-
-// IMPORTS DE IMAGENES
 import logo from "../images/logos/titulo-mas-cercano.svg";
 import { Link } from "react-router-dom";
-import { CartState } from "../$-context/Context";
+import Cookies from "universal-cookie";
+import { useEffect, useState } from "react";
 
 const Navbar = () => {
-  const { userState: {username}} = CartState();
+  const cookies = new Cookies();
 
+ 
   return (
     <nav
       id="start"
@@ -16,23 +16,28 @@ const Navbar = () => {
     >
       <div className="container-fluid p-0">
         <div className="login-width text-center">
-          {username ? (
+          {cookies.get('username') ? (
             <>
               <div
-                className="my-auto py-2 px-3 ms-md-3 font-poppins dropdown brown-font user-dropdown"
+                className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown "
                 id="dropdownMenuButton2"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {username}
+                {cookies.get('username').key}
               </div>
               <ul
-              className="dropdown-menu  bg-cream"
+              className="dropdown-menu bg-pink dd-body text-center"
               aria-labelledby="dropdownMenuButton2"
               >
                 <li
                   className="px-3 font-poppins logout"
-                  
+                  onClick={() => {
+                    console.log('hice click')
+                    cookies.remove('username', {maxAge: 1})
+                    document.location.reload()
+                  }
+                  }
                 >
                   Cerrar Sesion
                 </li>

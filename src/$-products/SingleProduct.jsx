@@ -1,5 +1,5 @@
-import image from '../images/bakery/pancakes.jpg';
-import { CartState } from '../$-context/Context';
+import image from "../images/bakery/pancakes.jpg";
+import { CartState } from "../$-context/Context";
 
 const SingleProduct = ({ card }) => {
   const { dispatch } = CartState();
@@ -8,19 +8,19 @@ const SingleProduct = ({ card }) => {
       className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post"
       key={card.id}
     >
-      <div class="card bg-cream border-0 w-100">
+      <div className="card bg-cream border-0 w-100">
         <img
           src={image}
-          class="card-img-top w-100 imgWidth"
+          className="card-img-top w-100 imgWidth"
           alt={card.category}
         />
         <div className="capaPadre">
           <div>
             <button
-              class="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
+              className="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
               onClick={() =>
                 dispatch({
-                  type: 'ADD_TO_CART',
+                  type: "ADD_TO_CART",
                   payload: card,
                 })
               }
@@ -29,8 +29,8 @@ const SingleProduct = ({ card }) => {
             </button>
           </div>
         </div>
-        <div class="card-body bg-cream p-0 d-flex justify-content-between">
-          <h5 class="card-title brown-font font-poppins">{card.name}</h5>
+        <div className="card-body bg-cream p-0 d-flex justify-content-between">
+          <h5 className="card-title brown-font font-poppins">{card.name}</h5>
           <p className="brown-font font-weight-700 font-poppins">
             $ {card.price}
           </p>
@@ -40,7 +40,7 @@ const SingleProduct = ({ card }) => {
             className="btn cardsButton bg-brown white-font font-poppins"
             onClick={() =>
               dispatch({
-                type: 'ADD_TO_CART',
+                type: "ADD_TO_CART",
                 payload: card,
               })
             }

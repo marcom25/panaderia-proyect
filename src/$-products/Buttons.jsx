@@ -3,26 +3,25 @@ import { useState } from "react";
 import { CartState } from "../$-context/Context";
 import "../css/Colors.css";
 
-
 export const ButtonAllProducts = ({ buttons, filter }) => {
-  console.log('buttons:', buttons);
-  const {
-    filterDispatch,
-  } = CartState();
+  console.log("buttons:", buttons);
+  const { filterDispatch } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
         if (cat === "All") {
-          console.log('cat:', cat)
+          console.log("cat:", cat);
           return (
             <li
               key={i}
               className="brown-font line-height-products d-block mb-1 container-category font-poppins"
-              style={{cursor: "pointer"}}
-              onClick={() => filterDispatch({
-                type: "SORT_ALL",
-                payload: cat
-              })}
+              style={{ cursor: "pointer" }}
+              onClick={() =>
+                filterDispatch({
+                  type: "SORT_ALL",
+                  payload: cat,
+                })
+              }
             >
               Todos los productos
             </li>
@@ -34,9 +33,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
 };
 
 export const ButtonHotDrinks = ({ buttons, filter }) => {
-  const {
-    filterDispatch,
-  } = CartState();
+  const { filterDispatch } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
@@ -44,10 +41,12 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
           return (
             <li
               key={i}
-              onClick={() => filterDispatch({
-                type: "FILTER_BY_HOT_DRINKS",
-                payload: cat
-              })}
+              onClick={() =>
+                filterDispatch({
+                  type: "FILTER_BY_HOT_DRINKS",
+                  payload: cat,
+                })
+              }
               className="brown-font d-block container-category font-bitter"
             >
               {cat}
@@ -60,9 +59,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
 };
 
 export const ButtonBakery = ({ buttons, filter }) => {
-  const {
-    filterDispatch,
-  } = CartState();
+  const { filterDispatch } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
@@ -75,10 +72,12 @@ export const ButtonBakery = ({ buttons, filter }) => {
           return (
             <li
               key={i}
-              onClick={() => filterDispatch({
-                type: "FILTER_BY_BAKERY",
-                payload: cat
-              })}
+              onClick={() =>
+                filterDispatch({
+                  type: "FILTER_BY_BAKERY",
+                  payload: cat,
+                })
+              }
               className="brown-font d-block container-category font-bitter "
             >
               {cat}
@@ -90,19 +89,15 @@ export const ButtonBakery = ({ buttons, filter }) => {
   );
 };
 
-export const ButtonsPagination = ({products}) => {
-  
-
+export const ButtonsPagination = ({ products }) => {
   const cardsPerPage = 12;
   const allCategories = [
     "All",
     ...new Set(products.map((item) => item.category)),
   ];
- 
+
   const [currentPage, setCurrentPage] = useState(0);
   const [cards, setCards] = useState(products.splice(0, cardsPerPage));
-  
-
 
   const totalCards = products.length;
 
@@ -124,15 +119,13 @@ export const ButtonsPagination = ({products}) => {
     setCurrentPage(prevPage);
   };
 
-
-
   return (
     <div className="text-center p-2">
       <div aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
+        <ul className="pagination justify-content-center">
+          <li className="page-item">
             <a
-              class="page-link bg-brown cream-font font-poppins rounded-3"
+              className="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Previous"
             >
@@ -141,9 +134,9 @@ export const ButtonsPagination = ({products}) => {
               </span>
             </a>
           </li>
-          <li class="page-item">
+          <li className="page-item">
             <a
-              class="page-link bg-brown cream-font font-poppins rounded-3"
+              className="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Next"
             >

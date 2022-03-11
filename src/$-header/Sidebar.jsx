@@ -28,7 +28,7 @@ const Sidebar = () => {
           <button className="navbar-toggler border-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
             <h2 ><AiOutlineMenu className="brown-font"/></h2>
           </button>
-          <div  className="offcanvas offcanvas-start bg-pink" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{width: 'max-content'}}>
+          <div  className="offcanvas offcanvas-start bg-pink" tabIndex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel" style={{width: 'max-content'}}>
             <div className="offcanvas-header">
               <button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
             </div>
@@ -43,8 +43,8 @@ const Sidebar = () => {
                 <li className="nav-item bg-brown-hover">
                   <Link className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" to="/nosotros"> <IoIosPeople style={{fontSize: '1.6rem', paddingRight: '4px'}}/> Nosotros</Link>
                 </li>
-                <li class="nav-item bg-brown-hover">
-                  <a class="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href="#contacto"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
+                <li className="nav-item bg-brown-hover">
+                  <a className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins" href="#contacto"><SiGooglemessages style={{fontSize: '1.6rem', paddingRight: '6px'}}/> Contactanos</a>
                 </li>
                 
               </ul>

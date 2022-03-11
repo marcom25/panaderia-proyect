@@ -47,9 +47,9 @@ const ChangePassword = () => {
 
   return (
     <>
-      <div class="container">
+      <div className="container">
         <div style={{ marginTop: "12vh", paddingBottom: "12vh" }}>
-          <div class="row card contenido">
+          <div className="row card contenido">
             <div className="col card-body bg-cream caja p-0">
               <h1 className="text-center card-title bg-cream font-poppins pt-5 titulo ">
                 Cambiar contraseña
@@ -57,7 +57,7 @@ const ChangePassword = () => {
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
               <p ref={emailText} className="white-font bg-brown d-none">Email incorrecto. Por favor, ingrese un email registrado.</p>
               <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
-                <div class="question">
+                <div className="question">
                   <input
                     type="text"
                     className="p-2"
@@ -67,7 +67,7 @@ const ChangePassword = () => {
                   />
                   <label className="font-poppins">Usuario o email</label>
                 </div>
-                <div class="question">
+                <div className="question">
                   <input
                     type="password"
                     className="p-2"
@@ -77,7 +77,7 @@ const ChangePassword = () => {
                   />
                   <label className="font-poppins">Contraseña nueva</label>
                 </div>
-                <div class="question">
+                <div className="question">
                   <input
                     type="password"
                     className="p-2"
