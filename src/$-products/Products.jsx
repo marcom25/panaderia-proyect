@@ -1,6 +1,6 @@
 // IMPORTS DE MODULOS
-import React, { useEffect, useState } from "react";
-import { CartState } from "../$-context/Context";
+import React, { useEffect, useState } from 'react';
+import { CartState } from '../$-context/Context';
 
 // IMPORTS DE COMPONENTES
 
@@ -9,23 +9,17 @@ import {
   ButtonBakery,
   ButtonHotDrinks,
   ButtonsPagination,
-} from "./Buttons";
-import SingleProduct from "./SingleProduct";
+} from './Buttons';
+import CardsProducts from './CardsProducts';
 
 const Products = () => {
-  const renderManager = 0;
-  
-  let sortedProducts = [];
-
-  const cardsPerPage = 12;
-
   const [allCategories, setAllCategories] = useState([]);
 
   const [loading, setLoading] = useState(false);
 
-  const [products, setProducts] = useState([].splice(0, 12));
-  
+  const [products, setProducts] = useState([]);
 
+  const [sortedProducts, setSortedProducts] = useState([]);
   // const [cards, setProducts] = useState();
 
   const {
@@ -33,60 +27,58 @@ const Products = () => {
   } = CartState();
 
   useEffect(() => {
-    fetch("http://localhost:8080/products", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-        "Acces-Control-Allow_Origin": "localhost:3000",
-      },
-      mode: "cors",
-    })
-      .then((res) => res.json())
-      .then((res) => {
-        setProducts(res.data);
-        console.log('Aca me estoy trayendo el primer producto:', res.data[0]);
-        setAllCategories([
-          "All",
-          ...new Set(res.data.map((item) => item.category)),
-        ]);
+    // Refactor callback/promise hell for async/await
+    const fetchProducts = async () => {
+      try {
         setLoading(true);
-
-        return(()=> {
-          setLoading(false)
-        })
-      })
-      .catch((error) => console.log(error));
-  }, [renderManager]);
+        const res = await fetch('http://localhost:8080/products', {
+          method: 'GET',
+          headers: {
+            'Content-Type': 'application/json',
+            'Acces-Control-Allow_Origin': 'localhost:3000',
+          },
+          mode: 'cors',
+        });
+        const { data } = await res.json();
+        console.log('DATA', data);
+        setProducts(data);
+        setAllCategories([
+          'All',
+          ...new Set(data.map((item) => item.category)),
+        ]);
+        setLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    fetchProducts();
+  }, []);
 
   console.log('sort:', sort);
   console.log('byBakery:', byBakery);
   console.log('byHotDrinks:', byHotDrinks);
-  if (sort) {
-    sortedProducts = products.splice(0, 12);
-    setProducts(sortedProducts);
-  }
+  useEffect(() => {
+    if (sort) {
+      setSortedProducts(products.slice(0, 12));
+    }
 
-  if (byBakery) {
-    sortedProducts = products.filter(
-      (item) => item.category === byBakery
-    );
+    if (byBakery) {
+      setSortedProducts(products.filter((item) => item.category === byBakery));
+    }
 
-    setProducts(sortedProducts);
-  }
+    if (byHotDrinks) {
+      setSortedProducts(
+        products.filter((item) => item.category === byHotDrinks)
+      );
+    }
+  }, [sort, byBakery, byHotDrinks, products]);
 
-  if (byHotDrinks) {
-    sortedProducts = products.filter(
-      (item) => item.category === byHotDrinks
-    )
-    setProducts(sortedProducts);
-  }
-
-  
-
+  console.log('PRODUCTS', products);
+  console.log('sortedProducts', sortedProducts);
   return (
     <>
-      {loading ? (
-        <section className="container-xs bg-cream" style={{ padding: "0" }}>
+      {!loading ? (
+        <section className="container-xs bg-cream" style={{ padding: '0' }}>
           <div className="container-xs bg-cream pt-2 pb-5">
             <h3
               className="py-4 text-center brown-font font-poppins fw-bold"
@@ -123,14 +115,14 @@ const Products = () => {
             <div className="d-flex">
               <div
                 className="d-none d-md-block ps-4 pe-5"
-                style={{ width: "min-content" }}
+                style={{ width: 'min-content' }}
               >
                 <ButtonAllProducts buttons={allCategories} />
                 <hr className="m-0" />
                 <div className="filters">
                   <h5
                     className="brown-font mb-1 font-poppins fw-bold"
-                    style={{ fontSize: "1.1rem" }}
+                    style={{ fontSize: '1.1rem' }}
                   >
                     Pastelería
                   </h5>
@@ -141,7 +133,7 @@ const Products = () => {
                 <div>
                   <h5
                     className="line-height-products mb-1 font-poppins fw-bold "
-                    style={{ fontSize: "1.1rem" }}
+                    style={{ fontSize: '1.1rem' }}
                   >
                     Bebidas calientes
                   </h5>
@@ -151,7 +143,10 @@ const Products = () => {
                 </div>
               </div>
               <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
-                <SingleProduct cards={products} />
+                <CardsProducts
+                  allCards={products}
+                  filteredCards={sortedProducts}
+                />
               </div>
             </div>
             {/* <ButtonsPagination products={products} /> */}

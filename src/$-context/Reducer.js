@@ -1,17 +1,16 @@
 
 
 export const cartReducer = (state, action) => {
-  console.log(state);
   switch (action.type) {
-    case "ADD_TO_CART":
+    case 'ADD_TO_CART':
       return { ...state, cart: [...state.cart, { ...action.payload, qty: 1 }] };
 
-    case "REMOVE_FROM_CART":
+    case 'REMOVE_FROM_CART':
       return {
         ...state,
         cart: state.cart.filter((i) => i.id !== action.payload.id),
       };
-    case "CHANGE_CART_QTY":
+    case 'CHANGE_CART_QTY':
       return {
         ...state,
         cart: state.cart.filter((i) =>
@@ -23,19 +22,15 @@ export const cartReducer = (state, action) => {
   }
 };
 
-
 export const filterReducer = (state, action) => {
   switch (action.type) {
-    case "SORT_ALL":
-      console.log(state);
+    case 'SORT_ALL':
       return { ...state, sort: action.payload };
-    case "FILTER_BY_BAKERY":
-      console.log(state);
+    case 'FILTER_BY_BAKERY':
       return { ...state, byBakery: action.payload };
-    case "FILTER_BY_HOT_DRINKS":
-      console.log(state);
+    case 'FILTER_BY_HOT_DRINKS':
       return { ...state, byHotDrinks: action.payload };
-  
+
     default:
       return state;
   }
