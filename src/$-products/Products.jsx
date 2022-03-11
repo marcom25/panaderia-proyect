@@ -21,7 +21,6 @@ const Products = () => {
 
   const [sortedProducts, setSortedProducts] = useState([]);
   
-  const cardsPerPage = 12;
 
   const {
     filterState: { sort },
@@ -59,8 +58,7 @@ const Products = () => {
   console.log('sort:', sort);
   useEffect(() => {
     if (sort == 'All') {
-      const firstProducts = products.slice(0, cardsPerPage);
-      setSortedProducts(firstProducts);
+      setSortedProducts(products);
     } else setSortedProducts(products.filter((item) => item.category === sort));
 
   }, [sort]); 
@@ -104,7 +102,7 @@ const Products = () => {
             </div>
             {/* mobile button ^ */}
 
-            <div className="d-flex">
+            <div className="d-flex" style={{height: '90vh', overflow: 'hidden'}}>
               <div
                 className="d-none d-md-block ps-4 pe-5"
                 style={{ width: 'min-content' }}
@@ -134,14 +132,14 @@ const Products = () => {
                   </ul>
                 </div>
               </div>
-              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100">
+              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100" style={{overflow: 'scroll'}}>
                 <CardsProducts
                   allCards={products}
                   filteredCards={sortedProducts}
                 />
               </div>
             </div>
-            {/* <ButtonsPagination products={products} /> */}
+            {/* <ButtonsPagination products={products} setProducts={setProducts} sortedProducts={sortedProducts} setSortedProducts={setSortedProducts}/> */}
           </div>
         </section>
       ) : (

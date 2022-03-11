@@ -90,20 +90,13 @@ export const ButtonBakery = ({ buttons, filter }) => {
   );
 };
 
-export const ButtonsPagination = ({products}) => {
+export const ButtonsPagination = ({products, sortedProducts, setSortedProducts}) => {
   
 
   const cardsPerPage = 12;
-  const allCategories = [
-    "All",
-    ...new Set(products.map((item) => item.category)),
-  ];
- 
+
   const [currentPage, setCurrentPage] = useState(0);
-  const [cards, setCards] = useState(products.splice(0, cardsPerPage));
-  
-
-
+ 
   const totalCards = products.length;
 
   const nextHandler = () => {
@@ -111,7 +104,7 @@ export const ButtonsPagination = ({products}) => {
     const firstNextIndex = nextPage * cardsPerPage;
     if (firstNextIndex === totalCards) return;
 
-    setCards(products.splice(firstNextIndex, cardsPerPage));
+    setSortedProducts(products.splice(firstNextIndex, cardsPerPage));
     setCurrentPage(nextPage);
   };
 
@@ -120,7 +113,7 @@ export const ButtonsPagination = ({products}) => {
     const firstPrevIndex = prevPage * cardsPerPage;
     if (firstPrevIndex < 0) return;
 
-    setCards(products.splice(firstPrevIndex, cardsPerPage));
+    setSortedProducts(products.splice(firstPrevIndex, cardsPerPage));
     setCurrentPage(prevPage);
   };
 
