@@ -1,5 +1,4 @@
-import image from "../images/bakery/pancakes.jpg";
-import { CartState } from "../$-context/Context";
+import { CartState } from '../$-context/Context';
 
 const SingleProduct = ({ card }) => {
   const { dispatch } = CartState();
@@ -10,8 +9,8 @@ const SingleProduct = ({ card }) => {
     >
       <div className="card bg-cream border-0 w-100">
         <img
-          src={image}
-          className="card-img-top w-100 imgWidth"
+          src={card.image}
+          class="card-img-top w-100 imgWidth img-fluid"
           alt={card.category}
         />
         <div className="capaPadre">
@@ -29,13 +28,14 @@ const SingleProduct = ({ card }) => {
             </button>
           </div>
         </div>
-        <div className="card-body bg-cream p-0 d-flex justify-content-between">
-          <h5 className="card-title brown-font font-poppins">{card.name}</h5>
+      </div>
+      <div class="card-body bg-cream p-0 d-flex justify-content-between">
+          <h5 class="card-title brown-font font-poppins">{card.name}</h5>
           <p className="brown-font font-weight-700 font-poppins">
             $ {card.price}
           </p>
-        </div>
-        <div className="m-auto d-lg-none">
+      </div>
+      <div className="text-center d-lg-none">
           <button
             className="btn cardsButton bg-brown white-font font-poppins"
             onClick={() =>
@@ -47,7 +47,6 @@ const SingleProduct = ({ card }) => {
           >
             +Añadir al Carrito
           </button>
-        </div>
       </div>
     </div>
   );

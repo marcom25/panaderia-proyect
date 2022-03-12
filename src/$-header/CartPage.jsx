@@ -37,7 +37,7 @@ export const CartPage = () => {
           <RiShoppingBag2Line style={{ paddingBottom: "0.1rem" }} /> Mi carrito
         </h2>
         <hr className="w-100 mt-3" />
-        <div className="d-lg-flex justify-content-end">
+        <div className="d-lg-flex justify-content-center">
           <div className="row">
             <div className="col-12 p-0">
               <div className="row">
@@ -47,7 +47,7 @@ export const CartPage = () => {
                       <div className="col-12 p-0">
                         <div className="row">
                           <div className="col-4 ms-md-4 my-auto">
-                            <img src={image} alt="pancake" className="w-100" />
+                            <img src={prod.image} alt="pancake" className="w-100" />
                           </div>
                           <div className="col-4">
                             <h4>{prod.name}</h4>

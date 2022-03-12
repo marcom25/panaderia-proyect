@@ -18,7 +18,7 @@ const Products = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([].slice(0, 12));
 
   const [sortedProducts, setSortedProducts] = useState([]);
   
@@ -89,7 +89,7 @@ const Products = () => {
                   Todas las categorias
                 </button>
                 <ul
-                  className="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold "
+                  className="dropdown-menu bg-cream brown-font text-center ms-04rem fw-bold"
                   aria-labelledby="dropdownMenu2"
                 >
                   <ButtonAllProducts
@@ -140,7 +140,6 @@ const Products = () => {
                 />
               </div>
             </div>
-            {/* <ButtonsPagination products={products} setProducts={setProducts} sortedProducts={sortedProducts} setSortedProducts={setSortedProducts}/> */}
           </div>
         </section>
       ) : (

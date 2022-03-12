@@ -39,7 +39,7 @@ export const DropdownCart = () => {
           <>
             {cart.map((prod) => (
               <span className="cartitem" key={prod.id}>
-                <img src={image} className="cartItemImg" alt={prod.name} />
+                <img src={prod.image} className="cartItemImg" alt={prod.name} />
                 <div className="cartItemDetail font-poppins">
                   <span>{prod.name}</span>
                   <span>$ {Number(prod.price)}</span>
