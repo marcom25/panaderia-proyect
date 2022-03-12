@@ -11,6 +11,7 @@ import {
   ButtonsPagination,
 } from './Buttons';
 import CardsProducts from './CardsProducts';
+import Loader from '../utils/Loader';
 
 const Products = () => {
   const [allCategories, setAllCategories] = useState([]);
@@ -32,7 +33,7 @@ const Products = () => {
     const fetchProducts = async () => {
       try {
         setLoading(true);
-        const res = await fetch('http://localhost:8080/products', {
+        const res = await fetch('https://panaderia-api.herokuapp.com/products', {
           method: 'GET',
           headers: {
             'Content-Type': 'application/json',
@@ -88,7 +89,7 @@ const Products = () => {
                   Todas las categorias
                 </button>
                 <ul
-                  className="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold"
+                  className="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold "
                   aria-labelledby="dropdownMenu2"
                 >
                   <ButtonAllProducts
@@ -143,7 +144,7 @@ const Products = () => {
           </div>
         </section>
       ) : (
-        <div className="bg-cream">Loading...</div>
+        <Loader/>
       )}
     </>
   );

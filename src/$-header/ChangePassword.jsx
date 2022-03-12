@@ -21,7 +21,7 @@ const ChangePassword = () => {
 
     if (password === confirmedPassword) {
       try {
-        const res = await fetch("http://localhost:8080/changePassword", {
+        const res = await fetch("https://panaderia-api.herokuapp.com/changePassword", {
           method: "PUT",
           body: JSON.stringify({ email, password, confirmedPassword }),
           headers: {
