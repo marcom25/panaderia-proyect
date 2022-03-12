@@ -17,7 +17,7 @@ const Products = () => {
 
   const [loading, setLoading] = useState(false);
 
-  const [products, setProducts] = useState([]);
+  const [products, setProducts] = useState([].slice(0, 12));
 
   const [sortedProducts, setSortedProducts] = useState([]);
   
@@ -139,7 +139,6 @@ const Products = () => {
                 />
               </div>
             </div>
-            {/* <ButtonsPagination products={products} setProducts={setProducts} sortedProducts={sortedProducts} setSortedProducts={setSortedProducts}/> */}
           </div>
         </section>
       ) : (

@@ -78,7 +78,7 @@
     
     .capaPadre {
         width: 100%;
-        height: 250px;
+        height: 100%;
         text-align: center;
         position: absolute;
         background: rgba(255, 216, 201, 0.7) !important;
@@ -91,7 +91,7 @@
         -o-transition: all 250ms ease-out !important;
     }
     .margin-button {
-        margin-top: 188px !important;
+        margin-top: 94% !important;
     }
     
     .capaPadre:hover {
