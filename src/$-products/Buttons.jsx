@@ -3,7 +3,6 @@ import { useState } from "react";
 import { CartState } from "../$-context/Context";
 import "../css/Colors.css";
 
-
 export const ButtonAllProducts = ({ buttons, filter }) => {
   // console.log('buttons:', buttons);
   const {
@@ -13,7 +12,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
     <div>
       {buttons.map((cat, i) => {
         if (cat === "All") {
-          console.log('cat:', cat)
+          console.log("cat:", cat);
           return (
             <li
               key={i}
@@ -34,9 +33,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
 };
 
 export const ButtonHotDrinks = ({ buttons, filter }) => {
-  const {
-    filterDispatch,
-  } = CartState();
+  const { filterDispatch } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
@@ -60,9 +57,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
 };
 
 export const ButtonBakery = ({ buttons, filter }) => {
-  const {
-    filterDispatch,
-  } = CartState();
+  const { filterDispatch } = CartState();
   return (
     <div>
       {buttons.map((cat, i) => {
@@ -117,15 +112,13 @@ export const ButtonsPagination = ({products, sortedProducts, setSortedProducts})
     setCurrentPage(prevPage);
   };
 
-
-
   return (
     <div className="text-center p-2">
       <div aria-label="Page navigation example">
-        <ul class="pagination justify-content-center">
-          <li class="page-item">
+        <ul className="pagination justify-content-center">
+          <li className="page-item">
             <a
-              class="page-link bg-brown cream-font font-poppins rounded-3"
+              className="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Previous"
             >
@@ -134,9 +127,9 @@ export const ButtonsPagination = ({products, sortedProducts, setSortedProducts})
               </span>
             </a>
           </li>
-          <li class="page-item">
+          <li className="page-item">
             <a
-              class="page-link bg-brown cream-font font-poppins rounded-3"
+              className="page-link bg-brown cream-font font-poppins rounded-3"
               href="#Handler"
               aria-label="Next"
             >

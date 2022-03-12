@@ -1,6 +1,9 @@
 import { useRef, useEffect, useState } from "react";
 import { CartState } from "../$-context/Context";
 import { Link } from "react-router-dom";
+import { msToDaysParser } from "../utils/msToDaysParser";
+import Cookies from "universal-cookie";
+
 
 const LoginForm = () => {
 
@@ -16,7 +19,8 @@ const LoginForm = () => {
 
   const submitHandler = async (e) => {
     e.preventDefault();
-    console.log(email, password);
+ 
+    const cookies = new Cookies();
 
 
     const showInvalidText = () => {
@@ -36,12 +40,9 @@ const LoginForm = () => {
 
       const data = await res.json();
       console.log(data);
+      
       if (data.isUser === true) {
-        console.log("true");
-        userDispatch({
-          type: "UPDATE_USER",
-          payload: data.user
-        })
+        cookies.set('username', {key: data.user}, {maxAge: msToDaysParser(5)} )
         window.location.assign("/");
        
       
@@ -55,16 +56,16 @@ const LoginForm = () => {
 
   return (
     <>
-      <div class="container" style={{ overflow: "hidden" }}>
+      <div className="container" style={{ overflow: "hidden" }}>
         <div style={{ marginTop: "12vh" }}>
-          <div class="row card contenido">
+          <div className="row card contenido">
             <div className="col card-body bg-cream caja p-0">
               <h1 className="text-center card-title bg-cream  font-poppins pt-5 titulo ">
                 Iniciar Sesion
               </h1>
               <form className="mt-5 bg-cream" onSubmit={submitHandler}>
                 <p ref={showText}  className="d-none">Usuario y/o contraseña incorrectos.</p>
-                <div class="question">
+                <div className="question">
                   <input
                     type="text"
                     className="p-2"
@@ -76,7 +77,7 @@ const LoginForm = () => {
                   <label className="font-poppins">Email</label>
                 </div>
 
-                <div class="question">
+                <div className="question">
                   <input
                     type="password"
                     className="p-2"

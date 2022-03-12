@@ -77,9 +77,9 @@ const Products = () => {
 
             {/* mobile button */}
             <div className="text-center">
-              <div class="dropdown pt-2 pb-4 d-md-none">
+              <div className="dropdown pt-2 pb-4 d-md-none">
                 <button
-                  class="btn bg-brown white-font dropdown-toggle font-poppins"
+                  className="btn bg-brown white-font dropdown-toggle font-poppins"
                   type="button"
                   id="dropdownMenu2"
                   data-bs-toggle="dropdown"
@@ -88,7 +88,7 @@ const Products = () => {
                   Todas las categorias
                 </button>
                 <ul
-                  class="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold"
+                  className="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold"
                   aria-labelledby="dropdownMenu2"
                 >
                   <ButtonAllProducts

@@ -52,9 +52,9 @@ const RegisterForm = () => {
 
   return (
     <>
-      <div class="container">
+      <div className="container">
         <div style={{ marginTop: "12vh", paddingBottom: "12vh" }}>
-          <div class="row card contenido">
+          <div className="row card contenido">
             <div className="col card-body bg-cream caja p-0">
               <h1 className="text-center card-title bg-cream  font-poppins pt-5 titulo ">
                 Registrarme
@@ -62,7 +62,7 @@ const RegisterForm = () => {
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
               <p ref={userText} className="white-font bg-brown d-none">Email y/o usuario en uso.</p>
               <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
-                <div class="question">
+                <div className="question">
                   <input
                     type="text"
                     className="p-2"
@@ -72,7 +72,7 @@ const RegisterForm = () => {
                   />
                   <label className="font-poppins">Usuario</label>
                 </div>
-                <div class="question">
+                <div className="question">
                   <input
                     type="email"
                     className="p-2"
@@ -82,7 +82,7 @@ const RegisterForm = () => {
                   />
                   <label className="font-poppins">Correo electronico</label>
                 </div>
-                <div class="question">
+                <div className="question">
                   <input
                     type="password"
                     className="p-2"
@@ -92,7 +92,7 @@ const RegisterForm = () => {
                   />
                   <label className="font-poppins">Contraseña</label>
                 </div>
-                <div class="question">
+                <div className="question">
                   <input
                     type="password"
                     className="p-2"

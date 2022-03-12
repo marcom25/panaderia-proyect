@@ -7,7 +7,7 @@ const SingleProduct = ({ card }) => {
       className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post"
       key={card.id}
     >
-      <div class="card bg-cream border-0 w-100">
+      <div className="card bg-cream border-0 w-100">
         <img
           src="https://i.ibb.co/DYj9nm4/chocolatada.jpg"
           class="card-img-top w-100 imgWidth img-fluid"
@@ -16,10 +16,10 @@ const SingleProduct = ({ card }) => {
         <div className="capaPadre">
           <div>
             <button
-              class="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
+              className="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
               onClick={() =>
                 dispatch({
-                  type: 'ADD_TO_CART',
+                  type: "ADD_TO_CART",
                   payload: card,
                 })
               }
@@ -40,7 +40,7 @@ const SingleProduct = ({ card }) => {
             className="btn cardsButton bg-brown white-font font-poppins"
             onClick={() =>
               dispatch({
-                type: 'ADD_TO_CART',
+                type: "ADD_TO_CART",
                 payload: card,
               })
             }

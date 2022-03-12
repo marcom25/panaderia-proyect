@@ -87,10 +87,44 @@
 
 .user-dropdown {
   cursor: pointer;
-  text-decoration: underline solid;
+ 
   font-size: 1.25rem;
+  background-color: rgb(77, 58, 64);
+  border: 2px solid rgb(255, 225, 215);
+  line-height: 0;
+  font-size: 17px;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  border-radius: 10px;
+  color: #FFFEE3;
+  font-weight: 100;
+  letter-spacing: 0.01em;
+  position: relative;
+  z-index: 1;
+}
+
+
+.user-dropdown:hover,
+.user-dropdown:focus {
+  color: rgb(77, 58, 64);
+  border: 2px solid rgb(77, 58, 64) !important;
+  background-color: #FFFEE3 !important;
+  
 }
 
 .logout {
   cursor: pointer;
 }
+
+.logout:hover{
+  background-color: rgb(77, 58, 64) !important;
+  border-radius: 5px;
+  color: #FFFEE3
+}
+
+.dd-body{
+  top: 80% !important;
+  left: 1.5% !important;
+}
+
