@@ -9,7 +9,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
     filterDispatch,
   } = CartState();
   return (
-    <div>
+    <ul className="p-md-0 mb-1">
       {buttons.map((cat, i) => {
         if (cat === "All") {
           console.log("cat:", cat);
@@ -28,14 +28,14 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
           );
         }
       })}
-    </div>
+    </ul>
   );
 };
 
 export const ButtonHotDrinks = ({ buttons, filter }) => {
   const { filterDispatch } = CartState();
   return (
-    <div>
+    <ul className="p-md-0">
       {buttons.map((cat, i) => {
         if (cat === "Café" || cat === "Té" || cat === "Chocolate") {
           return (
@@ -52,14 +52,14 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
           );
         }
       })}
-    </div>
+    </ul>
   );
 };
 
 export const ButtonBakery = ({ buttons, filter }) => {
   const { filterDispatch } = CartState();
   return (
-    <div>
+    <ul className="p-md-0">
       {buttons.map((cat, i) => {
         if (
           cat !== "Café" &&
@@ -81,7 +81,7 @@ export const ButtonBakery = ({ buttons, filter }) => {
           );
         }
       })}
-    </div>
+    </ul>
   );
 };
 

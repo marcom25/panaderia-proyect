@@ -9,7 +9,7 @@ const SingleProduct = ({ card }) => {
     >
       <div className="card bg-cream border-0 w-100">
         <img
-          src="https://i.ibb.co/DYj9nm4/chocolatada.jpg"
+          src={card.image}
           class="card-img-top w-100 imgWidth img-fluid"
           alt={card.category}
         />

@@ -88,7 +88,7 @@ const Products = () => {
                   Todas las categorias
                 </button>
                 <ul
-                  className="dropdown-menu bg-cream brown-font text-center ms-2 fw-bold"
+                  className="dropdown-menu bg-cream brown-font text-center ms-04rem fw-bold"
                   aria-labelledby="dropdownMenu2"
                 >
                   <ButtonAllProducts

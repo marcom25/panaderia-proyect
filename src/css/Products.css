@@ -28,7 +28,7 @@
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .cardsWidth {
-        width: 33% !important;
+        width: 50% !important;
     }
 }
 
@@ -43,13 +43,22 @@
 
 /* Filter */
 .container-category {
-    width: min-content !important;
+    width: 80%;
+}
+
+@media screen and (min-width: 768px) {
+    .container-category {
+        width: min-content !important;
+    }
 }
 
 .container-category:hover {
     color: rgb(39, 29, 32) !important;
     font-weight: 600 !important;
     cursor: pointer;
+}
+.ms-04rem {
+    margin-left: 0.4rem !important;
 }
 
 .item{
