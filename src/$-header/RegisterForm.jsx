@@ -13,12 +13,12 @@ const RegisterForm = () => {
   const successText = useRef(null);
 
   const showUsedText = () => {
-    userText.current.className = "d-block invalid-text";
-  };
+    userText.current.className = 'd-block invalid-text bg-brown white-font';
+  }
 
   const showDifferentPasswords = () => {
-    passwordText.current.className = "d-block invalid-text";
-  };
+    passwordText.current.className = 'd-block invalid-text bg-brown white-font';
+  }
 
   const showSuccessfulRegister = () => {
     successText.current.className = "d-block success-text";
