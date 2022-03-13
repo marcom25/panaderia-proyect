@@ -2,7 +2,6 @@ import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
 import { CartState } from "../$-context/Context";
 import { Link } from "react-router-dom";
-import image from "../images/bakery/pancakes.jpg";
 
 
 export const DropdownCart = () => {

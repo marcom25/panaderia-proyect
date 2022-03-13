@@ -213,7 +213,7 @@ const Footer = () => {
                     <p>
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="mailto:marcomignacco03@gmail.com?"
                         target="_blank"
                       >
                         Marco{" "}
@@ -221,7 +221,7 @@ const Footer = () => {
                       /
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
+                        href="mailto:sebaottok@gmail.com?"
                         target="_blank"
                       >
                         {" "}
