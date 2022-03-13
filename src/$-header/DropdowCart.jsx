@@ -10,8 +10,7 @@ export const DropdownCart = () => {
     dispatch,
   } = CartState();
 
-  console.log(cart.length)
-  console.log('cart en single:', cart);
+
   return (
     <>
       <button

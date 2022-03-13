@@ -12,7 +12,6 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
     <ul className="p-md-0 mb-1">
       {buttons.map((cat, i) => {
         if (cat === "All") {
-          console.log("cat:", cat);
           return (
             <li
               key={i}

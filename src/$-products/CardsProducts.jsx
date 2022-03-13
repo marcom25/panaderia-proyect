@@ -15,9 +15,8 @@ const CardsProducts = ({ allCards, filteredCards }) => {
     }
   };
 
-  console.log('cartState', cart);
   return (
-    <div className="w-100 pe-md-3">
+    <div className="w-100 pe-md-3" key={1}>
       <div className="w-100 d-flex flex-wrap">{renderedCards()}</div>
       {<div></div>}
     </div>

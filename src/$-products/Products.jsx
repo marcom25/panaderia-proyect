@@ -42,7 +42,6 @@ const Products = () => {
           mode: 'cors',
         });
         const { data } = await res.json();
-        console.log('DATA', data);
         setProducts(data);
         setAllCategories([
           'All',
@@ -56,7 +55,6 @@ const Products = () => {
     fetchProducts();
   }, []);
 
-  console.log('sort:', sort);
   useEffect(() => {
     if (sort == 'All') {
       setSortedProducts(products);

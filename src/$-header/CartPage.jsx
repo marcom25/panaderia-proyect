@@ -3,7 +3,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import { CartState } from "../$-context/Context";
-import image from "../images/bakery/pancakes.jpg";
+// import { cookies } from '../$-home/Home'
 
 export const CartPage = () => {
   const {
@@ -60,7 +60,7 @@ export const CartPage = () => {
                               </div>
                               <div className="ps-3">
                                 <select
-                                  class="form-select"
+                                  className="form-select"
                                   aria-label="Default select example"
                                   onChange={(e) =>
                                     dispatch({
@@ -124,9 +124,7 @@ export const CartPage = () => {
                 </div>
                 <div className="m-auto">
                   <div className="w-100">
-                    <button
-                      className="w-100 fs-5 returnButton font-poppins buttonPay"
-                      disabled={cart.length === 0}
+                    <button className="w-100 fs-5 returnButton font-poppins buttonPay" disabled={cart.length === 0}
                     >
                       Pagar
                     </button>

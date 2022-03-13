@@ -33,7 +33,6 @@ const LoginForm = () => {
       });
 
       const data = await res.json();
-      console.log(data);
 
       if (data.isUser === true) {
         cookies.set(
@@ -47,6 +46,8 @@ const LoginForm = () => {
     } catch (error) {
       console.log(error);
     }
+
+    
   };
 
   return (

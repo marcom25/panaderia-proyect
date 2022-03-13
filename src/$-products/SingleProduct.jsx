@@ -10,7 +10,7 @@ const SingleProduct = ({ card }) => {
       <div className="card bg-cream border-0 w-100">
         <img
           src={card.image}
-          class="card-img-top w-100 imgWidth img-fluid"
+          className="card-img-top w-100 imgWidth img-fluid"
           alt={card.category}
         />
         <div className="capaPadre">
@@ -29,8 +29,8 @@ const SingleProduct = ({ card }) => {
           </div>
         </div>
       </div>
-      <div class="card-body bg-cream p-0 d-flex justify-content-between">
-          <h5 class="card-title brown-font font-poppins">{card.name}</h5>
+      <div className="card-body bg-cream p-0 d-flex justify-content-between">
+          <h5 className="card-title brown-font font-poppins">{card.name}</h5>
           <p className="brown-font font-weight-700 font-poppins">
             $ {card.price}
           </p>
