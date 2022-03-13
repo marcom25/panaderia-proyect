@@ -133,7 +133,7 @@ const Products = () => {
                   </ul>
                 </div>
               </div>
-              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100" style={{overflow: 'scroll'}}>
+              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100 scrollbar" id="style-1" style={{overflow: 'scroll', overflowX: 'hidden'}}>
                 <CardsProducts
                   allCards={products}
                   filteredCards={sortedProducts}
