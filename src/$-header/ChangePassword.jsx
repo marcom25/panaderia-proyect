@@ -100,10 +100,6 @@ const ChangePassword = () => {
                   className="m-auto mt-4 mb-2"
                   style={{ width: "max-content" }}
                 >
-                  {/* <Link
-                    to="/login"
-                    className="font-poppins text-decoration-none white-font font-pink-hover"
-                  > */}
                   <button
                     className="d-block m-auto poppins text-decoration-none"
                     type="submit"

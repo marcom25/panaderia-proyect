@@ -12,9 +12,16 @@ import { SiGooglemessages } from "react-icons/si";
 
 // IMPORTANDO IMAGENES
 import logo from "../images/logos/titulo-mas-cercano.svg";
+import { CartState } from "../$-context/Context";
 
 const Sidebar = () => {
   const cookies = new Cookies();
+
+  const {
+    state: { cart },
+    
+  } = CartState();
+
 
   useEffect(() => {
     const wow = new WOW.WOW({});
@@ -154,6 +161,7 @@ const Sidebar = () => {
           <Link to="/cart" className="brown-font">
             <h1>
               <FaShoppingCart />
+              <span className="carrito-badge-sb position-absolute translate-middle badge rounded-pill ">{cart.length}</span>
             </h1>
           </Link>
         </div>
