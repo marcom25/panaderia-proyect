@@ -25,6 +25,20 @@ body {
   width: max-content !important;
 }
 
+.success-text {
+  width: max-content !important;
+  margin: auto !important;
+  margin-bottom: 1rem !important;
+  color: white;
+  background-color: rgb(39, 192, 39);
+  padding-left: 0.57rem !important;
+  padding-right: 0.57rem !important;
+  border-top-left-radius: 10px !important;
+  border-top-right-radius: 10px !important;
+  border-bottom-left-radius: 10px !important;
+  border-bottom-right-radius: 10px !important;
+}
+
 .caja{
   border-radius: 10px;
 }

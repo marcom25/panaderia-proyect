@@ -9,13 +9,18 @@ const RegisterForm = () => {
   
   const userText = useRef(null);
   const passwordText = useRef(null);
+  const successText = useRef(null);
 
   const showUsedText = () => {
-    userText.current.className = 'd-block white-font bg-brown invalid-text';
+    userText.current.className = 'd-block invalid-text';
   }
 
   const showDifferentPasswords = () => {
-    passwordText.current.className = 'd-block white-font bg-brown invalid-text';
+    passwordText.current.className = 'd-block invalid-text';
+  }
+
+  const showSuccessfulRegister = () => {
+    successText.current.className = 'd-block success-text'
   }
 
   const submitHandler = async (e) => {
@@ -38,7 +43,10 @@ const RegisterForm = () => {
         console.log(data);
         if (data.isAlreadyUsed) {
           showUsedText();
-        } else window.location.assign("/login");
+        } else{
+          showSuccessfulRegister();
+          window.location.assign("/login");
+        }
 
       
       } catch (error) {
@@ -60,8 +68,9 @@ const RegisterForm = () => {
                 Registrarme
               </h1>
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
-              <p ref={userText} className="white-font bg-brown d-none">Email y/o usuario en uso.</p>
-              <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
+              <p ref={successText} className="d-none">¡Registro exitoso!</p>
+              <p ref={userText} className="d-none">Email y/o usuario en uso.</p>
+              <p ref={passwordText} className="d-none">Las contraseñas deben ser idénticas.</p>
                 <div className="question">
                   <input
                     type="text"
