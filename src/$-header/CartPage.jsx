@@ -146,7 +146,7 @@ export const CartPage = () => {
                 </div>
                 <div className="m-auto">
                   <div className="w-100">
-                    <button className="w-100 fs-5 returnButton font-poppins buttonPay" disabled={cart.length === 0}
+                    <button className="w-100 fs-5 returnButton font-poppins buttonPay" onClick={handleCheckout} disabled={cart.length === 0}
                     >
                       Pagar
                     </button>
