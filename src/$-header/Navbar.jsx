@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 const Navbar = () => {
   const cookies = new Cookies();
 
- 
   return (
     <nav
       id="start"
@@ -16,28 +15,28 @@ const Navbar = () => {
     >
       <div className="container-fluid p-0">
         <div className="login-width text-center">
-          {cookies.get('username') ? (
+          {cookies.get("username") ? (
             <>
+              
               <div
-                className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown "
+                className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown d-flex justify-content-center"
                 id="dropdownMenuButton2"
                 data-bs-toggle="dropdown"
                 aria-expanded="false"
               >
-                {cookies.get('username').key}
+                {cookies.get("username").key}
               </div>
               <ul
-              className="dropdown-menu bg-pink dd-body text-center"
-              aria-labelledby="dropdownMenuButton2"
+                className="dropdown-menu bg-cream dd-body ms-md-3 text-center "
+                aria-labelledby="dropdownMenuButton2"
               >
                 <li
                   className="px-3 font-poppins logout"
                   onClick={() => {
-                    console.log('hice click')
-                    cookies.remove('username', {maxAge: 1})
-                    document.location.reload()
-                  }
-                  }
+                    console.log("hice click");
+                    cookies.remove("username", { maxAge: 1 });
+                    document.location.reload();
+                  }}
                 >
                   Cerrar Sesion
                 </li>

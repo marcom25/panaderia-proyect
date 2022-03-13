@@ -162,8 +162,8 @@ const Footer = () => {
                     <p>
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
-                        href="#!"
-                        target="_blank"
+                        href="https://www.linkedin.com/in/marco-mignacco-001547234/"
+                        target="_blank" rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
@@ -171,7 +171,7 @@ const Footer = () => {
                       <a
                         className="orange-dark-font text-decoration-none"
                         href="https://www.linkedin.com/in/sebasti%C3%A1n-ponce-4156a01a9/"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         {" "}
                         Sebastián
@@ -188,7 +188,7 @@ const Footer = () => {
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
                         href="https://github.com/marcom25"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
@@ -196,7 +196,7 @@ const Footer = () => {
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
                         href="https://github.com/sebaponce2"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         {" "}
                         Sebastián
@@ -239,7 +239,7 @@ const Footer = () => {
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
                         href="https://www.instagram.com/marco__m25/"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
@@ -247,7 +247,7 @@ const Footer = () => {
                       <a
                         className="orange-dark-font text-decoration-none font-bitter"
                         href="https://www.instagram.com/sebaponce__/"
-                        target="_blank"
+                        target="_blank" rel="noreferrer"
                       >
                         {" "}
                         Sebastián

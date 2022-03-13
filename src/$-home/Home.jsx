@@ -26,6 +26,7 @@ import "../css/Sidebar.css";
 import "../css/Card.css"
 import "../css/CartPage.css";
 import "../css/Footer.css";
+import "../css/Loader.css";
 
 // IMPORTS DE IMAGENES
 import image1 from "../images/bakery/prueba1.jpg";
