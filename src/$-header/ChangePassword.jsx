@@ -7,6 +7,7 @@ const ChangePassword = () => {
 
   const emailText = useRef(null);
   const passwordText = useRef(null);
+  const successText = useRef(null);
 
   const incorrectEmail = () => {
     emailText.current.className = 'd-block white-font bg-brown invalid-text';   
@@ -14,6 +15,10 @@ const ChangePassword = () => {
 
   const showDifferentPasswords = () => {
     passwordText.current.className = 'd-block white-font bg-brown invalid-text';
+  }
+
+  const showSuccessfulRegister = () => {
+    successText.current.className = 'd-block success-text'
   }
 
   const submitHandler = async (e) => {
@@ -36,7 +41,10 @@ const ChangePassword = () => {
 
         if (!data.registeredMail) {
           incorrectEmail();
-        } else window.location.assign("/login");
+        } else{
+          showSuccessfulRegister();
+          window.location.assign("/login");
+        } 
 
       } catch (error) {
         console.log(error);
@@ -55,6 +63,7 @@ const ChangePassword = () => {
                 Cambiar contraseña
               </h1>
               <form className="mt-4 bg-cream" onSubmit={submitHandler}>
+              <p ref={successText} className="d-none">¡Cambio de contraseña exitoso!</p>
               <p ref={emailText} className="white-font bg-brown d-none">Email incorrecto. Por favor, ingrese un email registrado.</p>
               <p ref={passwordText} className="white-font bg-brown d-none">Las contraseñas deben ser idénticas.</p>
                 <div className="question">
