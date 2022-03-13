@@ -135,7 +135,7 @@ const Home = () => {
             </div>
             <div className='row padding-collage bg-cream py-5'>
                 <h2 className="texto text-uppercase font-weight-1k text-center pt-5 pb-4 brown-font font-poppins wow slideInUp" data-wow-delay= '0.5s' data-wow-duration="1s">Nuestras delicias</h2>
-                <CollageImages/>
+                <CollageImages className='zoom'/>
             </div>
            
         </div>
