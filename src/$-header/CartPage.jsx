@@ -2,7 +2,9 @@ import { useEffect, useState } from "react";
 import { AiFillDelete } from "react-icons/ai";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
+import Cookies from "universal-cookie";
 import { CartState } from "../$-context/Context";
+import {useAlert} from "react-alert";
 // import { cookies } from '../$-home/Home'
 
 export const CartPage = () => {
@@ -10,6 +12,11 @@ export const CartPage = () => {
     state: { cart },
     dispatch,
   } = CartState();
+
+  const cookies = new Cookies();
+
+  const alert = useAlert()
+
 
   const [subTotal, setSubtotal] = useState();
   const [total, setTotal] = useState();
@@ -30,6 +37,21 @@ export const CartPage = () => {
     );
   }, [cart]);
 
+
+  const handleCheckout = () => {
+    
+
+    if (cookies.get('username')) {
+      console.log('checkout');
+    } else {
+      alert.error('Iniciar Sesion para continuar', {
+        timeout: 1500,
+        onClose: () => window.location.assign('/login')
+      })
+    }
+
+  }
+
   return (
     <>
       <section className="container-xs bg-cream pt-2 pb-5 ">
@@ -44,7 +66,7 @@ export const CartPage = () => {
                 <div className="col-12 p-0">
                   <div className="row">
                     {cart.map((prod) => (
-                      <div className="col-12 p-0">
+                      <div className="col-12 p-0" key={prod.id}>
                         <div className="row">
                           <div className="col-4 ms-md-4 my-auto">
                             <img src={prod.image} alt="pancake" className="w-100" />
@@ -162,6 +184,7 @@ export const CartPage = () => {
                 <div className="w-100 p-3">
                   <button
                     className="w-100 fs-5 returnButton font-poppins buttonPay"
+                    onClick={handleCheckout}
                     disabled={cart.length === 0}
                   >
                     Pagar

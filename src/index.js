@@ -6,14 +6,19 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import Context from "./$-context/Context";
 import { ParallaxProvider } from "react-scroll-parallax";
+import { Provider as AlertProvider } from "react-alert";
+import AlertTemplate from "react-alert-template-snackbar-material-ui";
+
 
 ReactDOM.render(
-  <ParallaxProvider>
-    <Context>
-      <BrowserRouter>
-        <App />
-      </BrowserRouter>
-    </Context>
-  </ParallaxProvider>,
+  <AlertProvider template={AlertTemplate} >
+    <ParallaxProvider>
+      <Context>
+        <BrowserRouter>
+          <App />
+        </BrowserRouter>
+      </Context>
+    </ParallaxProvider>
+  </AlertProvider>,
   document.getElementById("root")
 );
