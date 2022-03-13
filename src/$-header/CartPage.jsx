@@ -4,7 +4,7 @@ import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { CartState } from "../$-context/Context";
-import {useAlert} from "react-alert";
+import { useAlert } from "react-alert";
 // import { cookies } from '../$-home/Home'
 
 export const CartPage = () => {
@@ -15,8 +15,7 @@ export const CartPage = () => {
 
   const cookies = new Cookies();
 
-  const alert = useAlert()
-
+  const alert = useAlert();
 
   const [subTotal, setSubtotal] = useState();
   const [total, setTotal] = useState();
@@ -37,20 +36,28 @@ export const CartPage = () => {
     );
   }, [cart]);
 
-
   const handleCheckout = () => {
-    
-
-    if (cookies.get('username')) {
-      console.log('checkout');
+    if (cookies.get("username")) {
+      console.log("checkout");
     } else {
-      alert.error('Iniciar Sesion para continuar', {
+      alert.error("Iniciar Sesion para continuar", {
         timeout: 1500,
-        onClose: () => window.location.assign('/login')
-      })
+        onClose: () => window.location.assign("/login"),
+      });
     }
+  };
 
-  }
+  const handleCheckoutMobile = () => {
+    if (cookies.get("username")) {
+      console.log("checkout");
+    } else {
+      alert.error("Iniciar Sesion para continuar", {
+        timeout: 1500,
+        position: 'bottom center',
+        onClose: () => window.location.assign("/login"),
+      });
+    }
+  };
 
   return (
     <>
@@ -69,7 +76,11 @@ export const CartPage = () => {
                       <div className="col-12 p-0" key={prod.id}>
                         <div className="row">
                           <div className="col-4 ms-md-4 my-auto">
-                            <img src={prod.image} alt="pancake" className="w-100" />
+                            <img
+                              src={prod.image}
+                              alt="pancake"
+                              className="w-100"
+                            />
                           </div>
                           <div className="col-4">
                             <h4>{prod.name}</h4>
@@ -146,7 +157,10 @@ export const CartPage = () => {
                 </div>
                 <div className="m-auto">
                   <div className="w-100">
-                    <button className="w-100 fs-5 returnButton font-poppins buttonPay" onClick={handleCheckout} disabled={cart.length === 0}
+                    <button
+                      className="w-100 fs-5 returnButton font-poppins buttonPay"
+                      onClick={handleCheckoutMobile}
+                      disabled={cart.length === 0}
                     >
                       Pagar
                     </button>

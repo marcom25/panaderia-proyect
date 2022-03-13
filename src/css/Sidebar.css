@@ -1,12 +1,19 @@
 .padding-left-menu-button {
-    padding-left: 10px !important;
+  padding-left: 10px !important;
 }
 .colores {
-    background-color: rgb(255, 225, 215);
+  background-color: rgb(255, 225, 215);
 }
 .carrito {
-    width: 33% !important;
-    padding-right: 20px;
-    color: rgb(77, 58, 64);
+  width: 33% !important;
+  padding-right: 20px;
+  color: rgb(77, 58, 64);
 }
 
+.carrito-badge-sb {
+  font-size: .50em !important;
+  color: rgb(255, 225, 215) !important;
+  background-color: rgb(77, 58, 64) !important;
+  left: 95% !important;
+  top: 20% !important;
+}

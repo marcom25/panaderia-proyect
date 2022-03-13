@@ -42,7 +42,10 @@ const LoginForm = () => {
         );
         window.location.assign("/");
         setLoading(true);
-      } else showInvalidText();
+      } else {
+        setLoading(true);
+        showInvalidText();
+      }
     } catch (error) {
       console.log(error);
     }
@@ -62,7 +65,7 @@ const LoginForm = () => {
                 </h1>
                 <form className="mt-5 bg-cream" onSubmit={submitHandler}>
                   <p ref={showText} className="d-none">
-                    Usuario y/o contraseña incorrectos.
+                    Email y/o contraseña incorrectos.
                   </p>
                   <div className="question">
                     <input
