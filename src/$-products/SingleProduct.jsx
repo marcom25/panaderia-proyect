@@ -7,27 +7,30 @@ const SingleProduct = ({ card }) => {
       className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post"
       key={card.id}
     >
-      <div className="card bg-cream border-0 w-100">
-        <img
-          src={card.image}
-          className="card-img-top w-100 imgWidth img-fluid"
-          alt={card.category}
-        />
-        <div className="capaPadre">
-          <div>
-            <button
-              className="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
-              onClick={() =>
-                dispatch({
-                  type: "ADD_TO_CART",
-                  payload: card,
-                })
-              }
-            >
-              +Añadir al Carrito
-            </button>
+      <div style={{overflow: 'hidden'}}>
+        <div className="card bg-cream border-0 w-100 zoom">
+          <img
+            src={card.image}
+            className="card-img-top w-100 imgWidth img-fluid"
+            alt={card.category}
+          />
+          <div className="capaPadre">
+            <div>
+              <button
+                className="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
+                onClick={() =>
+                  dispatch({
+                    type: "ADD_TO_CART",
+                    payload: card,
+                  })
+                }
+              >
+                +Añadir al Carrito
+              </button>
+            </div>
           </div>
         </div>
+
       </div>
       <div className="card-body bg-cream p-0 d-flex justify-content-between">
           <h5 className="card-title brown-font font-poppins">{card.name}</h5>
