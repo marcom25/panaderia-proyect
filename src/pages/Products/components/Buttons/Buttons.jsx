@@ -1,7 +1,7 @@
 // IMPORTS DE CSS
 import { useState } from "react";
-import { CartState } from "../$-context/Context";
-import "../css/Colors.css";
+import { CartState } from "../../../../contexts/Context";
+import "../../../../css/Colors.css";
 
 export const ButtonAllProducts = ({ buttons, filter }) => {
   // console.log('buttons:', buttons);

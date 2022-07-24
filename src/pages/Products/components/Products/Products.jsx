@@ -1,6 +1,6 @@
 // IMPORTS DE MODULOS
 import React, { useEffect, useState } from 'react';
-import { CartState } from '../$-context/Context';
+import { CartState } from '../../../../contexts/Context';
 
 // IMPORTS DE COMPONENTES
 
@@ -9,9 +9,9 @@ import {
   ButtonBakery,
   ButtonHotDrinks,
   ButtonsPagination,
-} from './Buttons';
-import CardsProducts from './CardsProducts';
-import Loader from '../utils/Loader';
+} from '../Buttons/Buttons.jsx';
+import CardsProducts from '../CardsProducts/CardsProducts.jsx';
+import Loader from '../../../../components/common/Loader/Loader.jsx';
 
 const Products = () => {
   const [allCategories, setAllCategories] = useState([]);

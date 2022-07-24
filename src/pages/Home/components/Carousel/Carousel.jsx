@@ -1,6 +1,6 @@
-import image1 from "../images/bakery/pie.jpg";
-import image2 from "../images/bakery/muffinprueba.jpg";
-import image3 from "../images/bakery/tartaprueba.jpg";
+import image1 from "../../../../images/bakery/pie.jpg";
+import image2 from "../../../../images/bakery/muffinprueba.jpg";
+import image3 from "../../../../images/bakery/tartaprueba.jpg";
 
 const Carousel = () => {
   return (

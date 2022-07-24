@@ -1,7 +1,7 @@
 // IMPORTS DE MODULOS
 import React, {useEffect} from 'react';
 import { ParallaxBanner } from 'react-scroll-parallax';
-import torta from '../images/bakery/Torta-by-stef.jpg';
+import torta from '../../../../images/bakery/Torta-by-stef.jpg';
 import WOW from 'wowjs';
 
 

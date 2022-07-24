@@ -1,6 +1,6 @@
 
 
-import SingleProduct from './SingleProduct';
+import SingleProduct from '../SingleProduct/SingleProduct.jsx';
 
 const CardsProducts = ({ allCards, filteredCards }) => {
 

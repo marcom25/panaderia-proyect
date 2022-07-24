@@ -1,5 +1,8 @@
 
+
 import { useCart } from '../../../../contexts/Cart';
+
+
 
 const SingleProduct = ({ card }) => {
   const { addToCart } = useCart();

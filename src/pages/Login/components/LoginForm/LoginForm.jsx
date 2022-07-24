@@ -1,7 +1,7 @@
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import { msToDaysParser } from "../utils/msToDaysParser";
-import Loader from "../utils/Loader";
+import { msToDaysParser } from "../../../../utils/msToDaysParser";
+import Loader from "../../../../components/common/Loader/Loader.jsx";
 import Cookies from "universal-cookie";
 
 const LoginForm = () => {
