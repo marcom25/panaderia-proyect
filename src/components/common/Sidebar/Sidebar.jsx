@@ -12,15 +12,16 @@ import { SiGooglemessages } from "react-icons/si";
 
 // IMPORTANDO IMAGENES
 import logo from "../../../images/logos/titulo-mas-cercano.svg";
-import { CartState } from "../../../contexts/Context";
+
+import { useCart } from "../../../contexts/Cart";
 
 const Sidebar = () => {
   const cookies = new Cookies();
 
   const {
-    state: { cart },
+   cart,
     
-  } = CartState();
+  } = useCart();
 
 
   useEffect(() => {
