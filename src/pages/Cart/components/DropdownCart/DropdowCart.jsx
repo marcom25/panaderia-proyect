@@ -1,14 +1,15 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
-import { CartState } from "../../../../contexts/Context";
+
 import { Link } from "react-router-dom";
+import { useCart } from "../../../../contexts/Cart";
 
 
 export const DropdownCart = () => {
   const {
-    state: { cart },
-    dispatch,
-  } = CartState();
+    cart,
+    removeFromCart,
+  } = useCart();
 
 
   return (
@@ -47,10 +48,7 @@ export const DropdownCart = () => {
                   fontSize="20px"
                   style={{ cursor: "pointer" }}
                   onClick={() =>
-                    dispatch({
-                      type: "REMOVE_FROM_CART",
-                      payload: prod,
-                    })
+                    removeFromCart(prod)
                   }
                 />
               </span>

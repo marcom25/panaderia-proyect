@@ -1,11 +1,9 @@
-import { CartState } from '../../../../contexts/Context';
+
 
 import SingleProduct from '../SingleProduct/SingleProduct.jsx';
 
 const CardsProducts = ({ allCards, filteredCards }) => {
-  const {
-    state: { cart },
-  } = CartState();
+
 
   const renderedCards = () => {
     if (filteredCards.length === 0) {

@@ -6,28 +6,22 @@ import {userReducer} from "../reducers/user";
 
 const Cart = createContext();
 
-
-
 const Context = ({ children }) => {
-
-
-
- 
-  const [state, dispatch] = useReducer(cartReducer, {
-    cart: [],
-  });
-
   const [userState, userDispatch] = useReducer(userReducer, {
-    username: ""
+    username: "",
   });
 
-  
   const [filterState, filterDispatch] = useReducer(filterReducer, {
     sort: "",
   });
-  
 
-  return <Cart.Provider value={{ state, dispatch, filterState, filterDispatch, userState, userDispatch }}>{children}</Cart.Provider>;
+  return (
+    <Cart.Provider
+      value={{ filterState, filterDispatch, userState, userDispatch }}
+    >
+      {children}
+    </Cart.Provider>
+  );
 };
 
 export default Context;

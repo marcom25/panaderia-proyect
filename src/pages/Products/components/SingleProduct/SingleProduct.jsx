@@ -1,7 +1,11 @@
-import { CartState } from '../../../../contexts/Context';
+
+
+import { useCart } from '../../../../contexts/Cart';
+
+
 
 const SingleProduct = ({ card }) => {
-  const { dispatch } = CartState();
+  const { addToCart } = useCart();
   return (
     <div
       className="cardsWidth p-2 py-3 py-lg-3 bg-cream d-block post"
@@ -19,10 +23,7 @@ const SingleProduct = ({ card }) => {
               <button
                 className="btn cardsButton bg-white brown-font bg-brown-hover font-white-hover margin-button font-poppins"
                 onClick={() =>
-                  dispatch({
-                    type: "ADD_TO_CART",
-                    payload: card,
-                  })
+                  addToCart(card)
                 }
               >
                 +Añadir al Carrito
@@ -42,10 +43,7 @@ const SingleProduct = ({ card }) => {
           <button
             className="btn cardsButton bg-brown white-font font-poppins"
             onClick={() =>
-              dispatch({
-                type: "ADD_TO_CART",
-                payload: card,
-              })
+              addToCart(card)
             }
           >
             +Añadir al Carrito
