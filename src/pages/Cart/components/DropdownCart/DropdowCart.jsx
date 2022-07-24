@@ -1,6 +1,6 @@
 import { FaShoppingCart } from "react-icons/fa";
 import { AiFillDelete } from "react-icons/ai";
-
+import { CartState } from "../../../../contexts/Context";
 import { Link } from "react-router-dom";
 import { useCart } from "../../../../contexts/Cart";
 

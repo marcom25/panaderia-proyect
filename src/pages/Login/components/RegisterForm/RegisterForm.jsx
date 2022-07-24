@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import Loader from "../utils/Loader";
+import Loader from "../../../../components/common/Loader/Loader.jsx";
 
 const RegisterForm = () => {
   const [username, setUsername] = useState("");

@@ -2,15 +2,15 @@
 import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 // IMPORTANDO IMAGENES
-import bakeryUno from "../images/bakery/collage1.jpg";
-import bakeryDos from "../images/bakery/collage2.jpg";
-import brownie from "../images/bakery/collage3.jpg";
-import cakeUno from "../images/bakery/collage4.jpg";
-import cakeDos from "../images/bakery/collage5.jpg";
-import cakeTres from "../images/bakery/collage6.jpg";
-import cheesecake from "../images/bakery/collage7.jpg";
-import croissants from "../images/bakery/collage8.jpg";
-import macaroons from "../images/bakery/collage9.jpg";
+import bakeryUno from "../../../../images/bakery/collage1.jpg";
+import bakeryDos from "../../../../images/bakery/collage2.jpg";
+import brownie from "../../../../images/bakery/collage3.jpg";
+import cakeUno from "../../../../images/bakery/collage4.jpg";
+import cakeDos from "../../../../images/bakery/collage5.jpg";
+import cakeTres from "../../../../images/bakery/collage6.jpg";
+import cheesecake from "../../../../images/bakery/collage7.jpg";
+import croissants from "../../../../images/bakery/collage8.jpg";
+import macaroons from "../../../../images/bakery/collage9.jpg";
 
 
 const CollageImages = () => {

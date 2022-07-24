@@ -11,8 +11,8 @@ import { IoIosPeople } from "react-icons/io";
 import { SiGooglemessages } from "react-icons/si";
 
 // IMPORTANDO IMAGENES
-import logo from "../images/logos/titulo-mas-cercano.svg";
-import { CartState } from "../$-context/Context";
+import logo from "../../../images/logos/titulo-mas-cercano.svg";
+import { CartState } from "../../../contexts/Context";
 
 const Sidebar = () => {
   const cookies = new Cookies();

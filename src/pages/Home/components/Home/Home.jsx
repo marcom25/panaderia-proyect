@@ -3,38 +3,38 @@ import React, { useEffect } from 'react';
 import WOW from 'wowjs';
 // IMPORTS DE COMPONENTES
 
-import Card from "./Card";
-import ParallaxBg from './ParallaxBg';
-import Carousel from './Carousel';
-import CollageImages from './CollageImages';
-import ImgBlock from './ImgBlock';
+import Card from "../Card/Card.jsx";
+import ParallaxBg from '../ParallaxBg/ParallaxBg.jsx';
+import Carousel from '../Carousel/Carousel.jsx';
+import CollageImages from '../CollageImages/CollageImages.jsx';
+import ImgBlock from '../ImgBlock/ImgBlock.jsx';
 
 // IMPORTS DE CSS
-import "../css/Grid.css";
-import "../css/Colors.css";
-import "../css/Collage.css";
-import "../css/Fonts.css";
-import "../css/AboutUs.css";
-import "../css/Carousel.css";
-import "../css/Navbar.css";
-import "../css/Products.css";
-import "../css/Cart.css";
-import "../css/ImgBlock.css";
-import "../css/LoginForm.css";
-import "../css/ParallaxBg.css"
-import "../css/Sidebar.css";
-import "../css/Card.css"
-import "../css/CartPage.css";
-import "../css/Footer.css";
-import "../css/Loader.css";
+import "../../../Home/components/Home/css/Grid.css";
+import "../../../../css/Colors.css";
+import "../../../Home/components/CollageImages/css/Collage.css";
+import "../../../../css/Fonts.css";
+import "../../../AboutUs/components/AboutUs/css/AboutUs.css";
+import "../../../Home/components/Carousel/css/Carousel.css";
+import "../../../../components/common/Navbar/css/Navbar.css";
+import "../../../Products/components/Products/css/Products.css";
+import "../../../Cart/components/DropdownCart/css/Cart.css";
+import "../../../Home/components/ImgBlock/css/ImgBlock.css";
+import "../../../../pages/Login/components/LoginForm/css/LoginForm.css";
+import "../../../Home/components/ParallaxBg/css/ParallaxBg.css"
+import "../../../../components/common/Sidebar/css/Sidebar.css";
+import "../../../Home/components/Card/css/Card.css";
+import "../../../Cart/components/CartPage/css/CartPage.css";
+import "../../../../components/common/Footer/components/Footer/css/Footer.css";
+import "../../../../components/common/Loader/css/Loader.css";
 
 // IMPORTS DE IMAGENES
-import image1 from "../images/bakery/prueba1.jpg";
-import image2 from "../images/bakery/prueba2.jpg";
-import image3 from "../images/bakery/prueba3.jpg";
-import image4 from "../images/bakery/receta1.jpg";
-import image5 from "../images/bakery/receta3.jpg";
-import image6 from "../images/bakery/prueba4.jpg";
+import image1 from "../../../../images/bakery/prueba1.jpg";
+import image2 from "../../../../images/bakery/prueba2.jpg";
+import image3 from "../../../../images/bakery/receta3.jpg";
+import image4 from "../../../../images/bakery/receta1.jpg";
+import image5 from "../../../../images/bakery/receta3.jpg";
+import image6 from "../../../../images/bakery/receta4.jpg";
 
 const Home = () => {
     
