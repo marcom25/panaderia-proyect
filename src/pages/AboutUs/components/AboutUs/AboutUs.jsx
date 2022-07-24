@@ -3,10 +3,10 @@ import React, { useEffect } from "react";
 import WOW from "wowjs";
 
 // IMPORTS DE IMAGENES
-import aboutUs from "../images/bakery/aboutUs.jpg";
-import brownie from "../images/bakery/prueba1.jpg";
-import cake from "../images/bakery/prueba2.jpg";
-import pie from "../images/bakery/prueba3.jpg";
+import aboutUs from "../../../../images/bakery/aboutUs.jpg";
+import brownie from "../../../../images/bakery/prueba1.jpg";
+import cake from "../../../../images/bakery/prueba2.jpg";
+import pie from "../../../../images/bakery/prueba3.jpg";
 
 const AboutUs = () => {
   useEffect(() => {

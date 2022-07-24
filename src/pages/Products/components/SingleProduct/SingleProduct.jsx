@@ -1,4 +1,4 @@
-import { CartState } from '../$-context/Context';
+import { CartState } from '../../../../contexts/Context';
 
 const SingleProduct = ({ card }) => {
   const { dispatch } = CartState();

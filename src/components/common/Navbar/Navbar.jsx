@@ -1,6 +1,6 @@
 // IMPORTS DE MODULOS
-import { DropdownCart } from "./DropdowCart";
-import logo from "../images/logos/titulo-mas-cercano.svg";
+import { DropdownCart } from "../../../pages/Cart/components/DropdownCart/DropdowCart.jsx";
+import logo from "../../../images/logos/titulo-mas-cercano.svg";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { useEffect, useState } from "react";

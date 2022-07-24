@@ -1,6 +1,6 @@
-import { CartState } from '../$-context/Context';
+import { CartState } from '../../../../contexts/Context';
 
-import SingleProduct from './SingleProduct';
+import SingleProduct from '../SingleProduct/SingleProduct.jsx';
 
 const CardsProducts = ({ allCards, filteredCards }) => {
   const {

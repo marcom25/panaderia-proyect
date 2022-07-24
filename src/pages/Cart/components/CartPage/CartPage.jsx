@@ -3,7 +3,7 @@ import { AiFillDelete } from "react-icons/ai";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
-import { CartState } from "../$-context/Context";
+import { CartState } from "../../../../contexts/Context";
 import { useAlert } from "react-alert";
 // import { cookies } from '../$-home/Home'
 
