@@ -1,4 +1,3 @@
-import { CartState } from '../../../../contexts/Context';
 
 import SingleProduct from '../SingleProduct/SingleProduct.jsx';
 
