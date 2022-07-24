@@ -3,15 +3,16 @@ import { AiFillDelete } from "react-icons/ai";
 import { RiShoppingBag2Line } from "react-icons/ri";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
-import { CartState } from "../$-context/Context";
 import { useAlert } from "react-alert";
+import { useCart } from "../../../../contexts/Cart";
 // import { cookies } from '../$-home/Home'
 
 export const CartPage = () => {
   const {
-    state: { cart },
-    dispatch,
-  } = CartState();
+    cart,
+    removeFromCart,
+    changeCartQty
+  } = useCart();
 
   const cookies = new Cookies();
 
@@ -72,7 +73,7 @@ export const CartPage = () => {
               <div className="row">
                 <div className="col-12 p-0">
                   <div className="row">
-                    {cart.map((prod) => (
+                    {cart().map((prod) => (
                       <div className="col-12 p-0" key={prod.id}>
                         <div className="row">
                           <div className="col-4 ms-md-4 my-auto">
@@ -96,13 +97,8 @@ export const CartPage = () => {
                                   className="form-select"
                                   aria-label="Default select example"
                                   onChange={(e) =>
-                                    dispatch({
-                                      type: "CHANGE_CART_QTY",
-                                      payload: {
-                                        id: prod.id,
-                                        qty: e.target.value,
-                                      },
-                                    })
+                                    changeCartQty(prod.id, e.target.value)
+                                    
                                   }
                                 >
                                   <option value="1">1</option>
@@ -116,10 +112,7 @@ export const CartPage = () => {
                             <button
                               className="deleteIcon bg-cream fs-4"
                               onClick={() =>
-                                dispatch({
-                                  type: "REMOVE_FROM_CART",
-                                  payload: prod,
-                                })
+                                removeFromCart(prod)
                               }
                             >
                               <AiFillDelete className="deleteIcon brown-font" />
