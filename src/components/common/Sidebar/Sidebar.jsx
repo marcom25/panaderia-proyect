@@ -160,7 +160,6 @@ const Sidebar = () => {
         <div className="d-flex justify-content-end carrito">
           <Link to="/cart" className="brown-font">
             <h1>
-
               <FaShoppingCart />
             </h1>
           </Link>
@@ -173,5 +172,3 @@ const Sidebar = () => {
 export default Sidebar;
 
 
-
-// CHUPAME LAS PELOTAS

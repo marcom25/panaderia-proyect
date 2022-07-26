@@ -52,15 +52,14 @@
 
 .productOptions:hover {
   color: #fffee3 !important;
-  /* background-color: rgb(77, 58, 64) !important; */
+
 }
 
 /* Cart */
-.carritoNavbar {
-  width: fit-content !important;
-}
-
 .cart-icon {
+  display: flex;
+  justify-content: flex-start;
+  width: fit-content !important;
   font-size: 2rem;
 }
 

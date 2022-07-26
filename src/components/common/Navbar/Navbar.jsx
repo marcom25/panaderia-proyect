@@ -93,9 +93,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="carritoNavbar text-center brown-font px-lg-3 px-xl-4 px-md-3 dropdown">
-          <Link className="brown-font position-relative cart-icon" to="/cart"><FaShoppingCart /></Link>
-        </div>
+        <Link className="carritoNavbar text-center brown-font px-lg-3 px-xl-4 px-md-3 dropdown cart-icon" to="/cart">
+          <FaShoppingCart />
+        </Link>
       </div>
     </nav>
   );
