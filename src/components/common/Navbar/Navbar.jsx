@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <nav
       id="start"
-      className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex "
+      className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex navbar-position"
     >
       <div className="container-fluid p-0">
         <div className="login-width text-center">
