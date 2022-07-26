@@ -5,7 +5,7 @@ import WOW from 'wowjs';
 
 import Card from "../Card/Card.jsx";
 import ParallaxBg from '../ParallaxBg/ParallaxBg.jsx';
-import Carousell from '../Carousel/Carousel.jsx';
+import CarouselHome from '../Carousel/CarouselHome.jsx';
 import CollageImages from '../CollageImages/CollageImages.jsx';
 import ImgBlock from '../ImgBlock/ImgBlock.jsx';
 
@@ -105,7 +105,7 @@ const Home = () => {
             </div>
             <div className='row'>
                 <div className='col-sm p-0 bg-cream'>
-                    <Carousell/>
+                    <CarouselHome/>
                 </div>
             </div>
             <div className="bg-cream pt-5 pb-4">
