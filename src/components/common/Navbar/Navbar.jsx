@@ -1,9 +1,8 @@
 // IMPORTS DE MODULOS
-import { DropdownCart } from "../../../pages/Cart/components/DropdownCart/DropdowCart.jsx";
 import logo from "../../../images/logos/titulo-mas-cercano.svg";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
-import { useEffect, useState } from "react";
+import { FaShoppingCart } from "react-icons/fa";
 
 const Navbar = () => {
   const cookies = new Cookies();
@@ -95,7 +94,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="carritoNavbar text-center brown-font px-lg-3 px-xl-4 px-md-3 dropdown">
-          <DropdownCart />
+          <Link className="brown-font position-relative cart-icon" to="/cart"><FaShoppingCart /></Link>
         </div>
       </div>
     </nav>

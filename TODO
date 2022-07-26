@@ -6,9 +6,9 @@ CAMBIOS:
   SPINNER:
     - Cambiarlo
   NAVBAR:
-    - Sacar Bakcground Opciones Navbar
+    | Sacar Bakcground Opciones Navbar
     - Cerrar Sesion
-    - Cambiar Carrito en Mobile
+    | Cambiar Carrito en Mobile
   FOOTER:
     - Agregar hovers al footer
     - Si ya esta suscrito, que no aparezca la parte de suscribirse

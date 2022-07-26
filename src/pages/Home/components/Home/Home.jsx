@@ -18,7 +18,6 @@ import "../../../AboutUs/components/AboutUs/css/AboutUs.css";
 import "../../../Home/components/Carousel/css/Carousel.css";
 import "../../../../components/common/Navbar/css/Navbar.css";
 import "../../../Products/components/Products/css/Products.css";
-import "../../../Cart/components/DropdownCart/css/Cart.css";
 import "../../../Home/components/ImgBlock/css/ImgBlock.css";
 import "../../../../pages/Login/components/LoginForm/css/LoginForm.css";
 import "../../../Home/components/ParallaxBg/css/ParallaxBg.css"

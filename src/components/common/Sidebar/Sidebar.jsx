@@ -133,8 +133,7 @@ const Sidebar = () => {
                         <li
                           className="px-3 font-poppins logout"
                           onClick={() => {
-                            console.log("hice click");
-                            cookies.remove("username", { maxAge: 1 });
+                            
                             document.location.reload();
                           }}
                         >
@@ -162,7 +161,6 @@ const Sidebar = () => {
           <Link to="/cart" className="brown-font">
             <h1>
               <FaShoppingCart />
-              <span className="carrito-badge-sb position-absolute translate-middle badge rounded-pill ">{cart.length}</span>
             </h1>
           </Link>
         </div>
