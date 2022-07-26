@@ -73,7 +73,7 @@ export const CartPage = () => {
               <div className="row">
                 <div className="col-12 p-0">
                   <div className="row">
-                    {cart().map((prod) => (
+                    {cart.map((prod) => (
                       <div className="col-12 p-0" key={prod.id}>
                         <div className="row">
                           <div className="col-4 ms-md-4 my-auto">

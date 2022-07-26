@@ -71,7 +71,7 @@ const Footer = () => {
               <ul className="list-unstyled">
                 <li>
                   <a
-                    className="orange-dark-font text-decoration-none font-bitter"
+                    className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                     href="#start"
                   >
                     Inicio
@@ -79,23 +79,25 @@ const Footer = () => {
                 </li>
                 <li>
                   <Link
-                    className="orange-dark-font text-decoration-none font-bitter"
-                    href="#start" to="/productos"
+                    className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
+                    href="#start"
+                    to="/productos"
                   >
                     Productos
                   </Link>
                 </li>
                 <li>
                   <Link
-                    className="orange-dark-font text-decoration-none font-bitter"
-                    href="#start" to="/nosotros"
+                    className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
+                    href="#start"
+                    to="/nosotros"
                   >
                     Nosotros
                   </Link>
                 </li>
                 <li>
                   <a
-                    className="orange-dark-font text-decoration-none font-bitter"
+                    className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                     href="#contacto"
                   >
                     Contactanos
@@ -161,17 +163,19 @@ const Footer = () => {
                   <li>
                     <p>
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter"
                         href="https://www.linkedin.com/in/marco-mignacco-001547234/"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
-                        className="orange-dark-font text-decoration-none"
+                        className="orange-dark-font font-brown-hover text-decoration-none options-hover"
                         href="https://www.linkedin.com/in/sebasti%C3%A1n-ponce-4156a01a9/"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         {" "}
                         Sebastián
@@ -186,17 +190,19 @@ const Footer = () => {
                   <li>
                     <p>
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="https://github.com/marcom25"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="https://github.com/sebaponce2"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         {" "}
                         Sebastián
@@ -212,7 +218,7 @@ const Footer = () => {
                   <li>
                     <p>
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="mailto:marcomignacco03@gmail.com?"
                         target="_blank"
                       >
@@ -220,7 +226,7 @@ const Footer = () => {
                       </a>
                       /
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="mailto:sebaottok@gmail.com?"
                         target="_blank"
                       >
@@ -237,17 +243,19 @@ const Footer = () => {
                   <li>
                     <p>
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="https://www.instagram.com/marco__m25/"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         Marco{" "}
                       </a>
                       /
                       <a
-                        className="orange-dark-font text-decoration-none font-bitter"
+                        className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                         href="https://www.instagram.com/sebaponce__/"
-                        target="_blank" rel="noreferrer"
+                        target="_blank"
+                        rel="noreferrer"
                       >
                         {" "}
                         Sebastián
