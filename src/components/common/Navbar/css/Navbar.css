@@ -2,6 +2,12 @@
   width: fit-content !important;
 }
 
+.navbar-position {
+  position: fixed !important;
+  width: 100% !important;
+  z-index: 1000 !important;
+}
+
 .logo-width {
   width: 25% !important;
 }

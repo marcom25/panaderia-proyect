@@ -173,7 +173,7 @@ const Footer = () => {
                       /
                       <a
                         className="orange-dark-font font-brown-hover text-decoration-none options-hover"
-                        href="https://www.linkedin.com/in/sebasti%C3%A1n-ponce-4156a01a9/"
+                        href="https://www.linkedin.com/in/sebastian-ponce2/"
                         target="_blank"
                         rel="noreferrer"
                       >
