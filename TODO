@@ -10,7 +10,7 @@ CAMBIOS:
     - Cerrar Sesion
     | Cambiar Carrito en Mobile
   FOOTER:
-    - Agregar hovers al footer
+    | Agregar hovers al footer
     - Si ya esta suscrito, que no aparezca la parte de suscribirse
   INICIO:
     - Agregar cartas
@@ -26,7 +26,7 @@ CAMBIOS:
   REGISTRARSE:
     - Agregar opcion de recibir informacion
   CARRITO-DROPDOWN:
-    - SACARLO
+    | SACARLO
   CARRITO:
     - REVISARLA
     - Agregar borde a la img
