@@ -27,6 +27,9 @@ const Products = () => {
     filterState: { sort },
   } = CartState();
 
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   useEffect(() => {
     // Refactor callback/promise hell for async/await

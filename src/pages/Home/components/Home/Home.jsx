@@ -40,6 +40,8 @@ const Home = () => {
     useEffect(() => {
         const wow = new WOW.WOW({});
         wow.init();
+
+        window.scrollTo(0,0);
     }, []);
 
     return ( 
@@ -104,7 +106,7 @@ const Home = () => {
                 </div>
             </div>
             <div className='row'>
-                <div className='col-sm p-0 bg-cream'>
+                <div className='col-sm p-0 bg-cream w-100'>
                     <CarouselHome/>
                 </div>
             </div>
@@ -119,7 +121,7 @@ const Home = () => {
                 p3='300gr Manteca'
                 p4='2 Huevos'
                 image={image4} 
-                textAtributes='col-sm p-0 bg-brown' 
+                textAtributes='col-sm p-0 bg-brown d-flex justify-content-center align-items-center' 
                 imgAtributes='col-sm p-0 bg-cream d-flex justify-content-center' />
             </div>
             <div className='row bg-cream flex-row-reverse border-bottom border-dark px-lg-5 wow fadeInLeft' data-wow-delay= '1s' data-wow-duration="2s">
@@ -130,7 +132,7 @@ const Home = () => {
                 p3='300gr Azucar'
                 p4='4 Huevos'
                 image={image5} 
-                textAtributes='col-sm p-0 bg-brown' 
+                textAtributes='col-sm p-0 bg-brown d-flex justify-content-center align-items-center' 
                 imgAtributes='col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center'/>
             </div>
             <div className='row padding-collage bg-cream py-5'>
