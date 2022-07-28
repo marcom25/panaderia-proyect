@@ -1,16 +1,11 @@
+import loader from "../../../images/loader.gif";
+
 const Loader = () => {
   return (
     <>
-      <h1 className="word bg-cream">
-        <span className="l1 letter">c</span>
-        <span className="l2 letter">a</span>
-        <span className="l3 letter">r</span>
-        <span className="l4 letter">g</span>
-        <span className="l5 letter">a</span>
-        <span className="l6 letter">n</span>
-        <span className="l7 letter">d</span>
-        <span className="l8 letter">o</span>
-      </h1>
+      <div className="bg-cream-products d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
+          <img src={loader} alt="loader" style={{width: '18%', height:'auto'}}/>
+      </div>
     </>
   );
 };

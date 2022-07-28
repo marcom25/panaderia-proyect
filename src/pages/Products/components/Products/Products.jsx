@@ -144,7 +144,7 @@ const Products = () => {
           </div>
         </section>
       ) : (
-        <Loader/>
+          <Loader/>
       )}
     </>
   );

@@ -31,7 +31,6 @@
     -moz-transition: transform .2s;
     -ms-transition: transform .2s;
     -o-transition: transform .2s;
-    cursor: pointer;
 }
 
 .zoom:hover {
