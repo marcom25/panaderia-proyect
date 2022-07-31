@@ -1,5 +1,4 @@
 .paragraph {
-    
     position: absolute;
     top: 30%;
     width: 100%;
@@ -9,11 +8,5 @@
 }
 
 .sizer{
-    height: 50rem;
-}
-
-@media (max-width: 991px) {
-    .sizer{
-        height: 40rem !important;
-    }
+    height: 140vh !important;
 }

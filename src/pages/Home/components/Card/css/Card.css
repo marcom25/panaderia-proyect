@@ -13,3 +13,70 @@
     border-bottom-left-radius: 0.5rem !important;
     border-bottom-right-radius: 0.5rem !important;
 }
+
+.container-card {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.container-card div {
+    position: relative;
+    overflow: hidden;
+}
+/* .container-card > img {
+    width: 100% !important;
+    height: 100% !important;
+    
+} */
+
+.capa {
+    width: 100% !important;
+    height: 100% !important;
+    position:absolute !important;
+    top: 0 !important;
+    background-color: rgba(87, 64, 71, 0.9);
+    color: white !important;
+    opacity: 0;
+    text-align: center !important;
+    transition: all 600ms ease-out;
+    -webkit-transition: all 600ms ease-out;
+    -moz-transition: all 600ms ease-out;
+    -ms-transition: all 600ms ease-out;
+    -o-transition: all 600ms ease-out;
+} 
+
+.capa:hover {
+    opacity: 1 !important;
+}
+
+
+.capa .h3 {
+    margin-bottom: 50% ;
+    transition: all 650ms ease-out;
+    -webkit-transition: all 650ms ease-out;
+    -moz-transition: all 650ms ease-out;
+    -ms-transition: all 650ms ease-out;
+    -o-transition: all 650ms ease-out;
+}
+
+.capa:hover .h3 { 
+    margin-bottom:4.5% !important;
+    margin-top: 16% !important;
+}
+
+.capa .p {
+    margin-top: 50%;
+    transition: all 500ms ease-out;
+    margin-bottom: 50%;
+    -webkit-transition: all 500ms ease-out;
+    -moz-transition: all 500ms ease-out;
+    -ms-transition: all 500ms ease-out;
+    -o-transition: all 500ms ease-out;
+}
+
+.capa:hover .p{
+    margin-bottom: 0% !important;
+    margin-top: 2.5% !important;
+}
