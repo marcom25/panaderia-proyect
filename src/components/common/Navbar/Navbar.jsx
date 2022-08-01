@@ -43,6 +43,7 @@ const Navbar = () => {
             </>
           ) : (
             <Link
+              onClick={()=> window.scrollTo(0,100)}
               to="/login"
               className="my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins "
             >
@@ -59,6 +60,7 @@ const Navbar = () => {
               <Link
                 className="nav-link brown-font productOptions font-poppins"
                 aria-current="page"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/"
               >
                 Inicio
@@ -67,6 +69,7 @@ const Navbar = () => {
             <li className="nav-item w-20 my-auto text-center">
               <Link
                 className="nav-link brown-font productOptions font-poppins"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/productos"
               >
                 Productos
@@ -78,6 +81,7 @@ const Navbar = () => {
             <li className="nav-item my-auto w-20 text-center">
               <Link
                 className="nav-link brown-font productOptions font-poppins"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/nosotros"
               >
                 Nosotros

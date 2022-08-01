@@ -6,7 +6,7 @@ CAMBIOS:
   SPINNER:
     | Cambiarlo
   NAVBAR:
-    | Sacar Bakcground Opciones Navbar
+    | Sacar Background Opciones Navbar
     - Cerrar Sesion
     | Cambiar Carrito en Mobile
   FOOTER:

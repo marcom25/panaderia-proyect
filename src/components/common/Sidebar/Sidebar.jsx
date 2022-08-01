@@ -23,6 +23,15 @@ const Sidebar = () => {
     
   } = useCart();
 
+  
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
+  
+
 
   useEffect(() => {
     const wow = new WOW.WOW({});
@@ -64,10 +73,11 @@ const Sidebar = () => {
             </div>
             <div className="offcanvas-body p-0">
               <ul className="navbar-nav h-50 flex-grow-1 brown-fontn">
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
                     aria-current="page"
+                    onClick={()=> window.scrollTo(0,100)}
                     to="/"
                   >
                     {" "}
@@ -77,10 +87,12 @@ const Sidebar = () => {
                     Inicio
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
                     aria-current="page"
+                    onClick={()=> window.scrollTo(0,100)}
+                    
                     to="/productos"
                   >
                     {" "}
@@ -90,9 +102,10 @@ const Sidebar = () => {
                     Productos
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
+                    onClick={()=> window.scrollTo(0,100)}
                     to="/nosotros"
                   >
                     {" "}
@@ -102,10 +115,10 @@ const Sidebar = () => {
                     Nosotros
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover"  data-bs-dismiss="offcanvas">
                   <a
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
-                    href="#contacto"
+                    onClick={()=> scrollToBottom()}
                   >
                     <SiGooglemessages
                       style={{ fontSize: "1.6rem", paddingRight: "6px" }}

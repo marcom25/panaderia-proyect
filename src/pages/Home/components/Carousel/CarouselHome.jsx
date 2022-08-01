@@ -16,6 +16,7 @@ const CarouselHome = () => {
         pause={false}
         blur={true}
         className="w-100 h-auto"
+        style={{width: '100% !important'}}
       >
         <Carousel.Item interval={3000}>
           <img

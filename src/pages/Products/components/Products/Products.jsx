@@ -1,6 +1,7 @@
 // IMPORTS DE MODULOS
 import React, { useEffect, useState } from 'react';
 import { CartState } from '../../../../contexts/Context';
+import { TitleProducts } from './Components';
 
 // IMPORTS DE COMPONENTES
 
@@ -70,12 +71,12 @@ const Products = () => {
       {!loading ? (
         <section className="container-xs bg-cream" style={{ padding: '0' }}>
           <div className="container-xs bg-cream pt-2 pb-5">
-            <h3
-              className="py-4 text-center brown-font font-poppins fw-bold"
+            <TitleProducts
+              className="text-center brown-font font-poppins fw-bold"
               id="Handler"
             >
               Productos
-            </h3>
+            </TitleProducts>
 
             {/* mobile button */}
             <div className="text-center">

@@ -8,6 +8,7 @@ import ParallaxBg from "../ParallaxBg/ParallaxBg.jsx";
 import CarouselHome from "../Carousel/CarouselHome.jsx";
 import CollageImages from "../CollageImages/CollageImages.jsx";
 import ImgBlock from "../ImgBlock/ImgBlock.jsx";
+import { ContainerHome, TitlesHome } from "./Components.js";
 
 // IMPORTS DE CSS
 import "../../../Home/components/Home/css/Grid.css";
@@ -53,14 +54,14 @@ const Home = () => {
           <ParallaxBg />
         </div>
       </div>
-      <div className="row justify-content-sm-center bg-cream py-4 px-lg-5">
-        <h2
-          className="texto text-uppercase font-weight-1k text-center brown-font pt-5 font-poppins wow slideInUp"
+      <ContainerHome className="row">
+        <TitlesHome
+          className="texto text-uppercase font-weight-1k text-center brown-font font-poppins wow slideInUp"
           data-wow-delay="0.5s"
           data-wow-duration="1s"
         >
           ¡Nuevos productos!
-        </h2>
+        </TitlesHome>
         <div
           className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
           data-wow-delay="1s"
@@ -157,64 +158,67 @@ const Home = () => {
             contentClass="card-title text-center accordion-body font-bitter"
           />
         </div>
-      </div>
+      </ContainerHome>
       <div className="row">
-        <div className="col-sm p-0 bg-cream w-100">
-          <CarouselHome />
+        <div className="col-sm p-0 bg-cream w-100" style={{width: '100% !important'}}>
+          <CarouselHome style={{width: '100% !important'}} />
         </div>
       </div>
-      <div className="bg-cream pt-5 pb-4">
-        <h2
-          className="texto text-uppercase font-weight-1k text-center brown-font pt-5 font-poppins wow slideInUp"
-          data-wow-delay="0.5s"
-          data-wow-duration="1s"
-          data-wow-offset="1"
+      <ContainerHome className="row">
+        <div className="bg-cream pb-4">
+          <TitlesHome
+            className="texto text-uppercase font-weight-1k text-center brown-font font-poppins wow slideInUp"
+            data-wow-delay="0.5s"
+            data-wow-duration="1s"
+            data-wow-offset="1"
+          >
+            Nuestras recetas
+          </TitlesHome>
+        </div>
+
+        <div
+          className="row bg-cream border-top border-dark px-lg-5 wow fadeInRight"
+          data-wow-delay="1s"
+          data-wow-duration="2s"
         >
-          Nuestras recetas
-        </h2>
-      </div>
-      <div
-        className="row bg-cream border-top border-dark px-lg-5 wow fadeInRight"
-        data-wow-delay="1s"
-        data-wow-duration="2s"
-      >
-        <ImgBlock
-          h1="Masitas Dulces"
-          p1="500gr Harina"
-          p2="500ml Leche"
-          p3="300gr Manteca"
-          p4="2 Huevos"
-          image={image4}
-          textAtributes="col-sm p-0 bg-brown d-flex justify-content-center align-items-center"
-          imgAtributes="col-sm p-0 bg-cream d-flex justify-content-center"
-        />
-      </div>
-      <div
-        className="row bg-cream flex-row-reverse border-bottom border-dark px-lg-5 wow fadeInLeft"
-        data-wow-delay="1s"
-        data-wow-duration="2s"
-      >
-        <ImgBlock
-          h1="Facturas"
-          p1="800gr Harina"
-          p2="500ml Leche"
-          p3="300gr Azucar"
-          p4="4 Huevos"
-          image={image5}
-          textAtributes="col-sm p-0 bg-brown d-flex justify-content-center align-items-center"
-          imgAtributes="col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center"
-        />
-      </div>
-      <div className="row padding-collage bg-cream py-5">
-        <h2
-          className="texto text-uppercase font-weight-1k text-center pt-5 pb-4 brown-font font-poppins wow slideInUp"
+          <ImgBlock
+            h1="Masitas Dulces"
+            p1="500gr Harina"
+            p2="500ml Leche"
+            p3="300gr Manteca"
+            p4="2 Huevos"
+            image={image4}
+            textAtributes="col-sm p-0 bg-brown d-flex justify-content-center align-items-center"
+            imgAtributes="col-sm p-0 bg-cream d-flex justify-content-center"
+          />
+        </div>
+        <div
+          className="row bg-cream flex-row-reverse border-bottom border-dark px-lg-5 wow fadeInLeft"
+          data-wow-delay="1s"
+          data-wow-duration="2s"
+        >
+          <ImgBlock
+            h1="Facturas"
+            p1="800gr Harina"
+            p2="500ml Leche"
+            p3="300gr Azucar"
+            p4="4 Huevos"
+            image={image5}
+            textAtributes="col-sm p-0 bg-brown d-flex justify-content-center align-items-center"
+            imgAtributes="col-sm p-0 bg-cream pt-5 pt-sm-0 d-flex justify-content-center"
+          />
+        </div>
+      </ContainerHome>
+      <ContainerHome pt={0} className="row padding-collage">
+        <TitlesHome
+          className="texto text-uppercase font-weight-1k text-center brown-font font-poppins wow slideInUp"
           data-wow-delay="0.5s"
           data-wow-duration="1s"
         >
           Nuestras delicias
-        </h2>
+        </TitlesHome>
         <CollageImages className="zoom" />
-      </div>
+      </ContainerHome>
     </div>
   );
 };
