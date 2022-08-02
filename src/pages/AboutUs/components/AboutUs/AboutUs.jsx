@@ -1,6 +1,8 @@
 // IMPORTS DE MODULOS
 import React, { useEffect } from "react";
 import WOW from "wowjs";
+import { TitleAboutUs, TitleCarousel } from "./Components";
+import Carousel from "react-bootstrap/Carousel";
 
 // IMPORTS DE IMAGENES
 import aboutUs from "../../../../images/bakery/aboutUs.jpg";
@@ -13,7 +15,7 @@ const AboutUs = () => {
     const wow = new WOW.WOW({});
     wow.init();
 
-    window.scrollTo(0,0);
+    window.scrollTo(0, 0);
   }, []);
 
   return (
@@ -23,7 +25,9 @@ const AboutUs = () => {
         style={{ padding: "0", overflow: "hidden" }}
       >
         <div className="w-100 bg-cream pt-2 my-5 p-2">
-          <h1 className="text-center brown-font font-poppins">Nosotros</h1>
+          <TitleAboutUs className="brown-font font-poppins">
+            Nosotros
+          </TitleAboutUs>
           <hr className="w-50 m-auto" />
           <div className="d-xl-flex w-100 pt-5 mt-5">
             <div
@@ -89,14 +93,73 @@ const AboutUs = () => {
             </div>
           </div>
           <div className="py-5 carousel m-auto">
-            <h2
-              className="text-center brown-font pt-3 wow fadeIn font-poppins"
+            <TitleCarousel
+              className="brown-font wow fadeIn font-poppins"
               data-wow-delay="1s"
               data-wow-duration="1s"
             >
               ¡Gracias!
-            </h2>
-            <div>
+            </TitleCarousel>
+
+            <Carousel
+              fade={true}
+              controls={false}
+              indicators={false}
+              pause={true}
+              className="carousel wow fadeIn"
+              data-wow-delay="2s"
+              data-wow-duration="1s"
+            >
+              <Carousel.Item interval={3000}>
+                <div className="card">
+                  <img
+                    className="d-block w-100 blur"
+                    src={brownie}
+                    alt="brownie"
+                    blurRadius={5}
+                  />
+                </div>
+                <Carousel.Caption>
+                  <h3 className="fst-italic bg-brown carouselTitle">
+                    Bakery Shop
+                  </h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={3000}>
+                <div className="card">
+                  <img
+                    className="d-block w-100 blur"
+                    src={pie}
+                    alt="pie"
+                    blurRadius={5}
+                  />
+                </div>
+
+                <Carousel.Caption>
+                  <h3 className="fst-italic bg-brown carouselTitle">
+                    Bakery Shop
+                  </h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+              <Carousel.Item interval={3000}>
+                <div className="card">
+                  <img
+                    className="d-block w-100 blur"
+                    src={cake}
+                    alt="cake"
+                    blurRadius={5}
+                  />
+                </div>
+
+                <Carousel.Caption>
+                  <h3 className="fst-italic bg-brown carouselTitle">
+                    Bakery Shop
+                  </h3>
+                </Carousel.Caption>
+              </Carousel.Item>
+            </Carousel>
+
+            {/* <div>
               <div
                 id="carouselExampleCaptions"
                 className="carousel slide carousel-fade m-auto wow fadeIn"
@@ -177,7 +240,7 @@ const AboutUs = () => {
                   <span className="visually-hidden">Next</span>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>

@@ -21,7 +21,7 @@ const CarouselHome = () => {
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 img-fluid blur"
-            src={image2}
+            src={image1}
             alt="First slide"
             blurRadius={5}
           />
@@ -33,7 +33,7 @@ const CarouselHome = () => {
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 blur"
-            src={image3}
+            src={image2}
             alt="Second slide"
             blurRadius={5}
           />
@@ -45,7 +45,7 @@ const CarouselHome = () => {
         <Carousel.Item interval={3000}>
           <img
             className="d-block w-100 blur"
-            src={image1}
+            src={image3}
             alt="Third slide"
             blurRadius={5}
           />
