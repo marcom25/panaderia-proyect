@@ -9,6 +9,8 @@ import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 // IMPORTANDO IMAGENES
 import logo from "../../../../../images/logos/titulo-mas-cercano.svg";
 
+import "./css/Footer.css";
+
 const Footer = () => {
   useEffect(() => {
     const wow = new WOW.WOW({});
@@ -53,10 +55,10 @@ const Footer = () => {
                 <i className="fas fa-search" aria-hidden="true"></i>
                 <button
                   type="button"
-                  className="btn text-uppercase rounded-5 bg-brown white-font font-brown-hover mt-3 border-0 buttonFooter font-bitter"
-                  style={{ height: "55px", borderRadius: "8px" }}
+                  className="btn text-uppercase bg-brown white-font font-brown-hover mt-3 buttonFooter font-bitter"
                 >
-                  Suscribirme!
+                  {" "}
+                  <div className="font-bitter">Suscribirme!</div>
                 </button>
               </form>
               <br />
@@ -70,7 +72,8 @@ const Footer = () => {
 
               <ul className="list-unstyled">
                 <li>
-                  <Link to="/"
+                  <Link
+                    to="/"
                     className="orange-dark-font font-brown-hover text-decoration-none font-bitter options-hover"
                   >
                     Inicio

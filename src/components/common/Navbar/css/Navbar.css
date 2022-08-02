@@ -19,21 +19,17 @@
 .loginDesing {
   width: max-content !important;
   background-color: rgb(77, 58, 64) !important;
-  /* padding-top: 0.4rem !important;
-    padding-right: 1.5rem !important;
-    padding-left: 1.5rem !important;
-    padding-bottom: 0.4rem !important; */
+  border: 2px solid rgb(77, 58, 64) !important;
   border-top-left-radius: 10px !important;
   border-bottom-left-radius: 10px !important;
   border-top-right-radius: 10px !important;
   border-bottom-right-radius: 10px !important;
-  text-decoration: none !important;
+  text-decoration: none !important; 
   color: rgb(255, 225, 215) !important;
   font-weight: 600 !important;
 }
 
 .loginDesing:hover {
-  border: 2px solid rgb(77, 58, 64);
   background-color: #fffee3 !important;
   color: rgb(77, 58, 64) !important;
 }
@@ -50,10 +46,6 @@
   padding-right: 0.5rem !important;
 }
 
-.productOptions:hover {
-  color: #fffee3 !important;
-
-}
 
 /* Cart */
 .cart-icon {

@@ -13,7 +13,7 @@ const Navbar = () => {
       className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex navbar-position"
     >
       <div className="container-fluid p-0">
-        <div className="login-width text-center">
+        <div className="login-width text-center font-poppins">
           {cookies.get("username") ? (
             <>
               
@@ -45,7 +45,7 @@ const Navbar = () => {
             <Link
               onClick={()=> window.scrollTo(0,100)}
               to="/login"
-              className="my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins "
+              className="my-auto btn py-2 px-3 ms-md-3 loginDesing fw-bold"
             >
               Iniciar Sesion
             </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
           <ul className="navbar-nav d-flex justify-content-around m-auto barrita-chota">
             <li className="nav-item w-20 my-auto text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 aria-current="page"
                 onClick={()=> window.scrollTo(0,100)}
                 to="/"
@@ -68,7 +68,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item w-20 my-auto text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 onClick={()=> window.scrollTo(0,100)}
                 to="/productos"
               >
@@ -80,7 +80,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item my-auto w-20 text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 onClick={()=> window.scrollTo(0,100)}
                 to="/nosotros"
               >
@@ -89,7 +89,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item my-auto w-20 text-center">
               <a
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 href="#contacto"
               >
                 Contactanos
