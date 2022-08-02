@@ -31,7 +31,7 @@
     
 } */
 
-.capa {
+.layer {
     width: 100% !important;
     height: 100% !important;
     position:absolute !important;
@@ -47,12 +47,12 @@
     -o-transition: all 600ms ease-out;
 } 
 
-.capa:hover {
+.layer:hover {
     opacity: 1 !important;
 }
 
 
-.capa .h3 {
+.layer .h3 {
     margin-bottom: 50% ;
     transition: all 650ms ease-out;
     -webkit-transition: all 650ms ease-out;
@@ -61,12 +61,12 @@
     -o-transition: all 650ms ease-out;
 }
 
-.capa:hover .h3 { 
+.layer:hover .h3 { 
     margin-bottom:4.5% !important;
     margin-top: 16% !important;
 }
 
-.capa .p {
+.layer .p {
     margin-top: 50%;
     transition: all 500ms ease-out;
     margin-bottom: 50%;
@@ -76,7 +76,7 @@
     -o-transition: all 500ms ease-out;
 }
 
-.capa:hover .p{
+.layer:hover .p{
     margin-bottom: 0% !important;
     margin-top: 2.5% !important;
 }

@@ -1,5 +1,5 @@
 import { useState, useRef } from "react";
-import Loader from "../../../../components/common/Loader/Loader.jsx";
+import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage";
 
 const RegisterForm = () => {
   const [username, setUsername] = useState("");
@@ -141,7 +141,7 @@ const RegisterForm = () => {
                 </form>
               </div>
             ) : (
-              <Loader />
+              <LoaderPage />
             )}
           </div>
         </div>

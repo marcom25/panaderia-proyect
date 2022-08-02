@@ -22,7 +22,7 @@ const Card = ({
         src={image}
         alt="Card cap"
       />
-      <div className="capa">
+      <div className="layer">
         <h3 className="h3">Lorem ipsum</h3>
         <p className="p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis explicabo eaque fugit, saepe quis animi accusantium!</p>
       </div>

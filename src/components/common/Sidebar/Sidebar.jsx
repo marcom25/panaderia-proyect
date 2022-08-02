@@ -46,7 +46,7 @@ const Sidebar = () => {
           style={{ width: "33%", overflow: "hidden" }}
         >
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 "
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"

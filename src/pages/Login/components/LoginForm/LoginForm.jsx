@@ -1,8 +1,9 @@
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { msToDaysParser } from "../../../../utils/msToDaysParser";
-import Loader from "../../../../components/common/Loader/Loader.jsx";
+import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage.jsx";
 import Cookies from "universal-cookie";
+import Spinner from "../../../../components/common/Spinner/Spinner";
 
 const LoginForm = () => {
   const [email, setEmail] = useState("");
@@ -41,9 +42,9 @@ const LoginForm = () => {
           { maxAge: msToDaysParser(5) }
         );
         window.location.assign("/");
-        setLoading(true);
+        // setLoading(true);
       } else {
-        setLoading(true);
+        // setLoading(true);
         showInvalidText();
       }
     } catch (error) {
@@ -117,7 +118,11 @@ const LoginForm = () => {
                 </form>
               </div>
             ) : (
-              <Loader />
+              <div className="col card-body bg-cream-products caja p-0 d-flex justify-content-center"> 
+                <div className="row spinner-login justify-content-center align-content-center">
+                  <Spinner/>
+                </div>
+              </div>
             )}
           </div>
         </div>

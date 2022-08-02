@@ -12,7 +12,7 @@ import {
   ButtonsPagination,
 } from '../Buttons/Buttons.jsx';
 import CardsProducts from '../CardsProducts/CardsProducts.jsx';
-import Loader from '../../../../components/common/Loader/Loader.jsx';
+import LoaderPage from '../../../../components/common/LoaderPage/LoaderPage';
 
 const Products = () => {
   const [allCategories, setAllCategories] = useState([]);
@@ -145,7 +145,7 @@ const Products = () => {
           </div>
         </section>
       ) : (
-          <Loader/>
+          <LoaderPage/>
       )}
     </>
   );

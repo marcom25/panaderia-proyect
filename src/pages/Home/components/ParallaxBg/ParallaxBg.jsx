@@ -16,7 +16,7 @@ const ParallaxBg = () => {
 
         <ParallaxBanner
         layers={[
-            {image: torta, speed: -40},
+            {image: torta, speed: -70},
           ]}
           className="aspect-[2/1]"  
         > 

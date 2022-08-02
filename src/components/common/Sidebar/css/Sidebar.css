@@ -17,3 +17,7 @@
   left: 95% !important;
   top: 20% !important;
 }
+
+.navbar-toggler {
+  box-shadow: none;
+}

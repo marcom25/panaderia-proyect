@@ -26,7 +26,7 @@ import "../../../../components/common/Sidebar/css/Sidebar.css";
 import "../../../Home/components/Card/css/Card.css";
 import "../../../Cart/components/CartPage/css/CartPage.css";
 import "../../../../components/common/Footer/components/Footer/css/Footer.css";
-import "../../../../components/common/Loader/css/Loader.css";
+import "../../../../components/common/LoaderPage/css/LoaderPage.css";
 
 // IMPORTS DE IMAGENES
 import image1 from "../../../../images/bakery/prueba1.jpg";

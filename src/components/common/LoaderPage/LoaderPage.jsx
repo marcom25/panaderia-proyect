@@ -1,13 +1,16 @@
 import loader from "../../../images/loader.gif";
+import Spinner from "../Spinner/Spinner";
 
-const Loader = () => {
+const LoaderPage = () => {
   return (
     <>
       <div className="bg-cream-products d-flex justify-content-center align-items-center" style={{height: '100vh'}}>
-          <img src={loader} alt="loader" style={{width: '18%', height:'auto'}}/>
+        <div className="spinner-container">
+          <Spinner/>
+        </div>
       </div>
     </>
   );
 };
 
-export default Loader;
+export default LoaderPage;

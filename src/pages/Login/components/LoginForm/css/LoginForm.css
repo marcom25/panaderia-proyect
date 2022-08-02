@@ -275,3 +275,9 @@ form .question input[type="email"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+
+.spinner-login {
+  width: 50%;
+  height: 62.35vh;
+}
+
