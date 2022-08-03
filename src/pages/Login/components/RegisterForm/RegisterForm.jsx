@@ -1,5 +1,6 @@
 import { useState, useRef } from "react";
-import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage";
+import Spinner from "../../../../components/common/Spinner/Spinner";
+
 
 const RegisterForm = () => {
   const [username, setUsername] = useState("");
@@ -141,7 +142,11 @@ const RegisterForm = () => {
                 </form>
               </div>
             ) : (
-              <LoaderPage />
+              <div className="col card-body bg-cream-products caja p-0 d-flex justify-content-center"> 
+                <div className="row spinner-login justify-content-center align-content-center">
+                  <Spinner/>
+                </div>
+              </div>
             )}
           </div>
         </div>

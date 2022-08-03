@@ -9,7 +9,7 @@ import AboutUs from './pages/AboutUs/components/AboutUs/AboutUs.jsx';
 import LoginForm from './pages/Login/components/LoginForm/LoginForm.jsx';
 import RegisterForm from './pages/Login/components/RegisterForm/RegisterForm.jsx';
 import ChangePassword from './pages/Login/components/ChangePassword/ChangePassword.jsx';
-import Footer from './components/common/Footer/components/Footer/Footer.jsx';
+import Footer from './components/common/Footer/components/Footer.jsx';
 import { CartPage } from './pages/Cart/components/CartPage/CartPage.jsx';
 import ErrorPage from './components/common/Error/Error.jsx';
 

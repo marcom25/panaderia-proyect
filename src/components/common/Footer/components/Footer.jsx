@@ -7,7 +7,7 @@ import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 // IMPORTANDO IMAGENES
-import logo from "../../../../../images/logos/titulo-mas-cercano.svg";
+import logo from "../../../../images/logos/titulo-mas-cercano.svg";
 
 import "./css/Footer.css";
 

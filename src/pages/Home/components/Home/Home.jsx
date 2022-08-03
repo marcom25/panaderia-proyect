@@ -8,7 +8,7 @@ import ParallaxBg from "../ParallaxBg/ParallaxBg.jsx";
 import CarouselHome from "../Carousel/CarouselHome.jsx";
 import CollageImages from "../CollageImages/CollageImages.jsx";
 import ImgBlock from "../ImgBlock/ImgBlock.jsx";
-import { ContainerHome, TitlesHome } from "./Components.js";
+import { ContainerHome, TitlesHome } from "../../Components";
 
 // IMPORTS DE CSS
 import "../../../Home/components/Home/css/Grid.css";
@@ -25,7 +25,7 @@ import "../../../Home/components/ParallaxBg/css/ParallaxBg.css";
 import "../../../../components/common/Sidebar/css/Sidebar.css";
 import "../../../Home/components/Card/css/Card.css";
 import "../../../Cart/components/CartPage/css/CartPage.css";
-import "../../../../components/common/Footer/components/Footer/css/Footer.css";
+import "../../../../components/common/Footer/components/css/Footer.css";
 import "../../../../components/common/LoaderPage/css/LoaderPage.css";
 
 // IMPORTS DE IMAGENES
@@ -62,106 +62,15 @@ const Home = () => {
         >
           ¡Nuevos productos!
         </TitlesHome>
-        <div
-          className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image1}
-            msg="Pancakes"
-            imageDataTarget="#flush-collapseOne"
-            imageAriaControls="flush-collapseOne"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseOne"
-            bodyAriaLabel="flush-headingOne"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
-        <div
-          className="col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image2}
-            msg="Donuts"
-            imageDataTarget="#flush-collapseTwo"
-            imageAriaControls="flush-collapseTwo"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseTwo"
-            bodyAriaLabel="flush-headingTwo"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
-        <div
-          className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image1}
-            msg="Pancakes"
-            imageDataTarget="#flush-collapseOne"
-            imageAriaControls="flush-collapseOne"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseOne"
-            bodyAriaLabel="flush-headingOne"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
-        <div
-          className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image1}
-            msg="Pancakes"
-            imageDataTarget="#flush-collapseOne"
-            imageAriaControls="flush-collapseOne"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseOne"
-            bodyAriaLabel="flush-headingOne"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
-        <div
-          className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image1}
-            msg="Pancakes"
-            imageDataTarget="#flush-collapseOne"
-            imageAriaControls="flush-collapseOne"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseOne"
-            bodyAriaLabel="flush-headingOne"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
-        <div
-          className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
-          data-wow-delay="1s"
-          data-wow-duration="1s"
-        >
-          <Card
-            image={image1}
-            msg="Pancakes"
-            imageDataTarget="#flush-collapseOne"
-            imageAriaControls="flush-collapseOne"
-            bodyClass="card-body p-0 bg-cream card-content accordion-collapse collapse"
-            bodyId="flush-collapseOne"
-            bodyAriaLabel="flush-headingOne"
-            contentClass="card-title text-center accordion-body font-bitter"
-          />
-        </div>
+
+        <Card />
       </ContainerHome>
       <div className="row">
-        <div className="col-sm p-0 bg-cream w-100" style={{width: '100% !important'}}>
-          <CarouselHome style={{width: '100% !important'}} />
+        <div
+          className="col-sm p-0 bg-cream w-100"
+          style={{ width: "100% !important" }}
+        >
+          <CarouselHome style={{ width: "100% !important" }} />
         </div>
       </div>
       <ContainerHome className="row">
