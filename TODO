@@ -7,7 +7,7 @@ CAMBIOS:
     | Cambiarlo
   NAVBAR:
     | Sacar Background Opciones Navbar
-    | Cerrar Sesion
+    - Cerrar Sesion
     | Cambiar Carrito en Mobile
   FOOTER:
     | Agregar hovers al footer

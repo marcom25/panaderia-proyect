@@ -64,8 +64,8 @@ const RegisterForm = () => {
 
   return (
     <>
-      <div className="container">
-        <div style={{ marginTop: "12vh", paddingBottom: "12vh" }}>
+      <div className="container" style={{overflow: "hidden"}}>
+        <div style={{ marginTop: "12vh"}}>
           <div className="row card contenido">
             {loading ? (
               <div className="col card-body bg-cream caja p-0">

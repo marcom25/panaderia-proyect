@@ -42,9 +42,9 @@ const LoginForm = () => {
           { maxAge: msToDaysParser(5) }
         );
         window.location.assign("/");
-        // setLoading(true);
+        setLoading(true);
       } else {
-        // setLoading(true);
+        setLoading(true);
         showInvalidText();
       }
     } catch (error) {
