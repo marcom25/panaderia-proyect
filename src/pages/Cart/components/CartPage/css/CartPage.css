@@ -35,9 +35,8 @@
   }
   
   .returnButton {
-    
     background-color: rgb(77, 58, 64);
-    border: 2px solid #FFFEE3;
+    border: 2px solid rgb(77, 58, 64) !important;
     line-height: 0;
     font-size: 17px;
     display: inline-block;
@@ -49,13 +48,16 @@
     letter-spacing: 0.01em;
     position: relative;
     z-index: 1;
-  }
+    transition: .15s ease-in-out !important;
+    -webkit-transition: .15s ease-in-out !important;
+    -moz-transition: .15s ease-in-out !important;
+    -ms-transition: .15s ease-in-out !important;
+    -o-transition: .15s ease-in-out !important;
+}
   
   .returnButton:hover,
   .returnButton:focus {
     color: rgb(77, 58, 64);
-    border: 2px solid rgb(77, 58, 64) !important;
     background-color: #FFFEE3 !important;
-    
   }
   

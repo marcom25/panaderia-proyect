@@ -101,7 +101,7 @@ const ChangePassword = () => {
                   style={{ width: "max-content" }}
                 >
                   <button
-                    className="d-block m-auto poppins text-decoration-none"
+                    className="d-block m-auto font-poppins text-decoration-none"
                     type="submit"
                   >
                     Cambiar contraseña

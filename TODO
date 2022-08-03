@@ -7,7 +7,7 @@ CAMBIOS:
     | Cambiarlo
   NAVBAR:
     | Sacar Background Opciones Navbar
-    - Cerrar Sesion
+    | Cerrar Sesion
     | Cambiar Carrito en Mobile
   FOOTER:
     | Agregar hovers al footer
@@ -21,8 +21,8 @@ CAMBIOS:
     - Cambiar cartas
     - Cambiar cartas Mobile
   NOSOTROS:
-    - Cambiar Carrousel
-    - Fijarse en general
+    |Cambiar Carrousel
+    | Fijarse en general
   REGISTRARSE:
     - Agregar opcion de recibir informacion
   CARRITO-DROPDOWN:

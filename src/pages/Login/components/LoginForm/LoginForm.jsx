@@ -94,7 +94,7 @@ const LoginForm = () => {
 
                   <div className="m-auto" style={{ width: "max-content" }}>
                     <button
-                      className="d-block m-auto mt-4 mb-2 font-poppins text-decoration-none "
+                      className="d-block m-auto mt-4 mb-2 font-poppins text-decoration-none"
                       type="submit"
                     >
                       Iniciar sesión
