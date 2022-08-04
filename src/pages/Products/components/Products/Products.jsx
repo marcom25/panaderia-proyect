@@ -105,7 +105,7 @@ const Products = () => {
             </div>
             {/* mobile button ^ */}
 
-            <div className="d-flex" style={{height: '90vh', overflow: 'hidden'}}>
+            <div className="d-flex">
               <div
                 className="d-none d-md-block ps-4 pe-5"
                 style={{ width: 'min-content' }}
@@ -135,7 +135,7 @@ const Products = () => {
                   </ul>
                 </div>
               </div>
-              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100 scrollbar" id="style-1" style={{overflow: 'scroll', overflowX: 'hidden'}}>
+              <div className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100" id="style-1">
                 <CardsProducts
                   allCards={products}
                   filteredCards={sortedProducts}
