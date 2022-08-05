@@ -182,11 +182,11 @@ const Products = () => {
             <div className="m-auto mt-2">
               <ReactPaginate
                 breakLabel="..."
-                nextLabel="next >"
+                nextLabel="Siguiente>"
                 onPageChange={handlePageClick}
-                pageRangeDisplayed={2}
+                pageRangeDisplayed={3}
                 pageCount={pageCount}
-                previousLabel="< previous"
+                previousLabel="<Anterior"
                 renderOnZeroPageCount={null}
                 containerClassName="pagination"
                 pageLinkClassName="page-num"
