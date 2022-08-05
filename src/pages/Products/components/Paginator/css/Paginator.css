@@ -1,0 +1,38 @@
+.pagination {
+    color: white !important;
+    list-style: none !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5rem;
+    font-size: 1.2rem;
+    gap: 5px;
+}
+
+.pagination .page-num {
+    list-style: none !important;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 3px;
+    margin-top: 4rem;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+    font-weight: 400;
+    color: rgb(77, 58, 64) ;
+}
+
+.pagination .page-num:hover {
+    background-color: rgb(77, 58, 64) !important; 
+    color: white;
+}
+
+.pagination .active {
+    background-color: rgb(77, 58, 64) !important; 
+    color: white;    
+}
+
+ul a {
+    list-style: none !important;
+}
