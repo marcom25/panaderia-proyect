@@ -13,7 +13,10 @@ import { SiGooglemessages } from "react-icons/si";
 // IMPORTANDO IMAGENES
 import logo from "../../../images/logos/titulo-mas-cercano.svg";
 
+import UserOptions from "../UserOptions";
+
 import { useCart } from "../../../contexts/Cart";
+
 
 const Sidebar = () => {
   const cookies = new Cookies();
@@ -130,30 +133,7 @@ const Sidebar = () => {
               <ul className="navbar-nav h-50 d-flex justify-content-end">
                 <li className="nav-item mb-3 text-center">
                   {cookies.get("username") ? (
-                    <>
-                      <div
-                        className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown d-flex justify-content-center"
-                        id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        {cookies.get("username").key}
-                      </div>
-                      <ul
-                        className="dropdown-menu bg-cream dd-body ms-md-3 text-center "
-                        aria-labelledby="dropdownMenuButton2"
-                      >
-                        <li
-                          className="px-3 font-poppins logout"
-                          onClick={() => {
-                            
-                            document.location.reload();
-                          }}
-                        >
-                          Cerrar Sesion
-                        </li>
-                      </ul>
-                    </>
+                    <UserOptions/>
                   ) : (
                     <Link
                       to="/login"

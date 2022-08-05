@@ -3,11 +3,11 @@ import React, { useEffect } from "react";
 import WOW from "wowjs";
 // IMPORTS DE COMPONENTES
 
-import Card from "../Card/Card.jsx";
-import ParallaxBg from "../ParallaxBg/ParallaxBg.jsx";
-import CarouselHome from "../Carousel/CarouselHome.jsx";
-import CollageImages from "../CollageImages/CollageImages.jsx";
-import ImgBlock from "../ImgBlock/ImgBlock.jsx";
+import Card from "../Card/Card";
+import ParallaxBg from "../ParallaxBg/ParallaxBg";
+import CarouselHome from "../Carousel/CarouselHome";
+import CollageImages from "../CollageImages/CollageImages";
+import ImgBlock from "../ImgBlock/ImgBlock";
 import { ContainerHome, TitlesHome } from "../../Components";
 
 // IMPORTS DE CSS
@@ -27,6 +27,7 @@ import "../../../Home/components/Card/css/Card.css";
 import "../../../Cart/components/CartPage/css/CartPage.css";
 import "../../../../components/common/Footer/components/css/Footer.css";
 import "../../../../components/common/LoaderPage/css/LoaderPage.css";
+import "../../../../components/common/UserOptions/css/UserOptions.css";
 
 // IMPORTS DE IMAGENES
 import image1 from "../../../../images/bakery/prueba1.jpg";
