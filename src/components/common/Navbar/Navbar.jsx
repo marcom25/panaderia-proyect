@@ -3,6 +3,8 @@ import logo from "../../../images/logos/titulo-mas-cercano.svg";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { FaShoppingCart } from "react-icons/fa";
+import UserOptions from "../UserOptions";
+
 
 const Navbar = () => {
   const cookies = new Cookies();
@@ -15,32 +17,7 @@ const Navbar = () => {
       <div className="container-fluid p-0">
         <div className="login-width text-center font-poppins">
           {cookies.get("username") ? (
-            <>
-              
-              <div
-                className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown d-flex justify-content-center"
-                id="dropdownMenuButton2"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {cookies.get("username").key}
-              </div>
-              <ul
-                className="dropdown-menu bg-cream dd-body ms-md-3 text-center "
-                aria-labelledby="dropdownMenuButton2"
-              >
-                <li
-                  className="px-3 font-poppins logout"
-                  onClick={() => {
-                    console.log("hice click");
-                    cookies.remove("username", { maxAge: 1 });
-                    document.location.reload();
-                  }}
-                >
-                  Cerrar Sesion
-                </li>
-              </ul>
-            </>
+            <UserOptions/>
           ) : (
             <Link
               onClick={()=> window.scrollTo(0,100)}

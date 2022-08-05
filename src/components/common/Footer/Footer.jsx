@@ -7,7 +7,7 @@ import { SiGmail } from "react-icons/si";
 import { BsGithub, BsLinkedin, BsInstagram } from "react-icons/bs";
 
 // IMPORTANDO IMAGENES
-import logo from "../../../../images/logos/titulo-mas-cercano.svg";
+import logo from "../../../images/logos/titulo-mas-cercano.svg";
 
 import "./css/Footer.css";
 
@@ -55,7 +55,7 @@ const Footer = () => {
                 <i className="fas fa-search" aria-hidden="true"></i>
                 <button
                   type="button"
-                  className="btn text-uppercase bg-brown white-font font-brown-hover mt-3 buttonFooter font-bitter"
+                  className="btn text-uppercase bg-brown pink-font font-brown-hover mt-3 buttonFooter font-bitter"
                 >
                   {" "}
                   <div className="font-bitter">Suscribirme!</div>

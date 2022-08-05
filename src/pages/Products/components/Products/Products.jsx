@@ -14,10 +14,9 @@ import {
   ButtonBakery,
   ButtonHotDrinks,
   ButtonsPagination,
-} from "../Buttons/Buttons.jsx";
-import axiosClient from "../Paginator/api/axiosClient";
-import CardsProducts from "../CardsProducts/CardsProducts.jsx";
-import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage";
+} from '../Buttons/Buttons';
+import CardsProducts from '../CardsProducts/CardsProducts';
+import LoaderPage from '../../../../components/common/LoaderPage/LoaderPage';
 
 const Products = () => {
   const [allCategories, setAllCategories] = useState([]);

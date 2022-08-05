@@ -1,7 +1,6 @@
 import { useRef, useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import { msToDaysParser } from "../../../../utils/msToDaysParser";
-import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage.jsx";
 import Cookies from "universal-cookie";
 import Spinner from "../../../../components/common/Spinner/Spinner";
 
@@ -120,7 +119,7 @@ const LoginForm = () => {
             <div
               className={
                 loading
-                  ? "d-none" 
+                  ? "d-none"
                   : "col card-body bg-cream-products caja p-0 d-flex justify-content-center h-100"
               }
               style={{ position: "absolute", opacity: "0.5" }}
