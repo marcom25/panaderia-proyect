@@ -1,7 +1,7 @@
 // IMPORTS DE MODULOS
 import React, { useEffect, useState, useCallback } from "react";
 import { CartState } from "../../../../contexts/Context";
-import { TitleProducts } from "./Components";
+import { TitleProducts } from "./utils/Components";
 import Paginator from "../Paginator/Paginator";
 
 // PAGINATOR
@@ -77,7 +77,7 @@ const Products = () => {
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
 
-  const itemsPerPage = 8;
+  const itemsPerPage = 12;
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;

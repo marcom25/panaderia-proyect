@@ -8,7 +8,7 @@ import ParallaxBg from "../ParallaxBg/ParallaxBg";
 import CarouselHome from "../Carousel/CarouselHome";
 import CollageImages from "../CollageImages/CollageImages";
 import ImgBlock from "../ImgBlock/ImgBlock";
-import { ContainerHome, TitlesHome } from "../../Components";
+import { ContainerHome, TitlesHome } from "../../utils/Components";
 
 // IMPORTS DE CSS
 import "../../../Home/components/Home/css/Grid.css";
@@ -30,12 +30,10 @@ import "../../../../components/common/LoaderPage/css/LoaderPage.css";
 import "../../../../components/common/UserOptions/css/UserOptions.css";
 
 // IMPORTS DE IMAGENES
-import image1 from "../../../../images/bakery/prueba1.jpg";
-import image2 from "../../../../images/bakery/prueba2.jpg";
-import image3 from "../../../../images/bakery/receta3.jpg";
+
 import image4 from "../../../../images/bakery/receta1.jpg";
 import image5 from "../../../../images/bakery/receta3.jpg";
-import image6 from "../../../../images/bakery/receta4.jpg";
+
 
 const Home = () => {
   useEffect(() => {

@@ -60,4 +60,40 @@
     color: rgb(77, 58, 64);
     background-color: #FFFEE3 !important;
   }
-  
+
+
+.cart-container {
+    max-width: none !important;
+    overflow: hidden;
+}
+
+.cart-row {
+    margin-top: 6rem !important;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.item-image {
+    margin: 1rem 0 1rem 0;
+    width: 12rem;
+    border: rgb(66, 51, 55) solid 1px;
+}
+
+.item-title {
+    margin: .5rem 0 0 1rem;
+}
+
+.item-col {
+    margin: .5rem 0 .5rem 0;
+    display: flex;
+    justify-content: flex-start;
+    border:rgb(66, 51, 55) solid 2px;
+}
+
+@media (max-width: 767px) {
+    .cart-row {
+        margin-top: 2.5rem !important;
+    }
+}
+
