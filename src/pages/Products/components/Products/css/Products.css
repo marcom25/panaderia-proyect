@@ -26,6 +26,23 @@
     font-weight: 600 !important;
 }
 
+.cards-button-two {
+    padding: 0.375rem 0.75rem !important;
+    border-top-left-radius: 2rem !important;
+    border-top-right-radius: 2rem !important;
+    border-bottom-left-radius: 2rem !important;
+    border-bottom-right-radius: 2rem !important;
+    padding-left: 1.5rem !important;
+    padding-right: 1.5rem !important;
+    font-weight: 600 !important;
+    background-color: rgb(157, 18, 18) !important;
+    color: white !important;
+}
+
+.cards-button-two:hover {
+    background-color: rgb(205, 28, 28) !important;
+}
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
     .cardsWidth {
         width: 50% !important;

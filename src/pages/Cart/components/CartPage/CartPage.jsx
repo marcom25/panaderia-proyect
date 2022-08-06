@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { useAlert } from "react-alert";
 import { useCart } from "../../../../contexts/Cart";
-// import { cookies } from '../$-home/Home'
 
 export const CartPage = () => {
   const {
