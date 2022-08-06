@@ -7,6 +7,8 @@ import { useCart } from "../../../../contexts/Cart";
 import { Container, Row, Col, Image } from "react-bootstrap";
 import { TitlesHome } from "../../../Home/style/Components";
 
+
+
 export const CartPage = () => {
   const { cart, removeFromCart, changeCartQty } = useCart();
 
