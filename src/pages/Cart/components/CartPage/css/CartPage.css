@@ -11,14 +11,7 @@
     color: rgb(255, 216, 201) !important;
 }
 
-.deleteIcon {
-    border: 0px !important;
-}
 
-.deleteIcon:hover {
-    color: red !important;
-    cursor: pointer;
-}
 
 
 .productContainer {
@@ -78,10 +71,21 @@
     margin: 1rem 0 1rem 0;
     width: 12rem;
     border: rgb(66, 51, 55) solid 1px;
+    border-radius: 1rem;
 }
 
 .item-title {
     margin: .5rem 0 0 1rem;
+}
+
+.item-description {
+    margin: .2rem 1.5rem 0 1rem;
+    text-align: left;
+}
+
+.item-price {
+    margin: 4rem 0 0 1rem;
+    font-size: 2rem;
 }
 
 .item-col {
@@ -89,7 +93,79 @@
     display: flex;
     justify-content: flex-start;
     border:rgb(66, 51, 55) solid 2px;
+    border-radius: 1rem;
 }
+
+.manager-item-info {
+    text-align: left;
+}
+
+.qty-manager {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+}
+
+.btn-delete {
+    padding: 6px 10px 6px 10px !important;
+    border-color: transparent !important;
+    background-color: rgb(66, 51, 55) !important;
+    color: #FFFEE3 !important;
+}
+
+.btn-delete:hover {
+    color: rgb(66, 51, 55) !important;
+    background-color: #FFFEE3 !important;
+    border-color: rgb(66, 51, 55) !important;
+}
+
+.btn-delete:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.btn-qty {
+    border-color: transparent !important;
+    background-color: rgb(66, 51, 55) !important;
+    color: #FFFEE3 !important;
+}
+
+.btn-qty:hover {
+    color: rgb(66, 51, 55) !important;
+    background-color: #FFFEE3 !important;
+    border-color: rgb(66, 51, 55) !important;
+}
+
+.btn-qty:focus:not(:focus-visible) {
+    outline: none;
+    box-shadow: none;
+}
+
+.input-qty {
+    margin: 0 .5rem 0 .5rem;
+    min-width: 2rem;
+    max-width: 5rem;
+    padding: .4rem 0 .4rem 0 !important;
+    text-align: center !important;
+    background-color: #FFFEE3 !important;
+    color: rgb(66, 51, 55) !important;
+    border-color: rgb(66, 51, 55) !important;
+}
+
+.input-qty:focus {
+    outline: none !important;
+    box-shadow: none !important; 
+}
+
+.input-qty::-webkit-outer-spin-button,
+.input-qty::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.input-qty[type=number] {
+    -moz-appearance: textfield;
+  }
 
 @media (max-width: 767px) {
     .cart-row {

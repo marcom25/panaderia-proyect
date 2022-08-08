@@ -8,7 +8,7 @@ import ParallaxBg from "../ParallaxBg/ParallaxBg";
 import CarouselHome from "../Carousel/CarouselHome";
 import CollageImages from "../CollageImages/CollageImages";
 import ImgBlock from "../ImgBlock/ImgBlock";
-import { ContainerHome, TitlesHome } from "../../utils/Components";
+import { ContainerHome, TitlesHome } from "../../style/Components";
 
 // IMPORTS DE CSS
 import "../../../Home/components/Home/css/Grid.css";

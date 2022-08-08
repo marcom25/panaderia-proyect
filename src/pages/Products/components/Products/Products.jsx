@@ -1,7 +1,7 @@
 // IMPORTS DE MODULOS
 import React, { useEffect, useState, useCallback } from "react";
 import { CartState } from "../../../../contexts/Context";
-import { TitleProducts } from "./utils/Components";
+import { TitleProducts } from "./style/Components";
 import Paginator from "../Paginator/Paginator";
 
 // PAGINATOR
