@@ -14,9 +14,9 @@ import {
   ButtonBakery,
   ButtonHotDrinks,
   ButtonsPagination,
-} from '../Buttons/Buttons';
-import CardsProducts from '../CardsProducts/CardsProducts';
-import LoaderPage from '../../../../components/common/LoaderPage/LoaderPage';
+} from "../Buttons/Buttons";
+import CardsProducts from "../CardsProducts/CardsProducts";
+import LoaderPage from "../../../../components/common/LoaderPage/LoaderPage";
 
 const Products = () => {
   const [allCategories, setAllCategories] = useState([]);
@@ -93,7 +93,7 @@ const Products = () => {
   };
 
   const resetPaginator = () => {
-    setCurrentItems(products.slice(0, 8));
+    setCurrentItems(products.slice(0, 12));
   };
 
   return (
@@ -137,63 +137,68 @@ const Products = () => {
             </div>
             {/* mobile button ^ */}
 
-            <div className="d-flex">
-              <div
-                className="d-none d-md-block ps-4 pe-5"
-                style={{ width: "min-content" }}
-              >
-                <div onClick={() => resetPaginator()}>
-                  <ButtonAllProducts buttons={allCategories} />
+            <div className="w-100 ">
+              <div className="w-100 d-flex justify-content-center">
+                <div
+                  className="d-none d-md-block ps-4 pe-5"
+                  style={{ width: "min-content" }}
+                >
+                  <div onClick={() => resetPaginator()}>
+                    <ButtonAllProducts buttons={allCategories} />
+                  </div>
+                  <hr className="m-0" />
+                  <div className="filters">
+                    <h5
+                      className="brown-font mb-1 font-poppins fw-bold"
+                      style={{ fontSize: "1.1rem" }}
+                    >
+                      Pastelería
+                    </h5>
+                    <ul className="list-unstyled line-height-products mb-3">
+                      <ButtonBakery buttons={allCategories} />
+                    </ul>
+                  </div>
+                  <div>
+                    <h5
+                      className="line-height-products mb-1 font-poppins fw-bold "
+                      style={{ fontSize: "1.1rem" }}
+                    >
+                      Bebidas calientes
+                    </h5>
+                    <ul className="list-unstyled line-height-products">
+                      <ButtonHotDrinks buttons={allCategories} />
+                    </ul>
+                  </div>
                 </div>
-                <hr className="m-0" />
-                <div className="filters">
-                  <h5
-                    className="brown-font mb-1 font-poppins fw-bold"
-                    style={{ fontSize: "1.1rem" }}
-                  >
-                    Pastelería
-                  </h5>
-                  <ul className="list-unstyled line-height-products mb-3">
-                    <ButtonBakery buttons={allCategories} />
-                  </ul>
+                <div
+                  className="d-flex flex-wrap posts w-100"
+                  id="style-1"
+                  style={{maxWidth: '1008px'}}
+                >
+                  <CardsProducts
+                    allCards={currentItems}
+                    filteredCards={sortedProducts}
+                  />
                 </div>
-                <div>
-                  <h5
-                    className="line-height-products mb-1 font-poppins fw-bold "
-                    style={{ fontSize: "1.1rem" }}
-                  >
-                    Bebidas calientes
-                  </h5>
-                  <ul className="list-unstyled line-height-products">
-                    <ButtonHotDrinks buttons={allCategories} />
-                  </ul>
-                </div>
-              </div>
-              <div
-                className="d-flex flex-wrap posts pe-lg-4 pe-xl-5 w-100"
-                id="style-1"
-              >
-                <CardsProducts
-                  allCards={currentItems}
-                  filteredCards={sortedProducts}
-                />
               </div>
             </div>
-            <div className="m-auto mt-2">
-              <ReactPaginate
-                breakLabel="..."
-                nextLabel="Siguiente>"
-                onPageChange={handlePageClick}
-                pageRangeDisplayed={3}
-                pageCount={pageCount}
-                previousLabel="<Anterior"
-                renderOnZeroPageCount={null}
-                containerClassName="pagination"
-                pageLinkClassName="page-num"
-                previousLinkClassName="page-num"
-                nextLinkClassName="page-num"
-                activeLinkClassName="active"
-              />
+            <div className="d-flex justify-content-center">
+              <div className="mt-2 width-paginator">
+                <ReactPaginate
+                  breakLabel="..."
+                  nextLabel="Siguiente>"
+                  onPageChange={handlePageClick}
+                  pageRangeDisplayed={3}
+                  pageCount={pageCount}
+                  previousLabel="<Anterior"
+                  renderOnZeroPageCount={null}
+                  containerClassName="pagination"
+                  pageLinkClassName="page-num"
+                  previousLinkClassName="page-num"
+                  nextLinkClassName="page-num"
+                  activeLinkClassName="active"
+                />
+              </div>
             </div>
           </div>
         </section>
