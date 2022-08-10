@@ -51,10 +51,16 @@ const SingleProduct = ({ card }) => {
       </div>
       <div className="text-center d-lg-none">
         <button
-          className="btn cardsButton bg-brown white-font font-poppins"
-          onClick={() => addToCart(card)}
+          className={
+            isInCart(card.id)
+              ? "btn cards-button-two margin-button font-poppins"
+              : "btn cardsButton card-mobile margin-button font-poppins"
+          }
+          onClick={() =>
+            isInCart(card.id) ? removeFromCart(card) : addToCart(card)
+          }
         >
-          +Añadir al Carrito
+          {isInCart(card.id) ? "- Quitar del Carrito" : "+ Añadir al Carrito"}
         </button>
       </div>
     </div>

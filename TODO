@@ -18,7 +18,7 @@ CAMBIOS:
     | Revisar el Carrusel y Parallax (Carrusel hecho)
   PRODUCTOS:
     | Cambiar Scroll por pagination
-    - Cambiar cartas
+    | Cambiar cartas
     - Cambiar cartas Mobile
   NOSOTROS:
     |Cambiar Carrousel
@@ -28,13 +28,13 @@ CAMBIOS:
   CARRITO-DROPDOWN:
     | SACARLO
   CARRITO:
-    - REVISARLA
-    - Agregar borde a la img
-    - Cambiar forma de los items
-    - Cambiar Fonts
-    - Mover Titulo
-    - Dropdown de qty cambiarlo
-    - Aumentar fontSize
+    | REVISARLA
+    | Agregar borde a la img
+    | Cambiar forma de los items
+    | Cambiar Fonts
+    | Mover Titulo
+    | Dropdown de qty cambiarlo
+    | Aumentar fontSize
 
 
 UPDATES:

@@ -41,6 +41,13 @@
   font-weight: 600 !important;
 }
 
+.card-mobile {
+  color: #fffee3 !important;
+  background-color: rgb(66, 51, 55) !important;
+
+}
+
+
 .cards-button-two {
   padding: 0.375rem 0.75rem !important;
   border-top-left-radius: 2rem !important;

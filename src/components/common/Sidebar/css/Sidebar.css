@@ -19,5 +19,21 @@
 }
 
 .navbar-toggler {
-  box-shadow: none;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-close {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none !important;
 }
