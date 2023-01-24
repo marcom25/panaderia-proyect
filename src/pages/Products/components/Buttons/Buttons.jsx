@@ -3,8 +3,8 @@ import { useState } from "react";
 import { CartState } from "../../../../contexts/Context";
 import "../../../../css/Colors.css";
 
-export const ButtonAllProducts = ({ buttons, filter }) => {
-  // console.log('buttons:', buttons);
+export const ButtonAllProducts = ({ buttons, currentItems }) => {
+  
   const {
     filterDispatch,
   } = CartState();
@@ -19,7 +19,7 @@ export const ButtonAllProducts = ({ buttons, filter }) => {
               style={{cursor: "pointer"}}
               onClick={() => filterDispatch({
                 type: "SORT",
-                payload: cat
+                payload: currentItems
               })}
             >
               Todos los productos

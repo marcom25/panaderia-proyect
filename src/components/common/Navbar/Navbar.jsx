@@ -3,6 +3,8 @@ import logo from "../../../images/logos/titulo-mas-cercano.svg";
 import { Link } from "react-router-dom";
 import Cookies from "universal-cookie";
 import { FaShoppingCart } from "react-icons/fa";
+import UserOptions from "../UserOptions";
+
 
 const Navbar = () => {
   const cookies = new Cookies();
@@ -13,38 +15,14 @@ const Navbar = () => {
       className="bg-pink navbar navbar-expand-md navbar-light d-none d-md-block d-flex navbar-position"
     >
       <div className="container-fluid p-0">
-        <div className="login-width text-center">
+        <div className="login-width text-center font-poppins">
           {cookies.get("username") ? (
-            <>
-              
-              <div
-                className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown d-flex justify-content-center"
-                id="dropdownMenuButton2"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                {cookies.get("username").key}
-              </div>
-              <ul
-                className="dropdown-menu bg-cream dd-body ms-md-3 text-center "
-                aria-labelledby="dropdownMenuButton2"
-              >
-                <li
-                  className="px-3 font-poppins logout"
-                  onClick={() => {
-                    console.log("hice click");
-                    cookies.remove("username", { maxAge: 1 });
-                    document.location.reload();
-                  }}
-                >
-                  Cerrar Sesion
-                </li>
-              </ul>
-            </>
+            <UserOptions/>
           ) : (
             <Link
+              onClick={()=> window.scrollTo(0,100)}
               to="/login"
-              className="my-auto btn py-2 px-3 ms-md-3 loginDesing font-poppins "
+              className="my-auto btn py-2 px-3 ms-md-3 loginDesing fw-bold"
             >
               Iniciar Sesion
             </Link>
@@ -57,8 +35,9 @@ const Navbar = () => {
           <ul className="navbar-nav d-flex justify-content-around m-auto barrita-chota">
             <li className="nav-item w-20 my-auto text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 aria-current="page"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/"
               >
                 Inicio
@@ -66,7 +45,8 @@ const Navbar = () => {
             </li>
             <li className="nav-item w-20 my-auto text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/productos"
               >
                 Productos
@@ -77,7 +57,8 @@ const Navbar = () => {
             </li>
             <li className="nav-item my-auto w-20 text-center">
               <Link
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
+                onClick={()=> window.scrollTo(0,100)}
                 to="/nosotros"
               >
                 Nosotros
@@ -85,7 +66,7 @@ const Navbar = () => {
             </li>
             <li className="nav-item my-auto w-20 text-center">
               <a
-                className="nav-link brown-font productOptions font-poppins"
+                className="nav-link brown-font font-orange-dark-hover productOptions font-poppins fw-bold"
                 href="#contacto"
               >
                 Contactanos
@@ -93,9 +74,9 @@ const Navbar = () => {
             </li>
           </ul>
         </div>
-        <div className="carritoNavbar text-center brown-font px-lg-3 px-xl-4 px-md-3 dropdown">
-          <Link className="brown-font position-relative cart-icon" to="/cart"><FaShoppingCart /></Link>
-        </div>
+        <Link className="carritoNavbar text-center brown-font px-lg-3 px-xl-4 px-md-3 dropdown cart-icon" to="/cart">
+          <FaShoppingCart />
+        </Link>
       </div>
     </nav>
   );

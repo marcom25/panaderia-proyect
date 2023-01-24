@@ -17,3 +17,23 @@
   left: 95% !important;
   top: 20% !important;
 }
+
+.navbar-toggler {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus{
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-close {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.btn-close:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}

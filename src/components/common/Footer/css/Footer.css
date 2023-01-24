@@ -1,7 +1,7 @@
 .buttonFooter {
   margin-top: 35px;
   background-color: rgb(77, 58, 64);
-  border: 1px solid #fffee3;
+  border: 2px solid rgb(77, 58, 64) !important;
   line-height: 0;
   font-size: 17px;
   display: inline-block;
@@ -13,6 +13,12 @@
   letter-spacing: 0.01em;
   position: relative;
   z-index: 1;
+  height: 55px;
+  border-radius: 8px !important;
+  -webkit-border-radius: 8px !important;
+  -moz-border-radius: 8px !important;
+  -ms-border-radius: 8px !important;
+  -o-border-radius: 8px !important;
 }
 
 .options-hover{
@@ -27,6 +33,5 @@
 .buttonFooter:hover,
 .buttonFooter:focus {
   color: rgb(77, 58, 64);
-  border: 2px solid rgb(77, 58, 64) !important;
   background-color: #fffee3 !important;
 }

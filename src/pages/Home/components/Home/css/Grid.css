@@ -2,3 +2,9 @@
     margin-right: 0% !important;
     margin-left: 0%  !important;
 }
+
+@media screen and (min-width >= 992px){
+    .texto {
+        font-size: 2.8vw !important;
+    }
+}

@@ -1,6 +1,6 @@
 
 
-import SingleProduct from '../SingleProduct/SingleProduct.jsx';
+import SingleProduct from '../SingleProduct/SingleProduct';
 
 const CardsProducts = ({ allCards, filteredCards }) => {
 
@@ -14,7 +14,7 @@ const CardsProducts = ({ allCards, filteredCards }) => {
   };
 
   return (
-    <div className="w-100 pe-md-3" key={1}>
+    <div className="w-100" key={1}>
       <div className="w-100 d-flex flex-wrap">{renderedCards()}</div>
       {<div></div>}
     </div>

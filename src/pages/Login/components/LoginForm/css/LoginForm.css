@@ -50,7 +50,7 @@ body {
 
 .container {
   width: 100% !important;
-  height: 100vh !important;
+  height: 140vh !important;
 }
 .contenido{
   border: 0px !important;
@@ -65,7 +65,6 @@ form {
   position: relative;
   display: inline-block;
   box-sizing: border-box;
-
   background-color: inherit;
   border-radius: 40px;
   margin: 40px 0;
@@ -88,7 +87,7 @@ form h1 {
 form button {
   margin-top: 35px;
   background-color: rgb(77, 58, 64);
-  border: 1px solid #FFFEE3;
+  border: 2px solid rgb(77, 58, 64) !important;
   line-height: 0;
   font-size: 17px;
   display: inline-block;
@@ -105,9 +104,7 @@ form button {
 form button:hover,
 form button:focus {
   color: rgb(77, 58, 64);
-  border: 2px solid rgb(77, 58, 64) !important;
   background-color: #FFFEE3 !important;
-  
 }
 
 form .question {
@@ -275,3 +272,9 @@ form .question input[type="email"]:valid ~ label {
   -webkit-transform: translate(5px, -35px) scale(0.6);
   transform: translate(5px, -35px) scale(0.6);
 }
+
+.spinner-login {
+  width: 50%;
+  height: 62.35vh;
+}
+

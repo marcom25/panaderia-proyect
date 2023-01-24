@@ -4,37 +4,37 @@ CAMBIOS:
     - API Fetch con Axios y en un context
     - BUSCAR base de datos (subir a heroku)
   SPINNER:
-    - Cambiarlo
+    | Cambiarlo
   NAVBAR:
-    | Sacar Bakcground Opciones Navbar
-    - Cerrar Sesion
+    | Sacar Background Opciones Navbar
+    | Cerrar Sesion
     | Cambiar Carrito en Mobile
   FOOTER:
-    - Agregar hovers al footer
+    | Agregar hovers al footer
     - Si ya esta suscrito, que no aparezca la parte de suscribirse
   INICIO:
-    - Agregar cartas
-    - Hover a las cartas
-    - Revisar el Carrusel y Parallax
+    | Agregar cartas
+    | Hover a las cartas
+    | Revisar el Carrusel y Parallax (Carrusel hecho)
   PRODUCTOS:
-    - Cambiar Scroll por pagination
-    - Cambiar cartas
+    | Cambiar Scroll por pagination
+    | Cambiar cartas
     - Cambiar cartas Mobile
   NOSOTROS:
-    - Cambiar Carrousel
-    - Fijarse en general
+    |Cambiar Carrousel
+    | Fijarse en general
   REGISTRARSE:
     - Agregar opcion de recibir informacion
   CARRITO-DROPDOWN:
-    - SACARLO
+    | SACARLO
   CARRITO:
-    - REVISARLA
-    - Agregar borde a la img
-    - Cambiar forma de los items
-    - Cambiar Fonts
-    - Mover Titulo
-    - Dropdown de qty cambiarlo 
-    - Aumentar fontSize
+    | REVISARLA
+    | Agregar borde a la img
+    | Cambiar forma de los items
+    | Cambiar Fonts
+    | Mover Titulo
+    | Dropdown de qty cambiarlo
+    | Aumentar fontSize
 
 
 UPDATES:
@@ -51,4 +51,6 @@ UPDATES:
     - Agregar Categoria
   MEDIO DE PAGO:
     - Conectar con la API de mercadoPago
+  NAVBAR: 
+    - Convertir UserOptions en sidebar
     

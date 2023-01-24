@@ -1,44 +1,49 @@
 .padding-collage {
-    padding: 0rem;
+  padding-left: 0rem;
+  padding-right: 0rem;
 }
 
 @media screen and (min-width: 719px) and (max-width: 999px) {
-    .padding-collage {
-        padding: 0.5rem !important;
-    }
+  .padding-collage {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
 }
 
 @media screen and (min-width: 1000px) and (max-width: 1099px) {
-    .padding-collage {
-        padding: 4rem !important;
-    }
+  .padding-collage {
+    padding-left: 4rem !important;
+    padding-right: 4rem !important;
+  }
 }
 
 @media screen and (min-width: 1100px) and (max-width: 1299px) {
-    .padding-collage {
-        padding: 7rem !important;
-    }
+  .padding-collage {
+    padding-left: 7rem !important;
+    padding-right: 7rem !important;
+  }
 }
-@media screen and (min-width: 1300px){
-    .padding-collage {
-        padding: 9rem !important;
-    }
+@media screen and (min-width: 1300px) {
+  .padding-collage {
+    padding-left: 9rem !important;
+    padding-right: 9rem !important;
+  }
 }
 
 .zoom {
-    transition: transform .2s;
-    -webkit-transition: transform .2s;
-    -moz-transition: transform .2s;
-    -ms-transition: transform .2s;
-    -o-transition: transform .2s;
-    cursor: pointer;
+  transition: transform 0.2s;
+  -webkit-transition: transform 0.2s;
+  -moz-transition: transform 0.2s;
+  -ms-transition: transform 0.2s;
+  -o-transition: transform 0.2s;
 }
 
-.zoom:hover {
+@media screen and (min-width: 769px) {
+  .zoom:hover {
     transform: scale(1.1);
     -webkit-transform: scale(1.1);
     -moz-transform: scale(1.1);
     -ms-transform: scale(1.1);
     -o-transform: scale(1.1);
+  }
 }
-

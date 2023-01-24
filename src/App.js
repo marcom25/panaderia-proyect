@@ -1,17 +1,17 @@
 import React from 'react';
 import { Routes, Route, Navigate } from 'react-router-dom';
 
-import Home from './pages/Home/components/Home/Home.jsx';
-import Navbar from './components/common/Navbar/Navbar.jsx';
-import Sidebar from './components/common/Sidebar/Sidebar.jsx';
-import Products from './pages/Products/components/Products/Products.jsx';
-import AboutUs from './pages/AboutUs/components/AboutUs/AboutUs.jsx';
-import LoginForm from './pages/Login/components/LoginForm/LoginForm.jsx';
-import RegisterForm from './pages/Login/components/RegisterForm/RegisterForm.jsx';
-import ChangePassword from './pages/Login/components/ChangePassword/ChangePassword.jsx';
-import Footer from './components/common/Footer/components/Footer/Footer.jsx';
-import { CartPage } from './pages/Cart/components/CartPage/CartPage.jsx';
-import ErrorPage from './components/common/Error/Error.jsx';
+import Home from './pages/Home/components/Home/Home';
+import Navbar from './components/common/Navbar/Navbar';
+import Sidebar from './components/common/Sidebar/Sidebar';
+import Products from './pages/Products/components/Products/Products';
+import AboutUs from './pages/AboutUs/components/AboutUs/AboutUs';
+import LoginForm from './pages/Login/components/LoginForm/LoginForm';
+import RegisterForm from './pages/Login/components/RegisterForm/RegisterForm';
+import ChangePassword from './pages/Login/components/ChangePassword/ChangePassword';
+import Footer from './components/common/Footer/Footer';
+import { CartPage } from './pages/Cart/components/CartPage/CartPage';
+import ErrorPage from './components/common/Error/Error';
 
 function App() {
   return (

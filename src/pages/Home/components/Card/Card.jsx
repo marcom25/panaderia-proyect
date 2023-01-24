@@ -1,37 +1,29 @@
+import { cardInfo } from "./utils";
 
-const Card = ({
-  image,
-  msg,
-  imageClass,
-  iamgeType,
-  imageDataTarget,
-  imageAriaControls,
-  bodyClass,
-  bodyId,
-  bodyAriaLabel,
-  contentClass,
-}) => {
-  return (
-    <div className="card m-auto " style={{ width: "20rem" }}>
-      <img
-        className="card-img-top image accordion-button p-0 collapsed"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target={imageDataTarget}
-        aria-controls={imageAriaControls}
-        src={image}
-        alt="Card cap"
-      />
+const Card = () => {
+  return cardInfo.map((card) => (
+    <div
+      className="cards col-md-6 col-lg-4 py-4 wow fadeIn"
+      data-wow-delay="1s"
+      data-wow-duration="1s"
+    >
       <div
-        id={bodyId}
-        className={bodyClass}
-        aria-labelledby={bodyAriaLabel}
-        data-bs-parent="#accordionFlushExample"
+        className="row card m-auto container-card d-flex justify-content-center align-items-center"
+        style={{ width: "20rem" }}
+        key={card.id}
       >
-        <h5 className={contentClass}>{msg} </h5>
+        <img
+          className="card-img-top image accordion-button p-0 collapsed"
+          src={card.img}
+          alt="Card cap"
+        />
+        <div className="layer">
+          <h3 className="h3">{card.title}</h3>
+          <p className="p">{card.content}</p>
+        </div>
       </div>
     </div>
-  );
+  ));
 };
 
 export default Card;

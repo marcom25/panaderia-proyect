@@ -7,7 +7,7 @@
     background-color: #FFC6B0 !important;
 }
 .bg-brown {
-    background-color: rgb(77, 58, 64) !important; 
+    background-color: rgb(66, 51, 55) !important; 
 }
 .bg-orange-light {
     background-color: rgb(236, 138, 101) !important;
@@ -29,6 +29,9 @@
 }
 .bg-cream-dark{
     background-color: #f7f7b7 !important;
+}
+.bg-cream-products{
+    background-color: rgb(249, 243, 223) !important;
 }
 .bg-lightblue{
     background-color: #B0FFF2 !important;
@@ -54,7 +57,7 @@
 }
 
 .brown-font {
-    color: rgb(77, 58, 64) !important;
+    color: rgb(66, 51, 55) !important;
 }
 
 .orange-light-font {
@@ -93,7 +96,7 @@
 }
 
 .bg-brown-hover:hover {
-    background-color: rgb(64, 54, 50) !important;
+    background-color: rgb(66, 51, 55) !important;
     /* background-color: rgb(77, 64, 58) !important; */
 }
 
@@ -125,7 +128,7 @@
 }
 
 .font-brown-hover:hover {
-    color: rgb(77, 58, 64) !important;
+    color: rgb(66, 51, 55) !important;
 }
 .font-white-hover:hover {
     color: white !important;

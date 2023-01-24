@@ -13,7 +13,10 @@ import { SiGooglemessages } from "react-icons/si";
 // IMPORTANDO IMAGENES
 import logo from "../../../images/logos/titulo-mas-cercano.svg";
 
+import UserOptions from "../UserOptions";
+
 import { useCart } from "../../../contexts/Cart";
+
 
 const Sidebar = () => {
   const cookies = new Cookies();
@@ -22,6 +25,15 @@ const Sidebar = () => {
    cart,
     
   } = useCart();
+
+  
+  const scrollToBottom = () => {
+    window.scrollTo({
+      top: document.documentElement.scrollHeight,
+      behavior: 'smooth',
+    });
+  };
+  
 
 
   useEffect(() => {
@@ -37,7 +49,7 @@ const Sidebar = () => {
           style={{ width: "33%", overflow: "hidden" }}
         >
           <button
-            className="navbar-toggler border-0"
+            className="navbar-toggler border-0 "
             type="button"
             data-bs-toggle="offcanvas"
             data-bs-target="#offcanvasNavbar"
@@ -64,10 +76,11 @@ const Sidebar = () => {
             </div>
             <div className="offcanvas-body p-0">
               <ul className="navbar-nav h-50 flex-grow-1 brown-fontn">
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
                     aria-current="page"
+                    onClick={()=> window.scrollTo(0,100)}
                     to="/"
                   >
                     {" "}
@@ -77,10 +90,12 @@ const Sidebar = () => {
                     Inicio
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
                     aria-current="page"
+                    onClick={()=> window.scrollTo(0,100)}
+                    
                     to="/productos"
                   >
                     {" "}
@@ -90,9 +105,10 @@ const Sidebar = () => {
                     Productos
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover" data-bs-dismiss="offcanvas">
                   <Link
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
+                    onClick={()=> window.scrollTo(0,100)}
                     to="/nosotros"
                   >
                     {" "}
@@ -102,10 +118,10 @@ const Sidebar = () => {
                     Nosotros
                   </Link>
                 </li>
-                <li className="nav-item bg-brown-hover">
+                <li className="nav-item bg-brown-hover"  data-bs-dismiss="offcanvas">
                   <a
                     className="nav-link d-flex align-items-center brown-font font-pink-hover px-3 font-poppins"
-                    href="#contacto"
+                    onClick={()=> scrollToBottom()}
                   >
                     <SiGooglemessages
                       style={{ fontSize: "1.6rem", paddingRight: "6px" }}
@@ -117,30 +133,7 @@ const Sidebar = () => {
               <ul className="navbar-nav h-50 d-flex justify-content-end">
                 <li className="nav-item mb-3 text-center">
                   {cookies.get("username") ? (
-                    <>
-                      <div
-                        className="my-auto px-3 ms-md-3 w-100 font-poppins dropdown user-dropdown d-flex justify-content-center"
-                        id="dropdownMenuButton2"
-                        data-bs-toggle="dropdown"
-                        aria-expanded="false"
-                      >
-                        {cookies.get("username").key}
-                      </div>
-                      <ul
-                        className="dropdown-menu bg-cream dd-body ms-md-3 text-center "
-                        aria-labelledby="dropdownMenuButton2"
-                      >
-                        <li
-                          className="px-3 font-poppins logout"
-                          onClick={() => {
-                            
-                            document.location.reload();
-                          }}
-                        >
-                          Cerrar Sesion
-                        </li>
-                      </ul>
-                    </>
+                    <UserOptions/>
                   ) : (
                     <Link
                       to="/login"
@@ -170,3 +163,5 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
+
