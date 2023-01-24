@@ -31,7 +31,7 @@ const RegisterForm = () => {
     if (password === newPassword) {
       try {
         const res = await fetch(
-          "https://panaderia-api.herokuapp.com/register",
+          "https://panaderia-api.vercel.app/register",
           {
             method: "POST",
             body: JSON.stringify({ username, email, password }),

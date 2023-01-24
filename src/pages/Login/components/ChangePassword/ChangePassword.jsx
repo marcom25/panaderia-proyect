@@ -30,7 +30,7 @@ const ChangePassword = () => {
     if (password === confirmedPassword) {
       try {
         const res = await fetch(
-          "https://panaderia-api.herokuapp.com/changePassword",
+          "https://panaderia-api.vercel.app/changePassword",
           {
             method: "PUT",
             body: JSON.stringify({ email, password, confirmedPassword }),

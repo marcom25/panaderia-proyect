@@ -22,7 +22,7 @@ const LoginForm = () => {
     };
 
     try {
-      const res = await fetch("https://panaderia-api.herokuapp.com/login", {
+      const res = await fetch("https://panaderia-api.vercel.app/login", {
         method: "POST",
         body: JSON.stringify({ email, password }),
         headers: {

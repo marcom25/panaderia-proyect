@@ -41,7 +41,7 @@ const Products = () => {
       try {
         setLoading(true);
         const res = await fetch(
-          "https://panaderia-api.herokuapp.com/products",
+          "https://panaderia-api.vercel.app/products",
           {
             method: "GET",
             headers: {
