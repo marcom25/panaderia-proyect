@@ -173,7 +173,7 @@ const Products = () => {
                 <div
                   className="d-flex flex-wrap posts w-100"
                   id="style-1"
-                  style={{maxWidth: '1008px'}}
+                  style={{ maxWidth: '1008px' }}
                 >
                   <CardsProducts
                     allCards={currentItems}

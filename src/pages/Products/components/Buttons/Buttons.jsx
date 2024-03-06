@@ -4,7 +4,7 @@ import { CartState } from "../../../../contexts/Context";
 import "../../../../css/Colors.css";
 
 export const ButtonAllProducts = ({ buttons, currentItems }) => {
-  
+  const { selectedItem, onChangeSelectedItem } = CartState();
   const {
     filterDispatch,
   } = CartState();
@@ -16,11 +16,13 @@ export const ButtonAllProducts = ({ buttons, currentItems }) => {
             <li
               key={i}
               className="brown-font line-height-products d-block mb-1 container-category font-poppins"
-              style={{cursor: "pointer"}}
-              onClick={() => filterDispatch({
+              style={{cursor: "pointer", fontWeight: selectedItem === cat ? 'bold' : 'normal'}}
+              onClick={() => {filterDispatch({
                 type: "SORT",
                 payload: currentItems
-              })}
+              })
+              onChangeSelectedItem(cat);
+            }}
             >
               Todos los productos
             </li>
@@ -31,8 +33,9 @@ export const ButtonAllProducts = ({ buttons, currentItems }) => {
   );
 };
 
-export const ButtonHotDrinks = ({ buttons, filter }) => {
+export const ButtonHotDrinks = ({ buttons, filter } ) => {
   const { filterDispatch } = CartState();
+  const { selectedItem, onChangeSelectedItem } = CartState();
   return (
     <ul className="p-md-0">
       {buttons.map((cat, i) => {
@@ -40,11 +43,14 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
           return (
             <li
               key={i}
-              onClick={() => filterDispatch({
+              onClick={() =>{ filterDispatch({
                 type: "SORT",
                 payload: cat
-              })}
+              })
+              onChangeSelectedItem(cat);
+            }}
               className="brown-font d-block container-category font-bitter"
+              style={{cursor: "pointer", fontWeight: selectedItem === cat ? 'bold' : 'normal'}}
             >
               {cat}
             </li>
@@ -57,6 +63,7 @@ export const ButtonHotDrinks = ({ buttons, filter }) => {
 
 export const ButtonBakery = ({ buttons, filter }) => {
   const { filterDispatch } = CartState();
+  const { selectedItem, onChangeSelectedItem } = CartState();
   return (
     <ul className="p-md-0">
       {buttons.map((cat, i) => {
@@ -69,11 +76,14 @@ export const ButtonBakery = ({ buttons, filter }) => {
           return (
             <li
               key={i}
-              onClick={() => filterDispatch({
+              onClick={() => {filterDispatch({
                 type: "SORT",
                 payload: cat
-              })}
+              })
+              onChangeSelectedItem(cat);
+            }}
               className="brown-font d-block container-category font-bitter "
+              style={{cursor: "pointer", fontWeight: selectedItem === cat ? 'bold' : 'normal'}}
             >
               {cat}
             </li>

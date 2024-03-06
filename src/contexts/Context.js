@@ -1,4 +1,4 @@
-import React, { createContext, useReducer, useContext } from "react";
+import React, { createContext, useReducer, useContext, useState } from "react";
 import {cartReducer} from "../reducers/cart";
 import {filterReducer} from "../reducers/filter";
 import {userReducer} from "../reducers/user";
@@ -15,9 +15,15 @@ const Context = ({ children }) => {
     sort: "",
   });
 
+  const [selectedItem, setSelectedItem] = useState("");
+
+  const onChangeSelectedItem = (item) => {
+    setSelectedItem(item)
+  }
+
   return (
     <Cart.Provider
-      value={{ filterState, filterDispatch, userState, userDispatch }}
+      value={{ filterState, filterDispatch, userState, userDispatch, onChangeSelectedItem, selectedItem }}
     >
       {children}
     </Cart.Provider>
